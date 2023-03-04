@@ -1,0 +1,11 @@
+previous_phase=noone
+previous_enemy=noone
+previous_enemy_action_bar=0
+previous_enemy_active_pokemon=0
+previous_amber_action_bar=-1
+previousteamJansson=noone
+previous_enemy_HP=0
+previous_amber_HP=0
+previous_husmusen_y=0
+
+
