@@ -19,3 +19,13 @@ button=obj_pikachu_button
 thunderShock=constructThunderShock()
 thunder=constructThunder()
 ds_list_add(movesList,thunderShock,thunder)
+
+
+/*
+load = function(saveDataTrainer){
+loadPokemon(saveDataTrainer._pikachu)
+}
+
+save = function(saveDataTrainer){
+savePokemon(saveDataTrainer._pikachu)
+}

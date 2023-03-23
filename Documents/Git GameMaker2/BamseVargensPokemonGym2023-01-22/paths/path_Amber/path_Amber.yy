@@ -6,7 +6,7 @@
   "kind": 0,
   "parent": {
     "name": "Paths",
-    "path": "folders/Paths.yy",
+    "path": "folders/Objects/Gym/Trainers/amber/Paths.yy",
   },
   "points": [
     {"speed":100.0,"x":800.0,"y":600.0,},

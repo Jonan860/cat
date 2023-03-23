@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "constructors",
-    "path": "folders/Sprites/Scripts/constructors.yy",
+    "path": "folders/Scripts/constructors.yy",
   },
 }

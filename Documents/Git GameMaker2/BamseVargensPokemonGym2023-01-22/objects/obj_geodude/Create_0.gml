@@ -1,7 +1,6 @@
 event_inherited();
 max_HP=120
 HP=120;
-attack=20;
 defence_bonus=0;
 attack_bonus=0;
 active=0;
@@ -22,3 +21,13 @@ ds_list_add(movesList,defenceCurl,leer,rockThrow)
 
 
 button=obj_geodude_button
+
+/*
+load = function(saveDataTrainer){
+loadPokemon(saveDataTrainer._geodude)
+}
+
+save = function(saveDataTrainer){
+	variable_struct_set(saveDataEntry,"_geodude",{})
+savePokemon(saveDataTrainer._geodude)
+}

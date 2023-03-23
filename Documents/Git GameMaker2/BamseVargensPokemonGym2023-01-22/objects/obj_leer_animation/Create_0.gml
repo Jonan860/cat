@@ -1,3 +1,4 @@
+enemyImageTransform = method(undefined,enemyRotateTransform)
 event_inherited()
 sound=sound_leer
 start_xscale=image_xscale; start_yscale=image_yscale;

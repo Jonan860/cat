@@ -15,3 +15,12 @@ tailWhip=constructTailWhip()
 quickAttack=constructQuickAttack()
 ds_list_add(movesList,tailWhip,quickAttack)
 scr_ai=method(undefined, scr_rattata_ai) 
+
+/*
+load = function(saveDataTrainer){
+loadPokemon(saveDataTrainer._rattata)
+}
+
+save = function(saveDataTrainer){
+savePokemon(saveDataTrainer._rattata)
+}

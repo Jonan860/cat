@@ -13,6 +13,17 @@ sound=sound_snorlax
 xstart=x
 ystart=y
 superFang=constructSuperFang()
+quickAttack=constructQuickAttack()
 tailWhip=constructTailWhip()
-ds_list_add(movesList,superFang,tailWhip)
+ds_list_add(movesList,superFang,quickAttack,tailWhip)
 scr_ai= method(undefined, scr_raticate_ai)
+
+
+/*
+load = function(saveDataTrainer){
+loadPokemon(saveDataTrainer._raticate)
+}
+
+save = function(saveDataTrainer){
+savePokemon(saveDataTrainer._raticate)
+}

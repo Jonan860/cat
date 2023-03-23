@@ -1,11 +1,9 @@
 function scr_raticate_ai() {
 	var target=getOpponent()
-	if(superfang.pp>0){superFang.scr_perform()}
+	if(superFang.pp>0){global.move = superFang}
 	else{ 
 		var opponentDefenceBonus=target.defence_bonus
-		if(opponentDefenceBonus>-5){move=choose(tailWhip,quickAttack,quickAttack,quickAttack,quickAttack)}
-		else{move=quickAttack}
-	move.scrStart()
-	
+		if(opponentDefenceBonus>-5){global.move=choose(tailWhip,quickAttack,quickAttack,quickAttack,quickAttack)}
+		else{global.move=quickAttack}
 }
 }

@@ -14,3 +14,13 @@ confusion=constructConfusion()
 ds_list_add(movesList,sandAttack,confusion)
 scr_ai = method(undefined, scr_espeon_ai)
 
+
+/*
+load = function(saveDataTrainer){
+loadPokemon(saveDataTrainer._espeon)
+}
+
+save = function(saveDataTrainer){
+savePokemon(saveDataTrainer._espeon)
+}
+

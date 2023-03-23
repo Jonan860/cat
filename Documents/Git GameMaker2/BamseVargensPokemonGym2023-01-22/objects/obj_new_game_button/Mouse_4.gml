@@ -1,2 +1,2 @@
 
-room=start_code
+scr_goto_room(start_code)

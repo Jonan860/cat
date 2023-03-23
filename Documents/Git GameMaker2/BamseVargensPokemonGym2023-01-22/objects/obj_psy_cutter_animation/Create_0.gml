@@ -1,8 +1,4 @@
-
-
-
-spd=9
-miss=noone
+enemyImageTransform = method(undefined,doNothing)
 event_inherited()
 
 

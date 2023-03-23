@@ -12,5 +12,6 @@ function damage_calculate(victim) {
 	case DAMAGEPARADIGMS.percentage : return ceil(victim.max_HP*damage); break;
 	case DAMAGEPARADIGMS.fixed : return ceil(damage); break;
 	case DAMAGEPARADIGMS.riddles : return ceil(number_correct_answer*damageWithBonus*defenceWithBonus*typeBonus); break;
+	case DAMAGEPARADIGMS.elementless : return ceil(damageWithBonus*defenceWithBonus)
 	}
 }

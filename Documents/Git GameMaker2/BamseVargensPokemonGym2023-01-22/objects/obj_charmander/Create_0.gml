@@ -1,7 +1,7 @@
 event_inherited();
 max_HP=120
 HP=120;
-attack=20;
+
 defence_bonus=0;
 attack_bonus=0;
 active=0;
@@ -23,5 +23,14 @@ ember=constructEmber()
 ds_list_add(movesList,tailWhip,ember)
 
 button=obj_charmander_button
+
+/*
+load = function(saveDataTrainer){
+loadPokemon(saveDataTrainer._charmander)
+}
+
+save = function(saveDataTrainer){
+savePokemon(saveDataTrainer._charmander)
+}
 
 

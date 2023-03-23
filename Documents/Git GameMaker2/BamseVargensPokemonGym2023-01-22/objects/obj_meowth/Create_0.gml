@@ -17,3 +17,13 @@ growl=constructGrowl()
 scratch=constructScratch()
 ds_list_add(movesList,growl,scratch)
 scr_ai=method(undefined,scr_meowth_ai)
+
+
+/*
+load = function(saveDataTrainer){
+loadPokemon(saveDataTrainer._meowth)
+}
+
+save = function(saveDataTrainer){
+savePokemon(saveDataTrainer._meowth)
+}

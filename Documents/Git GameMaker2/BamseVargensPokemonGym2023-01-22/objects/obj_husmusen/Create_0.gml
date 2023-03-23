@@ -1,3 +1,5 @@
+
+
 event_inherited()
 global.Husmusen=id
 roomMatch=room_husmusen
@@ -7,7 +9,6 @@ wait=1
 defeated=0
 path=0
 name="Husmusen"
-pokemon_left=0 //pokemon_left räknas upp i step event
 lastroom_x=x; lastroom_y=y;
 start_x=x; start_y=y;
 rattata=instance_create_depth(opponent_x,opponent_y,0,obj_rattata)
@@ -17,14 +18,15 @@ pichu=instance_create_depth(opponent_x,opponent_y,0,obj_pichu)
 raichu=instance_create_depth(opponent_x,opponent_y,0,obj_raichu)
 sandshrew=instance_create_depth(opponent_x,opponent_y,0,obj_sandshrew)
 ds_list_add(pokemonList,sandshrew,raichu,pichu,rattata,marill,raticate)
+
 for(var i=0; i<ds_list_size(pokemonList); i++) {
-var pokemon = ds_list_find_value(pokemonList,i)
+var pokemon = pokemonList[|i]
 with(pokemon){
 x=opponent_x; y=opponent_y
 owner=other.id
 }
 }
-active_pokemon=sandshrew
+active_pokemon=pokemonList[|0]
 
 
 scrChoosing=method(undefined,scrEnemyChoosing)
@@ -37,9 +39,15 @@ scrMatch = method(undefined,scrEnemyMatch)
 isAmberApproachable=function(){
 var y_distance=abs(y-global.amber.y)
 	var x_distance=abs(x-global.amber.x)
-	var amber_distance=distance_to_object(global.amber)
-var husmus_distance=distance_to_object(instance_find(obj_husmusen,0))/2
-return y_distance<40 and amber_distance<husmus_distance or instance_find(obj_jansson,0).defeated
+	with(global.amber){
+	var jansson_distance=distance_to_object(global.Jansson)
+var husmus_distance=distance_to_object(global.Husmusen)
+	}
+	
+return y_distance<40 and jansson_distance>husmus_distance or instance_find(obj_jansson,0).defeated
 }
 
 getOpponent = function(){return global.amber}
+
+
+

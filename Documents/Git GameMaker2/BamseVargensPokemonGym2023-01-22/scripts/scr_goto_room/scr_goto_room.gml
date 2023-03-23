@@ -1,5 +1,5 @@
 ///scr_last_room(room)
 function scr_goto_room(newRoom) {
 	global.last_room=room
-	room=newRoom
+	room_goto(newRoom)
 }

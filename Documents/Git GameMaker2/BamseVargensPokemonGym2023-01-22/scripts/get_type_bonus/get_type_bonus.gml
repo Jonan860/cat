@@ -10,18 +10,9 @@ function get_type_bonus(type_self, victim) {
 	return 1/(1+type_bonus);break;
 	case ELEMENTALTYPES.water:
 	return 1/(1+type_bonus);break;
-	case ELEMENTALTYPES.psychic:
-	return 1; break;
 	case ELEMENTALTYPES.rock:
 	return 1/(1+type_bonus);break;
-	case ELEMENTALTYPES.normal:
-	return 1; break;
-	case ELEMENTALTYPES.electric:
-	return 1;break;
-	case ELEMENTALTYPES.ground:
-	return 1; break; //whut?
-	case ELEMENTALTYPES.ghost:
-	return 1; break;
+	default: return 1; break;
 	};break
 
 	case ELEMENTALTYPES.grass:
@@ -32,16 +23,11 @@ function get_type_bonus(type_self, victim) {
 	return 1/(1+type_bonus); break;
 	case ELEMENTALTYPES.water:
 	return 1+type_bonus; break;
-	case ELEMENTALTYPES.psychic:
-	return 1; break;
-	case ELEMENTALTYPES.normal:
-	return 1; break
 	case ELEMENTALTYPES.rock:
 	return 1+type_bonus; break;
 	case ELEMENTALTYPES.ground:
 	return 1+type_bonus; break;
-	case ELEMENTALTYPES.ghost:
-	return 1; break;
+	default: return 1; break;
 	}; break;
 
 	case ELEMENTALTYPES.water:
@@ -52,40 +38,20 @@ function get_type_bonus(type_self, victim) {
 	return 1+type_bonus; break;
 	case ELEMENTALTYPES.water:
 	return 1/(1+type_bonus); break;
-	case ELEMENTALTYPES.psychic:
-	return 1; break;
-	case ELEMENTALTYPES.normal:
-	return 1; break
 	case ELEMENTALTYPES.rock:
 	return 1+type_bonus; break;
-	case ELEMENTALTYPES.electric:
-	return 1; break;
 	case ELEMENTALTYPES.ground:
 	return 1+type_bonus; break;
 	case ELEMENTALTYPES.ghost:
 	return 1 ;break;
+	default: return 1; break;
 	}; break;
 
 	case ELEMENTALTYPES.psychic:
 	switch (type_other){
-	case ELEMENTALTYPES.grass:
-	return 1; break;
-	case ELEMENTALTYPES.fire:
-	return 1; break;
-	case ELEMENTALTYPES.water:
-	return 1; break;
 	case ELEMENTALTYPES.psychic:
 	return 1/(1+type_bonus); break;
-	case ELEMENTALTYPES.normal:
-	return 1; break
-	case ELEMENTALTYPES.rock:
-	return 1; break;
-	case ELEMENTALTYPES.electric:
-	return 1; break;
-	case ELEMENTALTYPES.ground:
-	return 1; break;
-	case ELEMENTALTYPES.ghost:
-	return 1; break;
+	default: return 1; break;
 	}; break;
 
 	case ELEMENTALTYPES.rock:
@@ -94,20 +60,9 @@ function get_type_bonus(type_self, victim) {
 	return 1; break;
 	case ELEMENTALTYPES.fire:
 	return 1+type_bonus; break;
-	case ELEMENTALTYPES.water:
-	return 1; break;
-	case ELEMENTALTYPES.psychic:
-	return 1; break;
-	case ELEMENTALTYPES.normal:
-	return 1; break
-	case ELEMENTALTYPES.rock:
-	return 1; break;
-	case ELEMENTALTYPES.electric:
-	return 1; break;
 	case ELEMENTALTYPES.ground:
 	return 1/(1+type_bonus); break;
-	case ELEMENTALTYPES.ghost:
-	return 1;break;
+	default: return 1; break;
 	}; break;
 
 	case ELEMENTALTYPES.normal:
@@ -125,22 +80,15 @@ function get_type_bonus(type_self, victim) {
 	switch (type_other){
 	case ELEMENTALTYPES.grass:
 	return 1/(1+type_bonus); break;
-	case ELEMENTALTYPES.fire:
-	return 1; break;
 	case ELEMENTALTYPES.water:
 	return 1+type_bonus; break;
-	case ELEMENTALTYPES.psychic:
-	return 1; break;
-	case ELEMENTALTYPES.normal:
-	return 1; break
-	case ELEMENTALTYPES.rock:
-	return 1; break;
 	case ELEMENTALTYPES.electric:
 	return  1/(1+type_bonus); break;
 	case ELEMENTALTYPES.ground:
 	return  1/(1+2*type_bonus); break;
 	case ELEMENTALTYPES.ghost:
 	return 1; break;
+	default: return 1; break;
 	}; break;
 
 

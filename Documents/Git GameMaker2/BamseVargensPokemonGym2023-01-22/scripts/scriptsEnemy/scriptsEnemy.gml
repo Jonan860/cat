@@ -22,29 +22,34 @@ camping=1
 function scrEnemyChoosing(){
 if(!active_pokemon.active and x>-sprite_width){
 var pokemon_left=0
-with(obj_pokemon){if(owner==global.enemy and alive){pokemon_left+=1}}
-
-if(pokemon_left>0){
-with(obj_pokemon){
-if(owner.name=global.enemy.name and alive){
-global.enemy.active_pokemon=id;
+global.enemy.active_pokemon=noone
+for(i=0; i< ds_list_size(pokemonList); i++){
+var pokemon = pokemonList[|i];
+if(pokemon.alive){
+global.enemy.active_pokemon=pokemon;
 break;
 }
 }
+
+if(global.enemy.active_pokemon!=noone){
 global.phase=PHASES.switchPokemon
 path_start(enemy_path,8,path_action_stop,1)
 }
 else{
-global.phase=PHASES.defeated
+	global.phase=PHASES.defeated
 with(obj_pokemon){scr_reset_attributes()}
 defeated=1
+exit;
 }
 }
 
 if(active_pokemon.HP>0 and active_pokemon.active){
 	if(!wait){
 	wait=1
-active_pokemon.scr_ai()
+	with(active_pokemon){
+scr_ai()
+scr_perform_status_ailment()
+	}
 }
 
 if(wait){if(alarm[0]=-1){alarm[0]=room_speed}}

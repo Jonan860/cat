@@ -13,7 +13,17 @@ amnesia=constructAmnesia()
 psyCutter=constructPsyCutter()
 ds_list_add(movesList,amnesia,psyCutter)
 
+
 sound=sound_snorlax
 scr_ai = method(undefined, scr_mew_ai)
 
+
+/*
+load = function(saveDataTrainer){
+loadPokemon(saveDataTrainer._mew)
+}
+
+save = function(saveDataTrainer){
+savePokemon(saveDataTrainer._mew)
+}
 

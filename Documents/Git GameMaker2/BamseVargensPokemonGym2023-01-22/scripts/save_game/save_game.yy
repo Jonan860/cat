@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_load",
+  "name": "save_game",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
     "name": "Scripts",
-    "path": "folders/Sprites/Scripts.yy",
+    "path": "folders/Scripts.yy",
   },
 }

@@ -4,6 +4,8 @@
   "name": "obj_confused_animator",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -12,8 +14,8 @@
     "path": "folders/Objects/ailment_animators.yy",
   },
   "parentObjectId": {
-    "name": "obj_animator",
-    "path": "objects/obj_animator/obj_animator.yy",
+    "name": "obj_ailment_animator",
+    "path": "objects/obj_ailment_animator/obj_ailment_animator.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,

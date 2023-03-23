@@ -22,7 +22,6 @@ world_x=noone; world_y=noone;
 
 function itemConstructor(effect_,cost,object_) constructor{
 count = 0;
-count_saved=0;
 effect= function(){
 	count-=1
 	with(active_pokemon){
@@ -32,8 +31,6 @@ effect= function(){
 	
 	};
 object=object_
-load=function(){count=count_saved}
-save=function(){count_saved=count}
 }
 
 fullHeal = new itemConstructor(,350,obj_full_heal)
@@ -51,20 +48,6 @@ antidote)
 for(var i=0;i<ds_list_size(potionBag);i++){
 	var pot=potionBag[|i]
 	pot.owner=id	
-}
-
-potionBagSave= function(){
-for(i=0;i<ds_list_size(potionBag);i++){
-var item=ds_list_find_value(potionBag,i)
-item.save()
-}
-}
-
-potionBagLoad=function(){
-for(var i=0;i<ds_list_size(potionBag);i++){
-var item=ds_list_find_value(potionBag,i)
-item.load()
-}
 }
 
 money=1000
@@ -88,3 +71,61 @@ scrSetMovable= function(){if(room=jansson_husmus_gym and moveable=0 and y>700) m
 scrMovement=method(undefined,scr_amber_movement)
 
 getOpponent = function(){return global.enemy}
+
+
+save = function(){
+global.saveData.Amber = {
+	_x : x,
+    _y : y,
+	_world_x : world_x,
+	_world_y : world_y,
+	_money : money,
+    _defeated : defeated,
+	_moveable : moveable,
+	_fullHeal : fullHeal,
+	_burnHeal : burnHeal,
+	_potion : potion,
+	_iceHeal : iceHeal,
+	_awakening : awakening,
+	_superPotion : superPotion,
+	_paralyzeHeal : paralyzeHeal,
+	_antidote : antidote,
+	_active_pokemon : noone
+}
+
+for(var i= 0; i < ds_list_size(pokemonList); i++){
+var pokemon = pokemonList[|i]
+pokemon.save()
+}
+
+
+
+}
+
+load = function(){
+var s = global.saveData.Amber
+x = s._x
+y = s._y
+world_x=s._world_x; world_y=s._world_y;
+money =s._money
+defeated=s._defeated
+moveable = s._moveable
+active_pokemon = s._active_pokemon
+
+fullHeal = s._fullHeal
+burnHeal = s._burnHeal
+potion = s._potion
+iceHeal = s._iceHeal
+awakening = s._awakening
+superPotion = s._superPotion
+paralyzeHeal = s._paralyzeHeal
+antidote = s._antidote
+
+for(var i = 0; i < ds_list_size(pokemonList); i++){
+var pokemon = pokemonList[|i]
+pokemon.load()
+}
+}
+
+
+

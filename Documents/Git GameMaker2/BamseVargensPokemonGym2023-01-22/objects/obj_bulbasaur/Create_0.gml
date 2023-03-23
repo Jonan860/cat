@@ -19,3 +19,12 @@ vineWhip=constructVineWhip()
 ds_list_add(movesList,growl,vineWhip)
 
 button=obj_bulbasaur_button
+
+/*
+load = function(saveDataTrainer){
+loadPokemon(saveDataTrainer._bulbasaur)
+}
+
+save = function(saveDataTrainer){
+savePokemon(saveDataTrainer._bulbasaur)
+}

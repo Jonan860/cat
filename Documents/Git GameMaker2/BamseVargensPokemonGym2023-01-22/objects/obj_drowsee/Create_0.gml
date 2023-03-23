@@ -16,3 +16,12 @@ confusion=constructConfusion()
 ds_list_add(movesList,hypnosis,dreamEater,confusion)
 xstart=x; ystart=y;
 scr_ai=method(undefined, scr_drowsee_ai)
+
+/*
+load = function(saveDataTrainer){
+loadPokemon(saveDataTrainer._drowsee)
+}
+
+save = function(saveDataTrainer){
+savePokemon(saveDataTrainer._drowsee)
+}

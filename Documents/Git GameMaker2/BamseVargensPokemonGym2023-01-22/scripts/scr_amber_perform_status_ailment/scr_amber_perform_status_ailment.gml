@@ -1,7 +1,20 @@
 function scr_perform_status_ailment() {
-		for(var i=0;i<ds_list_size(statusAilmentList);i++){
-		var statusAilment=statusAilmentList[|i]
-		with(statusAilment){if(applied){scrStart(); exit;}}
+	if(ailmentIterator == 0){
+	symptomize()
 	}
-	if(frozen.applied or asleep.applied or paralyzed.symptomatic){scr_turn_decision()}
+		while(ailmentIterator < ds_list_size(statusAilmentList)){
+		var statusAilment=statusAilmentList[|ailmentIterator];
+		ailmentIterator++
+		with(statusAilment){
+			
+			if(applied and willAnimate()){
+				scrStart(); exit;}
+			}
+		}
+	ailmentIterator = 0
+	var moveBlockedByAilment = asleep.applied or frozen.applied or (paralyzed.applied and paralyzed.sympomatic) or (confused.applied and confused.symptomatic)
+if(moveBlockedByAilment){
+	action_bar=max_action_bar
+	scr_turn_decision()
+} else{global.move.scrStart()}
 	}

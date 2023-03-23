@@ -6,7 +6,7 @@ var n=choose(0,1,1,1)
 if(n){
 var ember=instance_create_depth(x+250,y+80,0,obj_ember)
 with(ember){
-damage=20
+damage=STANDARD_MOVEDAMAGE
 miss=0
 image_angle+=180
 }

@@ -1,7 +1,6 @@
 event_inherited();
 max_HP=200
 HP=200;
-attack=20;
 defence_bonus=0;
 attack_bonus=0;
 accuracy_bonus=0; //remove
@@ -17,3 +16,13 @@ info_bubble=spr_mewtwo_info
 psyCutter=constructPsyCutter()
 ds_list_add(movesList,psyCutter)
 button=obj_mewtwo_button
+
+
+/*
+load = function(saveDataTrainer){
+loadPokemon(saveDataTrainer._mewtwo)
+}
+
+save = function(saveDataTrainer){
+savePokemon(saveDataTrainer._mewtwo)
+}

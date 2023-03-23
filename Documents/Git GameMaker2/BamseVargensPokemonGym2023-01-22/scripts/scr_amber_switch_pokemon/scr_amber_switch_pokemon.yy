@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "amber_step",
-    "path": "folders/Sprites/Scripts/amber_step.yy",
+    "path": "folders/Scripts/amber_step.yy",
   },
 }

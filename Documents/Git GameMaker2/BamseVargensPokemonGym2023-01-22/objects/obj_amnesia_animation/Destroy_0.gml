@@ -1,4 +1,3 @@
-if(number=4){struct.moveEnd()}
+if(number = 4){ struct.scrEnd()}
 
-instance_destroy()
 

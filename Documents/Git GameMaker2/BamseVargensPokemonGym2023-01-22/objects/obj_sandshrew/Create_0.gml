@@ -15,3 +15,13 @@ scratch=constructScratch()
 ds_list_add(movesList,sandAttack,scratch)
 xstart=x; ystart=y;
 scr_ai= method(undefined, scr_sandshrew_ai)
+
+
+/*
+load = function(saveDataTrainer){
+loadPokemon(saveDataTrainer._sandshrew)
+}
+
+save = function(saveDataTrainer){
+savePokemon(saveDataTrainer._sandshrew)
+}

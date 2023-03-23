@@ -5,7 +5,7 @@ var n=choose(0,1,1,1)
 if(n){
 var bubble=instance_create_depth(x+300,y+100,0,obj_bubble)
 with(bubble){
-damage=20
+damage=STANDARD_MOVEDAMAGE
 miss=0
 image_angle+=180
 image_xscale=0.8

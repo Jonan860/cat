@@ -1,4 +1,4 @@
-if(global.phase!=previous_phase){previous_phase=global.phase}
+/*if(global.phase!=previous_phase){previous_phase=global.phase}
 if(global.enemy!=previous_enemy){previous_enemy=global.enemy}
 
 if(global.enemy.active_pokemon.action_bar!=previous_enemy_action_bar){previous_enemy_action_bar=global.enemy.active_pokemon.action_bar}

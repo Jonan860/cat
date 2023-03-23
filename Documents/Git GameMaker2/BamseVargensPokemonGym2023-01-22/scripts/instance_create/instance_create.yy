@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "instance",
-    "path": "folders/Sprites/Scripts/compatibility/instance.yy",
+    "path": "folders/Scripts/compatibility/instance.yy",
   },
 }

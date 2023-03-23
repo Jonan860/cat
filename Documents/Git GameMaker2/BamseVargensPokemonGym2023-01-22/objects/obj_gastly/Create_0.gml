@@ -1,4 +1,5 @@
 
+/*
 event_inherited()
 max_HP=120
 HP=120
@@ -16,3 +17,12 @@ lick=constructLick()
 ds_list_add(movesList,hypnosis,nightmare,lick)
 xstart=x; ystart=y;
 scr_ai = method(undefined, scr_gastly_ai)
+
+load = function(saveDataTrainer){
+loadPokemon(saveDataTrainer._gastly)
+}
+
+
+save = function(saveDataTrainer){
+savePokemon(saveDataTrainer._gastly)
+}

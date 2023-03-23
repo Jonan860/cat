@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "functions",
-    "path": "folders/Sprites/Scripts/functions.yy",
+    "path": "folders/Scripts/functions.yy",
   },
 }

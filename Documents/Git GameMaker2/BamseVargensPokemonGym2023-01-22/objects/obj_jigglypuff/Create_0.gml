@@ -14,6 +14,15 @@ sound=sound_snorlax
 sing=constructSing()
 defenceCurl=constructDefenceCurl()
 tackle=constructtackle()
-ds_list_add(movesList,defenceCurl.tackle,sing)
+ds_list_add(movesList,defenceCurl,tackle,sing)
 xstart=x; ystart=y;
 scr_ai = method(undefined, scr_jigglypuff_ai)
+
+/*
+load = function(saveDataTrainer){
+loadPokemon(saveDataTrainer._jigglypuff)
+}
+
+save = function(saveDataTrainer){
+savePokemon(saveDataTrainer._jigglypuff)
+}

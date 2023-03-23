@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "unit",
-    "path": "folders/Sprites/Scripts/unit.yy",
+    "path": "folders/Scripts/unit.yy",
   },
 }

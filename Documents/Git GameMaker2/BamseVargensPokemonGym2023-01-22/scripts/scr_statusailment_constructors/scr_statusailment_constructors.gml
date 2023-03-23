@@ -1,5 +1,5 @@
 
- function scrStatusAilmentConstructor(sound_=sound_growl,animator_=noone,text_,scrStart_=scrStatusAilmentStandardStart,scrEffect_=ailmentStandardEffect ,scrEnd_=ailmentStandardEnd)  constructor {
+ function scrStatusAilmentConstructor(sound_=sound_growl,animator_=noone,text_,scrStart_=scrStatusAilmentStandardStart,scrEffect_=ailmentStandardEffect ,scrEnd_=ailmentStandardEnd, apply_ = applySimplest, willAnimate_ = function() {return 0}, scrReset_ =  simplestReset)  constructor {
 applied = 0
 symptomatic = 0
 turnsLeft=0
@@ -9,53 +9,58 @@ text=text_
 scrStart = method(undefined,scrStart_)
 scrEnd = method(undefined,scrEnd_)
 scrEffect=method(undefined,scrEffect_)
-scrReset = function(){
-applied=0
-turnsLeft=0
+apply = method(undefined, apply_)
+scrReset = method(undefined, scrReset_)
+willAnimate = method(undefined, willAnimate_)
 owner=other.id
 }
-}
 
-function constructAsleep(){return new scrStatusAilmentConstructor(sound_sleep,sleep_animator,"slp",,ailmentStandardEnd)}
-function constructBurned(){return new scrStatusAilmentConstructor(,,"brn",,,,)}
-function constructPoisoned(){return new scrStatusAilmentConstructor(,,"psn",,,)}
-function constructParalyzed(){return new scrStatusAilmentConstructor(sound_paralyzed,paralyzed_animator,"par", scrStartParalyzedAnimation,,)}
-function constructLeeched(){return new scrStatusAilmentConstructor(,,"lch",,,)}
-function constructNightmared(){return new scrStatusAilmentConstructor(sound_nightmare,,"",,nightmaredEffect,)}
-function constructConfused(){return new scrStatusAilmentConstructor(sound_confused, obj_confused_animator,"cnf",,,)}
+function constructAsleep(){return new scrStatusAilmentConstructor(sound_sleep,sleep_animator,"slp",,ailmentStandardEnd,applySleep, , asleepWillAnimate)}
+function constructBurned(){return new scrStatusAilmentConstructor(,,"brn",,,,applySimplest)}
+function constructPoisoned(){return new scrStatusAilmentConstructor(,,"psn",,,,applySimplest)}
+function constructParalyzed(){return new scrStatusAilmentConstructor(sound_paralyzed,paralyzed_animator,"par", scrStartParalyzedAnimation,,,)}
+function constructLeeched(){return new scrStatusAilmentConstructor(,,"lch",,,,)}
+function constructNightmared(){return new scrStatusAilmentConstructor(sound_nightmare,,"",,nightmaredEffect,,)}
+function constructConfused(){return new scrStatusAilmentConstructor(sound_confused, obj_confused_animator,"cnf",,scrConfusedEffect,,applyConfused, confusedWillAnimate, )}
 function constructFrozen(){
-	var frozen = new scrStatusAilmentConstructor(,,"frz",,,)
+	var frozen = new scrStatusAilmentConstructor(,,"frz",,,,)
 	variable_struct_set(frozen,"unfreeze",0)
 	return frozen
 	}
 
 function scrStatusAilmentStandardStart(){
-if(scrImplementable()){
+if(willAnimate()){
 audio_pause_sound(global.background_music)
 audio_play_sound(sound,0,0)
-instance_create_depth(x,y,-1,animator)
+var varanimator = instance_create_depth(owner.x,owner.y,-1,animator)
+with(varanimator){struct = other}
 }
 turnsLeft=max(turnsLeft-1,0)
 }
 
 function scrConfusedEffect() {
-	with(global.tackle){
-	owner=other.id
-	other.HP-=damage_calculate(other)
-	owner=noone
+	if(symptomatic){
+	with(owner){
+	var varselfhit = new scrMoveConstructor(obj_hit_animation,sound_hit,
+	,STANDARD_MOVEDAMAGE,,,,,,, 1, DAMAGEPARADIGMS.elementless,, )
+		}
+		with(varselfhit){
+			owner.HP-=damage_calculate(owner)
+			}
 	}
+	
 }
 
-function nightmaredEffect(){with(owner){HP-=max_HP/8}
+
+function nightmaredEffect(){with(owner){HP-=max_HP/8}}
 
 function scrAsleepStart(){
-	awakening=turnsLeft==0
-	if(scrImplementable()){
+	if(willAnimate()){
 	var varsound=sound_awakening*awakening+sound_sleep*!awakening
 	audio_pause_sound(global.background_music)
 	audio_play_sound(varsound,0,0)
-	var varanimator = instance_create_depth(x,y,-1,animator)
-	varanimator.struct=id
+	var varanimator = instance_create_depth(owner.x,owner.y,1,animator)
+	with(varanimator){struct=other.id}
 	}
 	if(awakening){owner.nightmareStatusAilment.applied=0}
 	turnsLeft=max(turnsLeft-1,0)
@@ -63,17 +68,39 @@ function scrAsleepStart(){
 
 function scrFrozenStart(){
 	if(choose(0,0,1)){unfreeze=0}
-	scrStatusAilmentStandardStart()}}
+	scrStatusAilmentStandardStart()}
 
     function scrStartParalyzedAnimation(){if(irandom(99)<33){scrStatusAilmentStandardStart()}}
-	function scrConfusionImplementable(){with(owner) return  !asleep.applied and !frozen.applied and !paralyzed.symptomatic}
-	function scrParalyzedImplementable(){with(owner) return !asleep-applied and !frozen.applied and !paralyzed.symptomatic}
+	function scrConfusionImplementable(){with(owner) return  !(asleep.applied or frozen.applied or paralyzed.symptomatic)}
+	function paralyzedWillAnimate(){with(owner) return !(asleep.applied or frozen.applied)}
 	
 	function ailmentStandardEnd(){
 audio_resume_sound(global.background_music)
 scrEffect()
+with(owner) scr_perform_status_ailment()
 }
 
 function ailmentStandardEffect(){}
 
+function applyConfused() {
+	applied=1
+	turnsLeft=choose(3,4,4,5)
+}
 
+function applySleep(){
+applied=1
+turnsLeft=choose(3,4,4,5)
+}
+
+function applySimplest(){applied = 1}
+function willAnimateSimplest(){return applied }
+function confusedWillAnimate(){
+	with(owner){ 
+	return !(asleep.applied  or frozen.applied or paralyzed.symptomatic) } }
+function asleepWillAnimate(){with(owner){ return !frozen.applied}}
+
+function simplestReset(){
+applied = 0;
+symptomatic = 0;
+turnsLeft = 0;
+}

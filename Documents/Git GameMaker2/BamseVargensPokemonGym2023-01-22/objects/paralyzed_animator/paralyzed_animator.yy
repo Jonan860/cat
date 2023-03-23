@@ -12,8 +12,8 @@
     "path": "folders/Objects/ailment_animators.yy",
   },
   "parentObjectId": {
-    "name": "obj_animator",
-    "path": "objects/obj_animator/obj_animator.yy",
+    "name": "obj_ailment_animator",
+    "path": "objects/obj_ailment_animator/obj_ailment_animator.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,

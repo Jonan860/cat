@@ -8,6 +8,7 @@
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_amber","path":"objects/obj_amber/obj_amber.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":4,"eventType":7,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -16,8 +17,8 @@
     "path": "folders/Objects/Gym/Trainers.yy",
   },
   "parentObjectId": {
-    "name": "obj_trainer",
-    "path": "objects/obj_trainer/obj_trainer.yy",
+    "name": "obj_enemy_trainer",
+    "path": "objects/obj_enemy_trainer/obj_enemy_trainer.yy",
   },
   "persistent": true,
   "physicsAngularDamping": 0.1,

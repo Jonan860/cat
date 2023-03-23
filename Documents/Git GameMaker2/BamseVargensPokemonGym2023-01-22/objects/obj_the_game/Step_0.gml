@@ -1,5 +1,7 @@
 
-if(keyboard_check_pressed(ord("L"))){scr_load()}
+if(keyboard_check_pressed(ord("L"))){
+//	scr_load()
+	}
 
 with(obj_trainer){
 if(object_index!=obj_amber){

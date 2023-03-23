@@ -16,3 +16,14 @@ rollout=constructRollout()
 ds_list_add(movesList,defenceCurl,rollout)
 xstart=x; ystart=y;
 scr_ai=method(undefined,scr_marill_ai)
+defenceCurlSprite = spr_marill_roll
+rolloutSprite = spr_marill_roll
+
+/*
+load = function(saveDataTrainer){
+loadPokemon(saveDataTrainer._marill)
+}
+
+save = function(saveDataTrainer){
+savePokemon(saveDataTrainer._marill)
+}

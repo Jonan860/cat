@@ -1,4 +1,4 @@
 function scr_marill_ai() {
-	if(marill.defence_curl.pp>0 and marill.defence_bonus<2){defenceCurl.scrStart()}
-	else{rollout.scrStart()}
+	if(defenceCurl.pp>0 and defence_bonus<2){global.move = defenceCurl}
+	else{global.move = rollout}
 }

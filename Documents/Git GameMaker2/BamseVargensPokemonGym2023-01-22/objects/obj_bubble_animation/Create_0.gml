@@ -1,7 +1,6 @@
+enemyImageTransform = method(undefined,enemyRotateTransform)
 event_inherited()
-spd=9
 sound=sound_bubble
-
 Xtranslate=200
 Ytranslate=150
 image_xscale=0.8

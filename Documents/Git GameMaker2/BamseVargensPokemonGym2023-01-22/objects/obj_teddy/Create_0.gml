@@ -19,7 +19,6 @@ x=opponent_x; y=opponent_y
 }
 
 active_pokemon=jigglypuff
-global.myTime = 1
 path=0
 name="Teddy"
 lastroom_x=x; lastroom_y=y;
@@ -35,3 +34,6 @@ scrMatch = method(undefined,scrEnemyMatch)
 isAmberApproachable=function(){return y==global.amber.y}
 
 getOpponent= function() {return global.amber}
+
+
+

@@ -31,7 +31,8 @@ enum PHASES{
 	reinardSell,
 	reinardShop,
 	buy,
-	sell
+	sell,
+	ailment
 }
 
 enum MOVES{
@@ -108,5 +109,6 @@ enum DAMAGEPARADIGMS{
 normal,
 percentage,
 fixed,
-riddles
+riddles,
+elementless
 }

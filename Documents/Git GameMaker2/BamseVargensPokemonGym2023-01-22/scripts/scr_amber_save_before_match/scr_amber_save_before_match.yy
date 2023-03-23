@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "amber room start",
-    "path": "folders/Sprites/Scripts/amber room start.yy",
+    "path": "folders/Scripts/amber room start.yy",
   },
 }

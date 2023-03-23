@@ -4,6 +4,5 @@ sound_global_volume(0.1)
 //instance_create(32,32,obj_mewtwo);
 global.state="start";
 global.bonus=0.25;
-global.n=choose(1,0);
 global.turn=TURNS.enemy;
 global.phase=PHASES.lilleSkutt

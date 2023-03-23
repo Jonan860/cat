@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "background",
-    "path": "folders/Sprites/Scripts/compatibility/background.yy",
+    "path": "folders/Scripts/compatibility/background.yy",
   },
 }

@@ -6,7 +6,7 @@ var n=choose(0,1,1,1)
 if(n)//n{
 var wine=instance_create_depth(x+200,y+200,0,obj_vine_whip)
 with(wine){
-damage=20
+damage=STANDARD_MOVEDAMAGE
 miss=0
 }
 }

@@ -1,4 +1,4 @@
-function scr_jansson_husmus_gym_defeat_load() {
+/*function scr_jansson_husmus_gym_defeat_load() {
 	if((room=jansson_husmus_gym or room=room_teddy_gym) and global.phase=PHASES.defeated and global.turn==TURNS.Amber)
    {global.amber.x=room_width/2
 	global.amber.y=room_height-sprite_height

@@ -9,7 +9,7 @@ function scr_reset_attributes() {
 	Ailment.scrReset()
 	}
 
-for(var i=0;i<ds_list_size(moveslist);i++){
+for(var i=0;i<ds_list_size(movesList);i++){
 var move=ds_list_find_value(movesList,i)
 move.pp=move.ppMax
 }
