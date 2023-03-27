@@ -11,8 +11,9 @@ switch (global.turn){
 	case TURNS.Amber: draw_sprite_ext(spr_teddy_victory_bubble,-1,x+sprite_width,y-sprite_height,1,1,0,c_white,1);
 	}
 sprite_index=spr_teddy_bed
-draw_self()
+
 }
+draw_self()
 }
 
 

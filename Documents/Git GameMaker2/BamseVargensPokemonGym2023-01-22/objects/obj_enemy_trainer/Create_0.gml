@@ -18,6 +18,9 @@ wait = s._wait
 camping = s._camping
 defeated=s._defeated
 moveable = s._moveable
+visible = s._visible
+speed = s._speed
+direction = s._direction
 for(var i = 0; i < ds_list_size(pokemonList); i++){
 var pokemon = pokemonList[|i]
 pokemon.load()
@@ -38,7 +41,10 @@ var insert = {
 	_camping : camping,
     _defeated : defeated,
 	_moveable : moveable,
-	_active_pokemon : noone
+	_active_pokemon : noone,
+	_speed : speed,
+	_direction : direction,
+	_visible : visible 
 }
 variable_struct_set(global.saveData,name,insert)
 

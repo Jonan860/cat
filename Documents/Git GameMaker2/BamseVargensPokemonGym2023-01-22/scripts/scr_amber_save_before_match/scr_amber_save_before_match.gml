@@ -1,4 +1,4 @@
-/*function scr_amber_save_before_match() {
+function scr_amber_save_before_match() {
 	if((room==room_jansson and global.Husmusen.defeated=0 or room==room_husmusen and global.Jansson.defeated==0 or room=room_teddy_match)){
 		///spara
 		var i=0

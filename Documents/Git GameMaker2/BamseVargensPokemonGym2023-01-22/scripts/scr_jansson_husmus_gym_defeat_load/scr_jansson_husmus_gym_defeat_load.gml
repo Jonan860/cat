@@ -1,17 +1,15 @@
-/*function scr_jansson_husmus_gym_defeat_load() {
+function scr_jansson_husmus_gym_defeat_load() {
 	if((room=jansson_husmus_gym or room=room_teddy_gym) and global.phase=PHASES.defeated and global.turn==TURNS.Amber)
    {global.amber.x=room_width/2
 	global.amber.y=room_height-sprite_height
 	global.amber.visible=1
 	global.amber.moveable=1
 	if(room=jansson_husmus_gym ){
-	var jansson=instance_find(obj_jansson,0)
-	var husmusen=instance_find(obj_husmusen,0)
-	with(jansson){
+	with(global.Jansson){
 	x=start_x; y=start_y
 	camping=1
 	}
-	with(husmusen){
+	with(global.Husmusen){
 	x=start_x; y=start_y
 	camping=1
 	}

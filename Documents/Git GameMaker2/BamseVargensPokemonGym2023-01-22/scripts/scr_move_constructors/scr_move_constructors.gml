@@ -21,6 +21,7 @@ damage_=0, elementalType_=ELEMENTALTYPES.normal,scrEffect_=moveDamageEffect, ppM
 	opponent=noone
 	owner=other.id
 	willHaveAnEffect=willHaveAnEffect_
+	load = function(struct){pp = struct.pp}
 }
 
 #macro STANDARD_MOVEDAMAGE 20
@@ -49,12 +50,12 @@ function constructDreamEater(){return new scrMoveConstructor(obj_dreameater_anim
 function constructHypnosis(){return new scrMoveConstructor(obj_hypnosis_animation,sound_hypnosis,,,,scrHypnosisEffect,3,,,,,,,function(){return !getOpponent.sleep.applied})}
 function constructNightmare(){return new scrMoveConstructor(obj_nightmare_animation,sound_nightmare,,STANDARD_MOVEDAMAGE,ELEMENTALTYPES.ghost,nightmaredEffect,,,,,,DAMAGEPARADIGMS.percentage,,function(){return getOpponent().sleep.applied})}
 function constructAmnesia(){return new scrMoveConstructor(obj_amnesia_animation,,,,,amnesiaEffect,2,,,,,,amnesiaEffect,amnesiaWillHaveEffect)}
-function constructSing(){return new scrMoveConstructor(obj_sing_animation,sound_sing,,,,scrSingEffect,1,,,,,,,function(){return !getOpponent().sleep.applied})}
-function constructtackle(){return new scrMoveConstructor(obj_tackle_button,sound_hit,,STANDARD_MOVEDAMAGE,,moveDamageEffect,,,,,,,,)}
+function constructSing(){return new scrMoveConstructor(obj_sing_animation,sound_sing,,,,scrSingEffect,2,,,,,,,function(){return !getOpponent().sleep.applied})}
+function constructtackle(){return new scrMoveConstructor(obj_tackle_animation,sound_hit,,STANDARD_MOVEDAMAGE,,moveDamageEffect,,,,,,,,)}
 function constructLick(){return new scrMoveConstructor(obj_lick_animation,sound_lick,,STANDARD_MOVEDAMAGE,ELEMENTALTYPES.ghost,lickEffect,,,,,,,,)}
 function constructConfusion(){ return new scrMoveConstructor(obj_confusion_animation,,,STANDARD_MOVEDAMAGE,ELEMENTALTYPES.psychic,confusionEffect,,,,,,,,)}
 function constructSandAttack(){return new scrMoveConstructor(obj_sand_attack_animation,,,,,scrSandAttackEffect,5,,,,,,,accuracyDebufferWillHaveEffect)}
-function scr_perform_start(){
+function scr_perform_start(){  //default
 pp-=sign(ppMax)
 owner.action_bar=owner.max_action_bar
 opponent=getOpponent()
@@ -84,9 +85,6 @@ number_correct_answer=choose(4,5,6,7,8)
 scr_perform_start()
 }
 }
-
-
-
 
 function doNothing(){}
 

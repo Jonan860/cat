@@ -1,6 +1,6 @@
 function scr_drowsee_ai() {
 	var target = global.amber.active_pokemon
-var sleepcount=target.asleep.count
+var sleepcount=target.asleep.turnsLeft
 	if(HP<max_HP/2 and sleepcount==0 and !target.awakening.applied) {
 		if(hypnosis.pp>0){global.move = hypnosis}
 		else{global.move = confusion}

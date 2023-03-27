@@ -1,5 +1,7 @@
 with(global.amber.active_pokemon){
-if(id=other.id and alive and !instance_exists(obj_move_button)){scr_create_move_buttons()}
+if(id=other.id and alive and !instance_exists(obj_move_button)){
+	scr_create_move_buttons()
+	}
 }
 
 if(HP<=0 and alive){

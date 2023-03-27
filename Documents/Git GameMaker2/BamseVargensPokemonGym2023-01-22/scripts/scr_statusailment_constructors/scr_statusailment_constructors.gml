@@ -13,9 +13,14 @@ apply = method(undefined, apply_)
 scrReset = method(undefined, scrReset_)
 willAnimate = method(undefined, willAnimate_)
 owner=other.id
+load = function(struct){
+applied = struct.applied
+symptomatic = struct.symptomatic
+turnsLeft = struct.turnsLeft
+}
 }
 
-function constructAsleep(){return new scrStatusAilmentConstructor(sound_sleep,sleep_animator,"slp",,ailmentStandardEnd,applySleep, , asleepWillAnimate)}
+function constructAsleep(){return new scrStatusAilmentConstructor(sound_sleep,sleep_animator,"slp",,, ailmentStandardEnd, applySleep, asleepWillAnimate)}
 function constructBurned(){return new scrStatusAilmentConstructor(,,"brn",,,,applySimplest)}
 function constructPoisoned(){return new scrStatusAilmentConstructor(,,"psn",,,,applySimplest)}
 function constructParalyzed(){return new scrStatusAilmentConstructor(sound_paralyzed,paralyzed_animator,"par", scrStartParalyzedAnimation,,,)}

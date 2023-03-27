@@ -18,7 +18,7 @@ owner=other.id
 }
 }
 
-world_x=noone; world_y=noone;
+world_x=x; world_y=y;
 
 function itemConstructor(effect_,cost,object_) constructor{
 count = 0;
@@ -74,6 +74,9 @@ getOpponent = function(){return global.enemy}
 
 
 save = function(){
+	if(global.phase == PHASES.world){
+	world_x = x; world_y = y
+	}
 global.saveData.Amber = {
 	_x : x,
     _y : y,
@@ -110,7 +113,6 @@ world_x=s._world_x; world_y=s._world_y;
 money =s._money
 defeated=s._defeated
 moveable = s._moveable
-active_pokemon = s._active_pokemon
 
 fullHeal = s._fullHeal
 burnHeal = s._burnHeal

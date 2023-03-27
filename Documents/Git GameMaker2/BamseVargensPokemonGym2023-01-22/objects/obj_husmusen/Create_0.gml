@@ -17,8 +17,8 @@ marill=instance_create_depth(opponent_x,opponent_y,0,obj_marill)
 pichu=instance_create_depth(opponent_x,opponent_y,0,obj_pichu)
 raichu=instance_create_depth(opponent_x,opponent_y,0,obj_raichu)
 sandshrew=instance_create_depth(opponent_x,opponent_y,0,obj_sandshrew)
-ds_list_add(pokemonList,sandshrew,raichu,pichu,rattata,marill,raticate)
-
+//ds_list_add(pokemonList,sandshrew,raichu,pichu,rattata,marill,raticate)
+ds_list_add(pokemonList,rattata,marill,raticate,sandshrew,raichu,pichu)
 for(var i=0; i<ds_list_size(pokemonList); i++) {
 var pokemon = pokemonList[|i]
 with(pokemon){

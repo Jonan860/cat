@@ -5,6 +5,8 @@ owner=noone
 defence_bonus=0; attack_bonus=0; evasion_bonus=0; accuracy_bonus=0;
 active=0
 level=5
+max_action_bar=100
+action_bar=0
 experience=0
 exp_needed=(power(level,4))*(level-4)  ///
 xstart=x; ystart=y;
@@ -24,12 +26,6 @@ ailmentIterator = 0
 
 movesList=ds_list_create()
 
-spr_lick_frame = 0;
-spr_lick_animation_speed = 0.3;
-
-
-spr_thundershock_frame = 0;
-spr_thundershock_animation_speed = 0.3;
 status_text=0
 
 scr_ai=function(){}
@@ -61,10 +57,11 @@ saveDataEntry = {
 	_HP : HP,
 	_x : x,
 	_y : y,
+	_action_bar : action_bar,
 	_level : level,
     _movesList : varMovesList,
 	_alive : alive,
-
+_active : active, 
 _defence_bonus : defence_bonus, _attack_bonus : attack_bonus, _evasion_bonus : evasion_bonus, _accuracy_bonus : accuracy_bonus,
 _level : level,
 _experience : experience,
@@ -93,14 +90,21 @@ load = function(struct){
 	x = struct._x
 	y = struct._y
 	level = struct._level
-
-	ds_list_destroy(movesList)
-	movesList=ds_list_create()
+	action_bar = struct._action_bar
+active = struct._active
 	for(var i = 0; i < array_length(struct._movesList); i++){
-    movesList[|i] = struct._movesList[i]
+    movesList[|i].load(struct._movesList[i])
 	}
+	
+	
 	if(struct._active_pokemon){
 		owner.active_pokemon = id
+		visible = 1
+		owner.visible = 0
+		if(owner == global.amber and instance_exists(obj_move_button)){
+		with(obj_move_button){instance_destroy()}
+		scr_create_move_buttons()}
+		
 		}
 	
 	alive = struct._alive
@@ -111,17 +115,21 @@ exp_needed = struct._exp_needed ///
 xstart = struct._xstart; ystart = struct._ystart;
 sound = struct._sound;
 status_text = struct._status_text
-confused = struct._confused
-asleep = struct._asleep
-paralyzed = struct._paralyzed
-poisoned = struct._poisoned
-frozen = struct._frozen
-burned = struct._burned
-leeched = struct._leeched
-nightmare = struct._nightmare
-ds_list_destroy(statusAilmentList)
+confused.load(struct._confused)
+asleep.load(struct._asleep)
+paralyzed.load(struct._paralyzed)
+poisoned.load(struct._poisoned)
+frozen.load(struct._frozen)
+burned.load(struct._burned)
+leeched.load(struct._leeched)
+nightmare.load(struct._nightmare)
+/*ds_list_destroy(statusAilmentList)
 statusAilmentList = ds_list_create()
 ds_list_add(statusAilmentList,confused,asleep,paralyzed,poisoned,frozen,burned,leeched,nightmare)
+for(var i = 0; i < ds_list_size(statusAilmentList); i++){
+statusAilmentList[|i].owner = id
+}*/
+
 }
 
 

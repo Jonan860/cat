@@ -1,5 +1,5 @@
 
-global.phase=noone
+global.phase=PHASES.world
 global.player="ida"
 global.last_room=noone
 global.saveData = {}
