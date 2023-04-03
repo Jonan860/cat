@@ -9,7 +9,7 @@ function antidoteAppliable(){with(owner.active_pokemon) return poisoned.applied}
 function awakeningEffect(){
 	with(owner.active_pokemon){
 asleep.applied=0
-nightmare.applied=0
+nightmared.applied=0
 	}
 }
 function awakeningAppliable(){with(owner.active_pokemon) return asleep.applied}

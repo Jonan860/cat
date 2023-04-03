@@ -16,12 +16,12 @@ owner=other.id
 visible=0
 }
 }
-meowth.visible=1
+active_pokemon=pokemonList[|0]
+
 
 
 with(espeon){x=opponent_x; y=opponent_y}
 
-active_pokemon=meowth
 path=0
 name="Jansson"
 lastroom_x=x; lastroom_y=y;
@@ -49,27 +49,4 @@ return y_distance<40 and jansson_distance<husmus_distance or global.Husmusen.def
 
 getOpponent = function(){return global.amber}
 
-/*
-save = function(){
-global.saveData._Jansson = {
-	_x : x,
-    _y : y,
-	_start_x : start_x,
-	_start_y : start_y,
-	_lastroom_x : lastroom_x,
-	_lastroom_y : lastroom_y,
-	_wait : wait,
-	_camping : camping,
-    _defeated : defeated,
-	_moveable : moveable,
-	
-	_meowth : meowth.save(),
-	_espeon : espeon.save(),
-	_mew : mew.save()
-}
-}
-
-load = function(){
-loadEnemyTrainer(global.saveData._Jansson)
-}
 

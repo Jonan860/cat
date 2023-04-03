@@ -26,7 +26,7 @@ array_push(vararray, global.saveData)
 var json = json_stringify(vararray)
 var buffer = buffer_create(string_byte_length(json)+1, buffer_fixed, 1)
 buffer_write(buffer, buffer_string, json)
-buffer_save(buffer, "savedFile.sav")
+buffer_save(buffer, keyboard_string + ".sav")
 
 buffer_delete(buffer)
 }

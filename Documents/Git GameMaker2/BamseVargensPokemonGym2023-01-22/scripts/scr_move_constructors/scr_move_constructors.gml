@@ -47,8 +47,8 @@ function constructRollout(){var roll = new scrMoveConstructor(obj_rollout_animat
 function constructCharm(){return new scrMoveConstructor(obj_charm_animator,sound_charm,,,,charmEffect,2,,,,,,,attackDebufferWillHaveEffect)}
 function constructScratch(){return new scrMoveConstructor(obj_scratch_animation,sound_scratch,,STANDARD_MOVEDAMAGE,,moveDamageEffect,,,,,,,,)}
 function constructDreamEater(){return new scrMoveConstructor(obj_dreameater_animation,,,STANDARD_MOVEDAMAGE,ELEMENTALTYPES.psychic,dreamEaterEffect,,,,,,,,function(){return getOpponent().sleep.applied})}
-function constructHypnosis(){return new scrMoveConstructor(obj_hypnosis_animation,sound_hypnosis,,,,scrHypnosisEffect,3,,,,,,,function(){return !getOpponent.sleep.applied})}
-function constructNightmare(){return new scrMoveConstructor(obj_nightmare_animation,sound_nightmare,,STANDARD_MOVEDAMAGE,ELEMENTALTYPES.ghost,nightmaredEffect,,,,,,DAMAGEPARADIGMS.percentage,,function(){return getOpponent().sleep.applied})}
+function constructHypnosis(){return new scrMoveConstructor(obj_hypnosis_animation,sound_hypnosis,,,,scrHypnosisEffect,3,,,,,,, function(){return !getOpponent().sleep.applied})}
+function constructNightmare(){return new scrMoveConstructor(obj_nightmare_animation,sound_nightmare,,STANDARD_MOVEDAMAGE,ELEMENTALTYPES.ghost,function(){getOpponent().nightmared.applied=true},,,,,,DAMAGEPARADIGMS.percentage,,function(){return getOpponent().sleep.applied})}
 function constructAmnesia(){return new scrMoveConstructor(obj_amnesia_animation,,,,,amnesiaEffect,2,,,,,,amnesiaEffect,amnesiaWillHaveEffect)}
 function constructSing(){return new scrMoveConstructor(obj_sing_animation,sound_sing,,,,scrSingEffect,2,,,,,,,function(){return !getOpponent().sleep.applied})}
 function constructtackle(){return new scrMoveConstructor(obj_tackle_animation,sound_hit,,STANDARD_MOVEDAMAGE,,moveDamageEffect,,,,,,,,)}

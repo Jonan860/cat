@@ -18,9 +18,9 @@ poisoned=constructPoisoned()
 frozen=constructFrozen()
 burned=constructBurned()
 leeched=constructLeeched()
-nightmare=constructNightmared()
+nightmared=constructNightmared()
 statusAilmentList=ds_list_create()
-ds_list_add(statusAilmentList,burned,poisoned,frozen,nightmare,leeched,asleep,paralyzed,confused)
+ds_list_add(statusAilmentList,burned,poisoned,frozen,nightmared,leeched,asleep,paralyzed,confused)
 
 ailmentIterator = 0
 
@@ -76,7 +76,7 @@ _poisoned : poisoned,
 _frozen : frozen,
 _burned : burned,
 _leeched : leeched,
-_nightmare : nightmare,
+_nightmared : nightmared,
 _status_text : status_text
 }
 
@@ -122,7 +122,7 @@ poisoned.load(struct._poisoned)
 frozen.load(struct._frozen)
 burned.load(struct._burned)
 leeched.load(struct._leeched)
-nightmare.load(struct._nightmare)
+nightmared.load(struct._nightmared)
 /*ds_list_destroy(statusAilmentList)
 statusAilmentList = ds_list_create()
 ds_list_add(statusAilmentList,confused,asleep,paralyzed,poisoned,frozen,burned,leeched,nightmare)

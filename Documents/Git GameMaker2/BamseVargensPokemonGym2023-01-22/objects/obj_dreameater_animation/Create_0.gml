@@ -4,7 +4,7 @@ enemyImageTransform = method(undefined,doNothing)
 event_inherited()
 
 Xtranslation=0
-Ytranslation=poke.sprite_height/4
+Ytranslation=sprite_height/4
 randomYtranslation=32
 
 instance_create_depth(opponent.x,

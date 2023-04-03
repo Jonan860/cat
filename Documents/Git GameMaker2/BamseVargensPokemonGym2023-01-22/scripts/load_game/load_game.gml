@@ -2,9 +2,9 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function load_game(){
 
-if !file_exists("savedFile.sav") exit;
+if !file_exists(keyboard_string + ".sav") exit;
 
-var buffer = buffer_load("savedFile.sav")
+var buffer = buffer_load(keyboard_string + ".sav")
 var json = buffer_read(buffer, buffer_string)
 buffer_delete(buffer)
 
@@ -12,7 +12,9 @@ var loadArray = json_parse(json)
 global.saveData = array_get(loadArray, 0)
 
 
-with(obj_trainer){instance_destroy()} //may need to improve destroy event if pokemons aren't removed
+with(obj_trainer){
+	instance_destroy()
+	} //may need to improve destroy event if pokemons aren't removed
 
 
 scr_goto_room(asset_get_index(global.saveData._room))
@@ -40,7 +42,7 @@ if(variable_struct_exists(global.saveData,"Husmusen")){
 with(instance_create_depth(0,0,0,obj_husmusen)){load()}
 }
 
-if(variable_struct_exists(global.saveData,"teddy")){
+if(variable_struct_exists(global.saveData,"Teddy")){
 with(instance_create_depth(0,0,0,obj_teddy)){load()}
 }
 

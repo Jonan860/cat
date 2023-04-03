@@ -5,14 +5,18 @@
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "obj_drowsee",
-    "path": "folders/Objects/unit/enemy pokemon/teddys pokemon/obj_drowsee.yy",
+    "name": "attack_animators",
+    "path": "folders/Objects/attack_animators.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_animator",
+    "path": "objects/obj_animator/obj_animator.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

@@ -2,10 +2,6 @@
 // You can write your code in this editor
 
 // Inherit the parent event
-enemyImageTransform = method(undefined,enemyMirrorTransform)
+with(obj_hypnosis_ring) instance_destroy()
 event_inherited();
-Xtranslation=match_x-opponent_x
-Ytranslation=match_y-opponent_y
-
-
 

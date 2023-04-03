@@ -2,20 +2,22 @@
 // You can write your code in this editor
 
 
-var target= struct.getOpponent()
+if(!instance_exists(obj_hypnosis_ring)){constructHypnosisRing()}
+
 with(obj_hypnosis_ring){
-if(abs(x-target.x)<9){
+if(abs(x-other.opponent.x)<9){
 	if(instance_number(obj_hypnosis_ring)==1){
-	struct.effect()
-	with(obj_hypnosis_animation){instance_destroy()}
-	scr_turn_decision()
+	with(obj_hypnosis_animation){instance_destroy(); exit}
 	}
 instance_destroy()
 }
 }
 
 var nearest = instance_nearest(x,y,obj_hypnosis_ring)
-if(abs(nearest.x-x)>abs(struct.owner.x-target.x)/6){constructHypnosisRing()}
+
+if(audio_is_playing(sound_hypnosis)){
+if(abs(nearest.x-x)>abs(struct.owner.x-opponent.x)/6){constructHypnosisRing()}
+}
 
 
 

@@ -10,7 +10,7 @@ drowsee=instance_create_depth(x,y,0,obj_drowsee)
 gastly=instance_create_depth(x,y,0,obj_gastly)
 
 ds_list_add(pokemonList,jigglypuff,drowsee,gastly)
-for(i=0;i<ds_list_size(pokemonList);i++){
+for(var i=0;i<ds_list_size(pokemonList);i++){
 var pokemon=ds_list_find_value(pokemonList,i)
 with(pokemon){
 owner=other.id
@@ -18,7 +18,9 @@ x=opponent_x; y=opponent_y
 }
 }
 
-active_pokemon=jigglypuff
+active_pokemon=pokemonList[|0]
+
+active_pokemon=noone
 path=0
 name="Teddy"
 lastroom_x=x; lastroom_y=y;

@@ -21,9 +21,8 @@ camping=1
 
 function scrEnemyChoosing(){
 if(!active_pokemon.active and x>-sprite_width){
-var pokemon_left=0
 global.enemy.active_pokemon=noone
-for(i=0; i< ds_list_size(pokemonList); i++){
+for(var i=0; i < ds_list_size(pokemonList); i++){
 var pokemon = pokemonList[|i];
 if(pokemon.alive){
 global.enemy.active_pokemon=pokemon;

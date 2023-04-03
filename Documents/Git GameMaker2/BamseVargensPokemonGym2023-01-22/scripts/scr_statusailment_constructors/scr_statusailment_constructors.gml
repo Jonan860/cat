@@ -20,7 +20,7 @@ turnsLeft = struct.turnsLeft
 }
 }
 
-function constructAsleep(){return new scrStatusAilmentConstructor(sound_sleep,sleep_animator,"slp",,, ailmentStandardEnd, applySleep, asleepWillAnimate)}
+function constructAsleep(){return new scrStatusAilmentConstructor(sound_sleep,sleep_animator,"slp",,asleepEffect, ailmentStandardEnd, applySleep, asleepWillAnimate)}
 function constructBurned(){return new scrStatusAilmentConstructor(,,"brn",,,,applySimplest)}
 function constructPoisoned(){return new scrStatusAilmentConstructor(,,"psn",,,,applySimplest)}
 function constructParalyzed(){return new scrStatusAilmentConstructor(sound_paralyzed,paralyzed_animator,"par", scrStartParalyzedAnimation,,,)}
@@ -67,7 +67,7 @@ function scrAsleepStart(){
 	var varanimator = instance_create_depth(owner.x,owner.y,1,animator)
 	with(varanimator){struct=other.id}
 	}
-	if(awakening){owner.nightmareStatusAilment.applied=0}
+	if(awakening){owner.nightmared.applied=0}
 	turnsLeft=max(turnsLeft-1,0)
 }
 
@@ -86,7 +86,7 @@ with(owner) scr_perform_status_ailment()
 }
 
 function ailmentStandardEffect(){}
-
+function asleepEffect(){applied = turnsLeft != 0}
 function applyConfused() {
 	applied=1
 	turnsLeft=choose(3,4,4,5)
