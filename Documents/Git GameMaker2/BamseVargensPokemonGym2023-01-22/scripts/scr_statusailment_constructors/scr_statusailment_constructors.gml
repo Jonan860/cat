@@ -23,9 +23,9 @@ turnsLeft = struct.turnsLeft
 function constructAsleep(){return new scrStatusAilmentConstructor(sound_sleep,sleep_animator,"slp",,asleepEffect, ailmentStandardEnd, applySleep, asleepWillAnimate)}
 function constructBurned(){return new scrStatusAilmentConstructor(,,"brn",,,,applySimplest)}
 function constructPoisoned(){return new scrStatusAilmentConstructor(,,"psn",,,,applySimplest)}
-function constructParalyzed(){return new scrStatusAilmentConstructor(sound_paralyzed,paralyzed_animator,"par", scrStartParalyzedAnimation,,,)}
+function constructParalyzed(){return new scrStatusAilmentConstructor(sound_paralyzed,paralyzed_animator,"par",,,,,paralyzedWillAnimate)}
 function constructLeeched(){return new scrStatusAilmentConstructor(,,"lch",,,,)}
-function constructNightmared(){return new scrStatusAilmentConstructor(sound_nightmare,,"",,nightmaredEffect,,)}
+function constructNightmared(){return new scrStatusAilmentConstructor(sound_nightmare,nightmared_animator,"ngt",,nightmaredEffect,,,asleepWillAnimate)}
 function constructConfused(){return new scrStatusAilmentConstructor(sound_confused, obj_confused_animator,"cnf",,scrConfusedEffect,,applyConfused, confusedWillAnimate, )}
 function constructFrozen(){
 	var frozen = new scrStatusAilmentConstructor(,,"frz",,,,)
@@ -75,9 +75,9 @@ function scrFrozenStart(){
 	if(choose(0,0,1)){unfreeze=0}
 	scrStatusAilmentStandardStart()}
 
-    function scrStartParalyzedAnimation(){if(irandom(99)<33){scrStatusAilmentStandardStart()}}
+    
 	function scrConfusionImplementable(){with(owner) return  !(asleep.applied or frozen.applied or paralyzed.symptomatic)}
-	function paralyzedWillAnimate(){with(owner) return !(asleep.applied or frozen.applied)}
+	function paralyzedWillAnimate(){with(owner) return paralyzed.symptomatic and !(asleep.applied or frozen.applied) }
 	
 	function ailmentStandardEnd(){
 audio_resume_sound(global.background_music)
@@ -86,7 +86,9 @@ with(owner) scr_perform_status_ailment()
 }
 
 function ailmentStandardEffect(){}
-function asleepEffect(){applied = turnsLeft != 0}
+function asleepEffect(){applied = turnsLeft != 0
+	owner.nightmared.applied = applied
+	}
 function applyConfused() {
 	applied=1
 	turnsLeft=choose(3,4,4,5)
@@ -103,6 +105,8 @@ function confusedWillAnimate(){
 	with(owner){ 
 	return !(asleep.applied  or frozen.applied or paralyzed.symptomatic) } }
 function asleepWillAnimate(){with(owner){ return !frozen.applied}}
+
+
 
 function simplestReset(){
 applied = 0;

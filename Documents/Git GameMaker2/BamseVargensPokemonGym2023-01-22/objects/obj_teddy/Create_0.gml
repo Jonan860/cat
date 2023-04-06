@@ -20,7 +20,6 @@ x=opponent_x; y=opponent_y
 
 active_pokemon=pokemonList[|0]
 
-active_pokemon=noone
 path=0
 name="Teddy"
 lastroom_x=x; lastroom_y=y;

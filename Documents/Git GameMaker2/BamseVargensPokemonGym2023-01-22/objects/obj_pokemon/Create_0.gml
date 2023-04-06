@@ -40,8 +40,9 @@ for(var i=0; i<ds_list_size(movesList); i++){
 }
 
 symptomize = function() {
-confused.symptomatic = confused.applied * choose(0, 0, 1)
 paralyzed.symptomatic = paralyzed.applied * choose(0, 0, 1)
+confused.symptomatic = confused.applied * choose(0, 0, 1)
+
 }
 
 getOpponent = function() {return owner.getOpponent().active_pokemon}

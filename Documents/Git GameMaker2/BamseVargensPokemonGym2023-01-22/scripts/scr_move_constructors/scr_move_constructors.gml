@@ -128,7 +128,7 @@ attack_bonus=(min(attack_bonus+1,5))
 
 function lickEffect(){
 	moveDamageEffect()
-	if(irandom(100)<33){opponent.paralyzed=1}
+	if(irandom(100)<33){opponent.paralyzed.applied=1}
 }
 
 function rolloutEffect(){
