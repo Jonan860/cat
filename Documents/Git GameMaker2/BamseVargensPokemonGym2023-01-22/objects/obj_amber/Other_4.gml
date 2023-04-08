@@ -17,28 +17,13 @@ if(room=jansson_husmus_gym or room=room_skalman or room=room_teddy_gym){
 	visible = 0
 	}
 	}
-//	x=world_x; y = world_y
+x=world_x; y = world_y
 visible=1
 }
 
-/*if((room=jansson_husmus_gym and global.Jansson.defeated==0 and global.Husmusen.defeated==0) or room=room_teddy_gym){
-	//game_save("save.sav")
-	}*/
 
-/*
-if(room=room_teddy_match){
-for(var i = 0; i< ds_list_size(pokemonList); i++){
-var varpokemon = pokemonList[|i]
-with(varpokemon){
-global.saved_HP[i] = HP
-for(i=0; i < ds_list_size(movesList); i++){
-		var move=movesList[|i]
-		move.ppSaved=move.pp	
-}
-visible = 0
-}
-}
-}
+
+
 
 
 scr_background_music()

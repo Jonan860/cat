@@ -485,7 +485,6 @@
     {"name":"obj_ice_heal","order":4,"path":"objects/obj_ice_heal/obj_ice_heal.yy",},
     {"name":"obj_awakening","order":5,"path":"objects/obj_awakening/obj_awakening.yy",},
     {"name":"obj_super_potion","order":6,"path":"objects/obj_super_potion/obj_super_potion.yy",},
-    {"name":"obj_paralyze_heal","order":7,"path":"objects/obj_paralyze_heal/obj_paralyze_heal.yy",},
     {"name":"obj_antidote","order":8,"path":"objects/obj_antidote/obj_antidote.yy",},
     {"name":"obj_teddy","order":8,"path":"objects/obj_teddy/obj_teddy.yy",},
     {"name":"enemyMirrorTransform","order":6,"path":"scripts/enemyMirrorTransform/enemyMirrorTransform.yy",},

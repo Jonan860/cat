@@ -3,8 +3,8 @@ if(visible){
 	with(global.amber){
 	for(var i=0; i<ds_list_size(potionBag); i++){
 	var item=ds_list_find_value(potionBag,i)
-	if(item.object_index=global.reinard_rav.buy.object_index){
-	if(item.price<=global.amber.money){count+=1; global.amber.money-=item.price}
+	if(item.object=global.reinard_rav.buy.object_index){
+	if(item.price<=global.amber.money){item.count+=1; global.amber.money-=item.price}
 	}
 	}
 	

@@ -20,8 +20,10 @@ owner=other.id
 
 world_x=x; world_y=y;
 
-function itemConstructor(effect_,cost,object_) constructor{
+function itemConstructor(effect_,_price,object_) constructor{
 count = 0;
+countSaved = 0;
+price = _price;
 effect= function(){
 	count-=1
 	with(active_pokemon){
@@ -122,6 +124,10 @@ awakening = s._awakening
 superPotion = s._superPotion
 paralyzeHeal = s._paralyzeHeal
 antidote = s._antidote
+
+ds_list_clear(potionBag)
+ds_list_add(potionBag,fullHeal,burnHeal,potion,iceHeal,awakening,superPotion,paralyzeHeal,
+antidote)
 
 for(var i = 0; i < ds_list_size(pokemonList); i++){
 var pokemon = pokemonList[|i]

@@ -45,7 +45,7 @@ function scr_jansson_husmus_gym_defeat_load() {
 
 	if(room==jansson_husmus_gym or room==room_teddy_gym){
 	if(world_x!=noone and world_y!=noone){
-		if(defeated=0){x=world_x; y=world_y}
+		if(!defeated){x=world_x; y=world_y}
 		else{
 			x=room_width/2
 			y=room_height-sprite_height

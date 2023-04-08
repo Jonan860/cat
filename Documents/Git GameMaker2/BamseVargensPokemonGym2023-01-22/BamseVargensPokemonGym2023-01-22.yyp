@@ -556,7 +556,6 @@
     {"id":{"name":"obj_ice_heal","path":"objects/obj_ice_heal/obj_ice_heal.yy",},},
     {"id":{"name":"obj_awakening","path":"objects/obj_awakening/obj_awakening.yy",},},
     {"id":{"name":"obj_super_potion","path":"objects/obj_super_potion/obj_super_potion.yy",},},
-    {"id":{"name":"obj_paralyze_heal","path":"objects/obj_paralyze_heal/obj_paralyze_heal.yy",},},
     {"id":{"name":"obj_antidote","path":"objects/obj_antidote/obj_antidote.yy",},},
     {"id":{"name":"obj_teddy","path":"objects/obj_teddy/obj_teddy.yy",},},
     {"id":{"name":"enemyMirrorTransform","path":"scripts/enemyMirrorTransform/enemyMirrorTransform.yy",},},

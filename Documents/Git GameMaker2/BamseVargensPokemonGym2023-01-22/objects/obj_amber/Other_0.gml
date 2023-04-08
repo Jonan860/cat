@@ -14,30 +14,3 @@
 		world_y = y;
 	scr_goto_room(door.next_room)
 	}
-	
-	/*
-	switch(room){
-	case room_skalman:{
-	if(y<0){
-	world_x=x
-	world_y=room_height-sprite_height
-	scr_goto_room(room_teddy_gym)
-	} else if(y>room_height){
-	world_y=0
-	scr_goto_room(jansson_husmus_gym)
-	}
-	}; break;
-	case room_teddy_gym:{
-	if(y>room_height){
-	y=0
-	scr_goto_room(room_skalman)
-	}
-	} break;
-	case jansson_husmus_gym: {
-	if(y<=0){
-	y=room_height-sprite_height     
-	scr_goto_room(room_skalman)
-	}; break;
-	}
-	}
-	}

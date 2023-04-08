@@ -56,6 +56,7 @@ varMovesList[i] = movesList[|i]
 
 saveDataEntry = {
 	_HP : HP,
+	_max_HP : max_HP,
 	_x : x,
 	_y : y,
 	_action_bar : action_bar,
@@ -88,6 +89,7 @@ variable_struct_set(global.saveData,owner.name + "." + name, saveDataEntry)
 load = function(struct){
 	struct= variable_struct_get(global.saveData,owner.name + "." + name)
 	HP = struct._HP
+	max_HP = struct._max_HP
 	x = struct._x
 	y = struct._y
 	level = struct._level
@@ -124,12 +126,7 @@ frozen.load(struct._frozen)
 burned.load(struct._burned)
 leeched.load(struct._leeched)
 nightmared.load(struct._nightmared)
-/*ds_list_destroy(statusAilmentList)
-statusAilmentList = ds_list_create()
-ds_list_add(statusAilmentList,confused,asleep,paralyzed,poisoned,frozen,burned,leeched,nightmare)
-for(var i = 0; i < ds_list_size(statusAilmentList); i++){
-statusAilmentList[|i].owner = id
-}*/
+
 
 }
 

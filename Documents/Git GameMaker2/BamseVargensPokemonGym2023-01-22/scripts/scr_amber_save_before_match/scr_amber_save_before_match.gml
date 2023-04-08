@@ -13,9 +13,10 @@ function scr_amber_save_before_match() {
 		var item=ds_list_find_value(potionBag,i)
 		item.countSaved=item.count
 		}
-
+if(x !=match_x and y!=match_y){ //implies saving (hopfully)
 	world_x=x ;world_y=y
 	x=match_x; y=match_y
+}
 	}
 
 }
