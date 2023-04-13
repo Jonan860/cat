@@ -20,7 +20,8 @@ owner=other.id
 
 world_x=x; world_y=y;
 
-function itemConstructor(effect_,_price,object_) constructor{
+function itemConstructor(effect_,_price,object_,_name) constructor{
+name = _name	
 count = 0;
 countSaved = 0;
 price = _price;
@@ -35,14 +36,14 @@ effect= function(){
 object=object_
 }
 
-fullHeal = new itemConstructor(,350,obj_full_heal)
-burnHeal = new itemConstructor(burnHealEffect,200,obj_burn_heal)
-potion = new itemConstructor(potionSuperPotionEffect,200,obj_potion)
-iceHeal = new itemConstructor(iceHealEffect,200,obj_ice_heal)
-awakening = new itemConstructor(awakeningEffect,200,obj_awakening)
-superPotion = new itemConstructor(potionSuperPotionEffect,500,obj_super_potion)
-paralyzeHeal = new itemConstructor(paralyzeHealEffect,200,obj_paralyze_heal)
-antidote = new itemConstructor(antidoteEffect,200,obj_antidote)
+fullHeal = new itemConstructor(,350,obj_full_heal,"Full Heal")
+burnHeal = new itemConstructor(burnHealEffect,200,obj_burn_heal,"Burn Heal")
+potion = new itemConstructor(potionSuperPotionEffect,200,obj_potion, "Potion")
+iceHeal = new itemConstructor(iceHealEffect,200,obj_ice_heal, "Ice Heal")
+awakening = new itemConstructor(awakeningEffect,200,obj_awakening, "Awakening")
+superPotion = new itemConstructor(potionSuperPotionEffect,500,obj_super_potion," Super Potion")
+paralyzeHeal = new itemConstructor(paralyzeHealEffect,200,obj_paralyze_heal, "Paralyze Heal")
+antidote = new itemConstructor(antidoteEffect,200,obj_antidote, "Antidote")
 potionBag =ds_list_create()
 ds_list_add(potionBag,fullHeal,burnHeal,potion,iceHeal,awakening,superPotion,paralyzeHeal,
 antidote)

@@ -1,17 +1,29 @@
 
 draw_self();
-if(sell!=noone){
-	draw_sprite(spr_speech_bubble,0,x-328,y-64)
-	draw_text_color(x-328,y,"Vill du salja "+sell.name+"for"+string(floor(sell.price/2))+"riksdaler"+"?",c_black,c_black,c_black,c_black,1)
-}
 
-if(buy!=noone){
-draw_sprite(spr_speech_bubble,0,x-328,y-64)
-	draw_text_color(x-328,y,"Vill du kopa "+buy.name+"for"+string(floor(buy.price))+"riksdaler"+"?",c_black,c_black,c_black,c_black,1)
+if(room != room_skalman){
+switch(global.phase){
+	
+case PHASES.sell:
+	switch(global.shopManager.sellStruct) {
+	case noone: var txt = "Vad vill du salja?"; break;
+	default: var txt = "Vill du salja "+global.shopManager.sellStruct.name+"\n for"+string(floor(global.shopManager.sellStruct.price/2))+" riksdaler"+"?"
+	}; break;
+
+case PHASES.buy:
+ switch(global.shopManager.buyStruct){
+	
+case noone: switch(global.shopManager.cantBuyName){
+	case noone: var txt = "Vad vill du kopa?"; break;
+	default : var txt = "Du har inte rad att kopa "+global.shopManager.cantBuyName; break;
+	}; break;
+	default : var txt = "Vill du kopa "+global.shopManager.buyStruct.name+"\n for"+string(floor(global.shopManager.buyStruct.price))+" riksdaler"+"?"
+ }; break;
+case PHASES.reinardShop:
+var txt = "Valkommen, vad vill du gora?"; break;
 }
-if(cant_buy!=noone){
-draw_sprite(spr_speech_bubble,0,x-328,y-64)
-	draw_text_color(x-328,y,"Du har inte rad att kopa "+cant_buy,c_black,c_black,c_black,c_black,1)
+drawSpeechBubble(x-328,y,txt)
+
 }
 
 if(room=room_shop){draw_text_color(0,y+300,"Pengar="+string(global.amber.money),c_green,c_green,c_black,c_green,1)}

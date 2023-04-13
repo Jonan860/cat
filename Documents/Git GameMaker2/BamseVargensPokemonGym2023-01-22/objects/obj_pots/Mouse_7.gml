@@ -2,22 +2,20 @@ if(room=room_shop){
 var buybutton=instance_find(obj_buy_button,0)
 var sellbutton=instance_find(obj_sell_button,0)
 var cancelbutton=instance_find(obj_cancel_buy,0)
-if(!buybutton.visible and !cancelbutton.visible){
-	if(price<=global.amber.money){
-buybutton.visible=1
-cancelbutton.visible=1
-sellbutton.visible=0
+if(global.phase == PHASES.buy){
+	if(struct.price<=global.amber.money){
+global.shopManager.buyStruct=struct
 global.phase=PHASES.buy
-global.reinard_rav.buy=id
+global.shopManager.updateShopButtons()
 }
-else if(price>global.amber.money){global.reinard_rav.cant_buy=name}
+else if(struct.price>global.amber.money){global.reinard_rav.cantBuyName=struct.name}
 }
 }
 
 if(room=room_inventory){
-if(global.phase=PHASES.reinardSell){
+if(global.phase=PHASES.sell){
 global.phase=PHASES.sell
-global.reinard_rav.sell=id
+global.shopManager.sellStruct=struct
 scr_goto_room(room_shop)
 }
 }

@@ -11,7 +11,7 @@ enum PHASES{
 	Sakuradaycareentrancehall,
 	sakuradaycareretrieve,
 	sakuradaycaredropof,
-	inventory,
+	inventory, //10
 	world,
 	confused,
 	paralyzed,
@@ -21,18 +21,21 @@ enum PHASES{
 	nightmared,
 	awakening,
 	burned,
-	unfreezed,
+	unfreezed,//20
 	leeched,
 	riddle,
 	trainerMoving,
 	chooseItem,
 	winning,
 	lilleSkutt,
-	reinardSell,
 	reinardShop,
 	buy,
-	sell,
+	sell,//30
 	ailment
+}
+
+enum SHOPPHASES{
+
 }
 
 enum MOVES{

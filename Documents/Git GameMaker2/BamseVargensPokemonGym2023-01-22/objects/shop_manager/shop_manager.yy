@@ -1,9 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_nej_button",
+  "name": "shop_manager",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":4,"eventType":7,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -11,15 +12,12 @@
     "name": "shop buttons",
     "path": "folders/Objects/button/shop buttons.yy",
   },
-  "parentObjectId": {
-    "name": "obj_shop_button",
-    "path": "objects/obj_shop_button/obj_shop_button.yy",
-  },
-  "persistent": false,
+  "parentObjectId": null,
+  "persistent": true,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
   "physicsFriction": 0.2,
-  "physicsGroup": 0,
+  "physicsGroup": 1,
   "physicsKinematic": false,
   "physicsLinearDamping": 0.1,
   "physicsObject": false,
@@ -30,10 +28,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "sprite144",
-    "path": "sprites/sprite144/sprite144.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }
