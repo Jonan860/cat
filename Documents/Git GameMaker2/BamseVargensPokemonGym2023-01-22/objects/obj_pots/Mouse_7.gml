@@ -1,7 +1,4 @@
 if(room=room_shop){
-var buybutton=instance_find(obj_buy_button,0)
-var sellbutton=instance_find(obj_sell_button,0)
-var cancelbutton=instance_find(obj_cancel_buy,0)
 if(global.phase == PHASES.buy){
 	if(struct.price<=global.amber.money){
 global.shopManager.buyStruct=struct

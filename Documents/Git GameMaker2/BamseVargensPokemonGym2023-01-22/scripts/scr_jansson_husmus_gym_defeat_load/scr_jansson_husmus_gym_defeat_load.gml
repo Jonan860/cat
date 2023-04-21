@@ -23,18 +23,14 @@ function scr_jansson_husmus_gym_defeat_load() {
 	with(obj_pokemon){scr_reset_attributes()}
 	with(global.amber){potionBagLoad()}
 
-	var i
-	i=0
-	with(obj_starters){
-		if(global.saved_HP[i]>0){HP=min(global.saved_HP[i]+daycare*scr_get_daycare_heal(),max_HP)}
-		else{
-		HP=daycare*scr_get_daycare_heal()/2
-		alive=1
-		}
+var daycareHeal = scr_get_daycare_heal()
+	for(var i = 0; i < ds_list_size(daycareList); i++){
+		if(global.saved_HP[i]>0){HP=min(global.saved_HP[i]+daycareHeal,max_HP)}
+		else{HP=daycareHeal/2}
 	action_bar=max_action_bar
-	i+=1
-	if(HP>0){alive=1}
+	alive= HP>0
 	}
+	
 	with(obj_opponent){
 	HP=max_HP
 	alive=1

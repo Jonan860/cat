@@ -22,8 +22,9 @@ case noone: switch(global.shopManager.cantBuyName){
 case PHASES.reinardShop:
 var txt = "Valkommen, vad vill du gora?"; break;
 }
+if(scrContains(global.phase, PHASES.sell, PHASES.buy, PHASES.reinardShop)){
 drawSpeechBubble(x-328,y,txt)
-
+}
 }
 
 if(room=room_shop){draw_text_color(0,y+300,"Pengar="+string(global.amber.money),c_green,c_green,c_black,c_green,1)}

@@ -47,6 +47,7 @@ if(active_pokemon.HP>0 and active_pokemon.active){
 	wait=1
 	with(active_pokemon){
 scr_ai()
+global.phase = PHASES.statusAilment
 scr_perform_status_ailment()
 	}
 }

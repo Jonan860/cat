@@ -1,3 +1,3 @@
 
 draw_self()
-draw_text(x+sprite_width+5,y,string(global.amber.ice_heal_count))
+draw_text(x+sprite_width+5,y,string(global.amber.iceHeal.count))

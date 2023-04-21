@@ -31,7 +31,7 @@ enum PHASES{
 	reinardShop,
 	buy,
 	sell,//30
-	ailment
+	statusAilment
 }
 
 enum SHOPPHASES{

@@ -1,12 +1,12 @@
 var hasBeenUsed=false
-for(var i=0;i<ds_list_size(global.amber.statusAilmentList);i++){
-var ailment=ds_list_find_value(global.amber.statusAilmentList,i)
-with(ailment){
-if(applied){
-hasBeenUsed=true
-applied=0
-count=0
-}
+for(var i=0;i<ds_list_size(global.amber.active_pokemon.statusAilmentList);i++){	
+	var ailment=ds_list_find_value(global.amber.active_pokemon.statusAilmentList,i)
+	with(ailment){
+			if(applied){
+				hasBeenUsed=true
+				applied=0
+				count=0
+			}
 }
 if(hasBeenUsed){
 global.amber.fullHeal.count-=1

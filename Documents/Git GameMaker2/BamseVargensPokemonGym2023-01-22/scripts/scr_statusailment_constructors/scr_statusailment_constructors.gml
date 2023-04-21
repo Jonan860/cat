@@ -1,5 +1,8 @@
 
- function scrStatusAilmentConstructor(sound_=sound_growl,animator_=noone,text_,scrStart_=scrStatusAilmentStandardStart,scrEffect_=ailmentStandardEffect ,scrEnd_=ailmentStandardEnd, apply_ = applySimplest, willAnimate_ = function() {return 0}, scrReset_ =  simplestReset)  constructor {
+ function scrStatusAilment(sound_=sound_growl,animator_=noone,text_
+ ,scrStart_=scrStatusAilmentStandardStart,scrEffect_=ailmentStandardEffect 
+ ,scrEnd_=ailmentStandardEnd, apply_ = applySimplest, willAnimate_ = function() {return 0}
+ , scrReset_ =  simplestReset) constructor  {
 applied = 0
 symptomatic = 0
 turnsLeft=0
@@ -20,15 +23,15 @@ turnsLeft = struct.turnsLeft
 }
 }
 
-function constructAsleep(){return new scrStatusAilmentConstructor(sound_sleep,sleep_animator,"slp",,asleepEffect, ailmentStandardEnd, applySleep, asleepWillAnimate)}
-function constructBurned(){return new scrStatusAilmentConstructor(,,"brn",,,,applySimplest)}
-function constructPoisoned(){return new scrStatusAilmentConstructor(,,"psn",,,,applySimplest)}
-function constructParalyzed(){return new scrStatusAilmentConstructor(sound_paralyzed,paralyzed_animator,"par",,,,,paralyzedWillAnimate)}
-function constructLeeched(){return new scrStatusAilmentConstructor(,,"lch",,,,)}
-function constructNightmared(){return new scrStatusAilmentConstructor(sound_nightmare,nightmared_animator,"ngt",,nightmaredEffect,,,asleepWillAnimate)}
-function constructConfused(){return new scrStatusAilmentConstructor(sound_confused, obj_confused_animator,"cnf",,scrConfusedEffect,,applyConfused, confusedWillAnimate, )}
+function constructAsleep(){return new scrStatusAilment(sound_sleep,sleep_animator,"slp",,asleepEffect, ailmentStandardEnd, applySleep, asleepWillAnimate)}
+function constructBurned(){return new scrStatusAilment(,,"brn",,,,applySimplest)}
+function constructPoisoned(){return new scrStatusAilment(,,"psn",,,,applySimplest)}
+function constructParalyzed(){return new scrStatusAilment(sound_paralyzed,paralyzed_animator,"par",,,,,paralyzedWillAnimate)}
+function constructLeeched(){return new scrStatusAilment(,,"lch",,,,)}
+function constructNightmared(){return new scrStatusAilment(sound_nightmare,nightmared_animator,"ngt",,nightmaredEffect,,,asleepWillAnimate)}
+function constructConfused(){return new scrStatusAilment(sound_confused, obj_confused_animator,"cnf",,scrConfusedEffect,,applyConfused, confusedWillAnimate, )}
 function constructFrozen(){
-	var frozen = new scrStatusAilmentConstructor(,,"frz",,,,)
+	var frozen = new scrStatusAilment(,,"frz",,,,)
 	variable_struct_set(frozen,"unfreeze",0)
 	return frozen
 	}
@@ -46,7 +49,7 @@ turnsLeft=max(turnsLeft-1,0)
 function scrConfusedEffect() {
 	if(symptomatic){
 	with(owner){
-	var varselfhit = new scrMoveConstructor(obj_hit_animation,sound_hit,
+	var varselfhit = new scrMove(obj_hit_animation,sound_hit,
 	,STANDARD_MOVEDAMAGE,,,,,,, 1, DAMAGEPARADIGMS.elementless,, )
 		}
 		with(varselfhit){
@@ -59,7 +62,7 @@ function scrConfusedEffect() {
 
 function nightmaredEffect(){with(owner){HP-=max_HP/8}}
 
-function scrAsleepStart(){
+/*function scrAsleepStart(){
 	if(willAnimate()){
 	var varsound=sound_awakening*awakening+sound_sleep*!awakening
 	audio_pause_sound(global.background_music)
@@ -69,20 +72,20 @@ function scrAsleepStart(){
 	}
 	if(awakening){owner.nightmared.applied=0}
 	turnsLeft=max(turnsLeft-1,0)
-}
+}*/
 
 function scrFrozenStart(){
 	if(choose(0,0,1)){unfreeze=0}
 	scrStatusAilmentStandardStart()}
 
     
-	function scrConfusionImplementable(){with(owner) return  !(asleep.applied or frozen.applied or paralyzed.symptomatic)}
-	function paralyzedWillAnimate(){with(owner) return paralyzed.symptomatic and !(asleep.applied or frozen.applied) }
+function scrConfusionImplementable(){with(owner) return  !(asleep.applied or frozen.applied or paralyzed.symptomatic)}
+function paralyzedWillAnimate(){with(owner) return paralyzed.symptomatic and !(asleep.applied or frozen.applied) }
 	
 	function ailmentStandardEnd(){
 audio_resume_sound(global.background_music)
 scrEffect()
-with(owner) scr_perform_status_ailment()
+with(owner) {if(HP>0) scr_perform_status_ailment()}
 }
 
 function ailmentStandardEffect(){}

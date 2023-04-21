@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function potionSuperPotionEffect(){with(owner.active_pokemon){HP=min(HP+healAmount,max_HP)}}
+function potionSuperPotionEffect(){with(owner.active_pokemon){HP=min(HP+other.healAmount,max_HP)}}
 function potionSuperPotionAppliable(){with(owner.active_pokemon){return HP<max_HP and alive}}
 
 function antidoteEffect(){with(owner.active_pokemon) poisoned.applied=0}

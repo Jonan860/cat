@@ -1,18 +1,13 @@
 
-
-
-var i=1
-
 if(global.turn==TURNS.Amber){
 if(global.phase=PHASES.choosing ){
 	
 	with(global.amber){
 for(var i=0; i<ds_list_size(potionBag); i++){
-var item=ds_list_find_value(potionBag,i)
-with(item){
+var varitem=ds_list_find_value(potionBag,i)
+with(varitem){
 if(count>0 and !instance_exists(object)){
-instance_create_depth(x,y-30*i,0,object)
-i+=1
+instance_create_depth(500,600-30*i,0,button)
 }}}}
 
 global.phase=PHASES.chooseItem

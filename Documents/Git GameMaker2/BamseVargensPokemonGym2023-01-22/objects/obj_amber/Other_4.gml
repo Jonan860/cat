@@ -1,4 +1,4 @@
-scr_amber_save_before_match()
+global.amber.save_before_match()
 
 scr_jansson_husmus_gym_defeat_load()
 

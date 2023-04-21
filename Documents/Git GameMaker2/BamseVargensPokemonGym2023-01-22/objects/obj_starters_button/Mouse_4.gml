@@ -15,14 +15,14 @@ with(obj_move_button) instance_destroy()
 
 switch(global.phase){
 case PHASES.sakuradaycaredropof:{
-object.daycare=1
+object.moveToDaycare()
 with(obj_starters_button) instance_destroy()
 
 global.phase=PHASES.Sakuradaycareentrancehall
 }; break;
 
 case PHASES.sakuradaycareretrieve:{
-object.daycare=0
+object.daycareRetrieve()
 with(obj_starters_button) instance_destroy()
 global.phase=PHASES.Sakuradaycareentrancehall
 }; break;

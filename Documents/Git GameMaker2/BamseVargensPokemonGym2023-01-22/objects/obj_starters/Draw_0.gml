@@ -12,11 +12,13 @@ concatenateAilmentText()
 draw_text(x,y-175,status_text)
 draw_self();
 draw_healthbar(x-80,y-100,x+80,y-120,HP/max_HP*100, c_black, c_red, c_lime, 0, true, true);
+draw_healthbar(x-80,y-150,x+80,y-120,action_bar/max_action_bar*100, c_black, c_white, c_lime, 0, true, true);
+
 draw_text(x-50,y-100,"Level "+string(level))
 draw_text(x,y-150,string_hash_to_newline(name))
 draw_text(x+90,y-120,string_hash_to_newline("HP:"+string(HP)))
 }
-else if(room=room_inventory and daycare=0){
+else if(room=room_inventory and !daycare){
 old_color=draw_get_color()
 draw_set_color(c_teal)
 image_xscale=0.5

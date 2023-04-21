@@ -1,15 +1,13 @@
-var i=1
-with(obj_starters)
-{
-if(daycare=0)
-{
-x=200+300*(i>3)
-y=180*i-180*3*(i>3)
-visible=1
-i+=1
+for(var i = 0; i<ds_list_size(global.amber.pokemonCompanionList); i++){
+	with(global.amber.pokemonCompanionList[|i]){
+		x=200+300*(i>3)
+		y=180*i-180*3*(i>3)
+		visible=1
+		i+=1
+}
 }
 
-}
+
 
 var j=1
 
