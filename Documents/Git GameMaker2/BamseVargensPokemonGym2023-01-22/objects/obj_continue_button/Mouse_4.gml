@@ -11,8 +11,5 @@ if(global.Husmusen.defeated){global.amber.moveable=1}
 room_goto(jansson_husmus_gym); break;
 
 case room_teddy_match: 
-if(global.phase==PHASES.defeated){room_goto(room_teddy_gym)
-}else{room_goto(room_win)}; break;
+ room_goto(ifElseReturn(global.amber.defeated,  room_teddy_gym, room_win)); break;
 }
-
-global.phase=PHASES.world

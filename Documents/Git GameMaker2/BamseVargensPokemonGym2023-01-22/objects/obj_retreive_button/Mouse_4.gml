@@ -1,11 +1,10 @@
-
+if(visible){
 global.phase=PHASES.sakuradaycareretrieve
+
 with(obj_starters_button){instance_destroy()}
-
-
-with(global.amber){
-for(var i = 0; i < ds_list_size(daycareList); i++){
-var pokemon = daycareList[|i]
-instance_create_depth(400,64*i,0,pokemon.button)
+with(obj_pokemon){visible = 0}
+displayPokemonList(400,0,0.5,0.5,global.amber.daycareList)
+with(obj_drop_of_button) visible = 1
+visible = 0
 }
-}
+

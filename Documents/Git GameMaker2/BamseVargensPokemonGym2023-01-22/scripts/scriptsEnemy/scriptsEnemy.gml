@@ -35,7 +35,7 @@ global.phase=PHASES.switchPokemon
 path_start(enemy_path,8,path_action_stop,1)
 }
 else{
-	global.phase=PHASES.defeated
+global.phase=PHASES.defeated
 with(obj_pokemon){scr_reset_attributes()}
 defeated=1
 exit;
@@ -69,7 +69,10 @@ global.enemy.visible=1
 	
 	function scrEnemyDefeated() {if(!instance_exists(obj_continue_button)){
 instance_create_depth(room_width-196/2,32,0,obj_continue_button)
-global.enemy.visible=1
+with(global.enemy) {visible=1}
+with(obj_move_button){ instance_destroy()}
+with(obj_switch_pokemon_button){instance_destroy()}
+with(obj_item_button_choose){instance_destroy()}
 }}
 
 
@@ -89,6 +92,7 @@ visible=0
 function scrEnemyMatch(){
 	switch(global.turn){
 	case TURNS.enemy:
+	if(active_pokemon != noone) scrDeath()
 	switch(global.phase){
 case PHASES.choosing: scrChoosing(); break;
 case PHASES.defeated: scrDefeated(); break;

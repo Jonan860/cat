@@ -74,19 +74,71 @@ global.spr_nightmare_frame=0
 global.spr_paralyzed_frame=0
 
 function scrAmberDefeated(){
-if(defeated=1 and (room=room_teddy_match or room=room_husmusen or room=room_jansson)){
-global.phase=PHASES.defeated
-active_pokemon=noone
+	if(defeated=1 and isBattleRoom() and global.phase!=PHASES.defeated){
+		global.phase=PHASES.defeated
+		active_pokemon.visible = 0
+		active_pokemon = noone
+		with(obj_move_button){instance_destroy()}
+		with(obj_switch_pokemon_button){instance_destroy()}
+		with(obj_item_button_choose){instance_destroy()}
+	}
+}
+
+daycareHeal = function(){
+var varDaycareHeal = scr_get_daycare_heal()
+	for(var i = 0; i < ds_list_size(daycareList); i++){	
+	daycareList[|i].daycareHeal(varDaycareHeal)
+	}
+	}
+
+defeatWorldSetup = function(){
+	daycareHeal()
+	x=room_width/2
+	y=room_height-sprite_height
+	defeated = 0
+		}
+		
+		
+scrDeath = function(){
+	if(active_pokemon.HP<=0 and active_pokemon.alive){
+	active_pokemon.die()
+	global.turn = TURNS.Amber
+	global.phase=PHASES.choosing
+	
+	active=1
+
+if(!isListAlive( pokemonCompanionList)){
+	loseSetup() 
+	}
 }
 }
 
+loseSetup=function(){
+	defeated = 1
+	with(obj_move_button){instance_destroy()}
+	with(obj_switch_pokemon_button){instance_destroy()}
+	with(obj_item_button_choose){instance_destroy()}
+	global.enemy.active_pokemon.visible = 0
+	global.enemy.visible = 1
+	visible = 1
+	global.phase=PHASES.defeated
+	}
 
 scrDefeated= method(undefined,scrAmberDefeated)
 scrEnterBuilding = method(undefined,scr_amber_enter_building)
 scrSwitchPokemon = method(undefined,scr_amber_switch_pokemon)
 scrPerformStatusAilment=method(undefined,scr_amber_perform_status_ailment)
 scrSetMovable= function(){if(room=jansson_husmus_gym and moveable=0 and y>700) moveable=1}
-scrMovement=method(undefined,scr_amber_movement)
+scrMovement = function() {
+	if(moveable){
+	var x_translation=64*(keyboard_check_pressed(vk_right)-keyboard_check_pressed(vk_left))
+	var y_translation=64*(keyboard_check_pressed(vk_down)-keyboard_check_pressed(vk_up))
+	var blocker=instance_position(x+x_translation,y+y_translation,obj_trainer)
+	if(blocker<0){x+=x_translation; y+=y_translation}
+	
+	else if(blocker.defeated){x+=x_translation; y+=y_translation}
+	}
+}
 
 getOpponent = function(){return global.enemy}
 
@@ -98,6 +150,7 @@ save = function(saveStruct = global.saveData){
 saveStruct.Amber = {
 	_x : x,
     _y : y,
+	_visible : visible,
 	_world_x : world_x,
 	_world_y : world_y,
 	_money : money,
@@ -116,27 +169,24 @@ saveStruct.Amber = {
 
 for(var i= 0; i < ds_list_size(pokemonList); i++){
 var pokemon = pokemonList[|i]
-pokemon.save()
+pokemon.save(saveStruct)
 }
-
-
 
 }
 
 load = function(saveStruct = global.saveData){
 var s = saveStruct.Amber
-if(saveStruct != global.saveBeforeBattle){
-x = s._x
-y = s._y
-}else{
-x = room_width/2
-y = room_height-64
-}
+var beforeBattle = saveStruct == global.saveBeforeBattle
 
-world_x=s._world_x; world_y=s._world_y;
-money =s._money
-defeated=s._defeated
-moveable = s._moveable
+x = ifElseReturn(beforeBattle, room_width/2, s._x)
+y = ifElseReturn(beforeBattle, room_height-sprite_height, s._y)
+visible =s._visible;
+
+world_x = ifElseReturn(beforeBattle, x, s._world_x) ;
+world_y = ifElseReturn(beforeBattle, y, s._world_y);
+money = s._money
+defeated = s._defeated
+moveable = ifElseReturn(beforeBattle, 1, s._moveable)
 
 fullHeal.load(s._fullHeal)
 burnHeal.load(s._burnHeal)
@@ -155,51 +205,15 @@ antidote)
 ds_list_clear(daycareList)
 ds_list_clear(pokemonCompanionList)
 for(var i = 0; i < ds_list_size(pokemonList); i++){
-var pokemon = pokemonList[|i]
-pokemon.load()
-if(pokemon.daycare){ds_list_add(daycareList,pokemon)}
-else(ds_list_add(pokemonCompanionList,pokemon))
-}
-
-if(saveStruct == global.saveBeforeBattle){
-	for(var i = 0; i < ds_list_size(pokemonCompanionList); i++){
-	pokemonCompanionList[|i].daycareHeal() 
-	}
+with(pokemonList[|i]){
+load(saveStruct)
+if(daycare){ds_list_add(owner.daycareList,id)}
+else(ds_list_add(owner.pokemonCompanionList,id))
 }
 }
 
-daycareHeal = function(){HP = min(max_HP, HP + DAYCAREHEAL)}
-/*save_before_match = function() {
-	global.battleStartSave = {
-	}
-	for(var i; i < ds_list_size( pokemonCompanionList); i++){
-	var varpoke = pokemonCompanionList[|i]
-	with(varpoke){
-		variable_struct_set(global.battleStartSave, varpoke.name, {
-		_HP : HP,
-		
-		}) 
-	}
-	}
-	
-	if((room==room_jansson and global.Husmusen.defeated=0 or room==room_husmusen and global.Jansson.defeated==0 or room=room_teddy_match)){
-		var i=0
-		with(obj_starters){
-			if(owner.name="Amber"){
-				global.saved_HP[i]=HP ///
-				i+=1
-			}
-		}
-		
-		for(i=0;i<ds_list_size(potionBag);i++){
-		var item=ds_list_find_value(potionBag,i)
-		item.countSaved=item.count
-		}
-if(x !=match_x and y != match_y){ //implies saving (hopfully)
-	world_x=x ;world_y=y
-	x=match_x; y=match_y
+if(active_pokemon == noone){active_pokemon = pokemonCompanionList[|0]}
 }
-	}
 
-}
-*/
+
+

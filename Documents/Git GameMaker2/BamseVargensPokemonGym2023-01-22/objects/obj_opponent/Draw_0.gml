@@ -9,11 +9,11 @@ draw_healthbar(x-100, y-100, x+100, y-120, pc, c_black, c_red, c_lime, 0, true, 
 draw_healthbar(x-100, y-150, x+100, y-120, (action_bar/max_action_bar)*100, c_black, c_red, c_lime, 0, true, true)
 
 draw_text(x-75,y-150,"Level "+string(level))
-draw_text(x+110,y-120,string_hash_to_newline("HP:"+string(HP)))
+draw_text(x+110,y-120,string_hash_to_newline("HP : "+string(HP)))
 draw_text(x+250,y-50,string_hash_to_newline("Stats"))
-draw_text(x+200,y-30,string_hash_to_newline("Defence Bonus:"+string(defence_bonus)))
-draw_text(x+200,y-10,string_hash_to_newline("Attack Bonus"+string(attack_bonus)))
-draw_text(x+200,y+10,string_hash_to_newline("Accuracy Bonus"+string(accuracy_bonus)))
+draw_text(x+200,y-30,string_hash_to_newline("Defence Bonus : "+string(defence_bonus)))
+draw_text(x+200,y-10,string_hash_to_newline("Attack Bonus : "+string(attack_bonus)))
+draw_text(x+200,y+10,string_hash_to_newline("Accuracy Bonus : "+string(accuracy_bonus)))
 
 status_text=""
 for(var i=0;i<ds_list_size(statusAilmentList);i++){

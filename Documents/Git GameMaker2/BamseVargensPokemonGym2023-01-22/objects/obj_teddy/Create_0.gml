@@ -1,9 +1,9 @@
 
 event_inherited()
-start_x=x; start_y=y
+world_x=x; world_y=y
 roomWorld=room_teddy_gym
 roomMatch=room_teddy_match
-global.teddy=id
+if(instance_number(obj_teddy)==1) global.teddy=id
 camping=1
 jigglypuff=instance_create_depth(x,y,0,obj_jigglypuff)
 drowsee=instance_create_depth(x,y,0,obj_drowsee)

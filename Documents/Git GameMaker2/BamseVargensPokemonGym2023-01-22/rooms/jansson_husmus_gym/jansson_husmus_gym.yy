@@ -2,7 +2,7 @@
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
   "name": "jansson_husmus_gym",
-  "creationCodeFile": "${project_dir}/rooms/jansson_husmus_gym/RoomCreationCode.gml",
+  "creationCodeFile": "rooms/jansson_husmus_gym/RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,

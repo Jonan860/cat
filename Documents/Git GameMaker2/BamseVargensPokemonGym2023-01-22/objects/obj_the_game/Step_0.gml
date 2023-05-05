@@ -4,6 +4,7 @@ if(keyboard_check_pressed(ord("L"))){
 	}
 
 with(obj_trainer){
+if(active_pokemon != noone) scrDeath()
 if(object_index!=obj_amber){
 switch(room){
 case roomWorld: scrWorld(); break;
@@ -19,18 +20,6 @@ scrSetMovable()
 scrPerformStatusAilment()
 }
 }
-
-/*if(phaseAttack()){
-	switch(global.turn){
-case TURNS.Amber: var poke=global.amber.active_pokemon
-case TURNS.enemy: var poke= global.enemy.active_pokemon
-poke.scrMoveStart()
-}
-}*/
-
-
-
-scrUpdateExperience()
 
 
 

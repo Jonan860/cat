@@ -17,10 +17,19 @@ scrReset = method(undefined, scrReset_)
 willAnimate = method(undefined, willAnimate_)
 owner=other.id
 load = function(struct){
-applied = struct.applied
-symptomatic = struct.symptomatic
-turnsLeft = struct.turnsLeft
+applied = struct._applied
+symptomatic = struct._symptomatic
+turnsLeft = struct._turnsLeft
 }
+
+save = function(){
+return {
+	_applied : applied,
+	_symptomatic : symptomatic,
+	_turnsLeft : turnsLeft
+	}
+}
+
 }
 
 function constructAsleep(){return new scrStatusAilment(sound_sleep,sleep_animator,"slp",,asleepEffect, ailmentStandardEnd, applySleep, asleepWillAnimate)}
@@ -90,7 +99,7 @@ with(owner) {if(HP>0) scr_perform_status_ailment()}
 
 function ailmentStandardEffect(){}
 function asleepEffect(){applied = turnsLeft != 0
-	owner.nightmared.applied = applied
+	if(!applied) owner.nightmared.applied = 0
 	}
 function applyConfused() {
 	applied=1

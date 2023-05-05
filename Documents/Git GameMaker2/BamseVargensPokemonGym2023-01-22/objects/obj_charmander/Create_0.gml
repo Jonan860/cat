@@ -24,13 +24,6 @@ ds_list_add(movesList,tailWhip,ember)
 
 button=obj_charmander_button
 
-/*
-load = function(saveDataTrainer){
-loadPokemon(saveDataTrainer._charmander)
-}
 
-save = function(saveDataTrainer){
-savePokemon(saveDataTrainer._charmander)
-}
 
 

@@ -17,13 +17,7 @@ with(obj_trainer){instance_destroy()}
 
 scr_goto_room(asset_get_index(global.saveData._room))
 
-global.phase = global.saveData._global.phase
-global.turn = global.saveData._global.turn
-global.background_music = global.saveData._global.background_music
-global.enemy = global.saveData._global.enemy
-global.last_room = global.saveData._global.last_room
-global.move = global.saveData._global.move
-global.numberofstartersleft = global.saveData._global.numberofstartersleft
+load_globals(global.saveData)
 
 
 if(variable_struct_exists(global.saveData,"Amber")){
@@ -57,8 +51,6 @@ global.background_music = global.saveBeforeBattle._global.background_music
 global.enemy = global.saveBeforeBattle._global.enemy
 global.last_room = global.saveBeforeBattle._global.last_room
 global.move = global.saveBeforeBattle._global.move
-global.numberofstartersleft = global.saveBeforeBattle._global.numberofstartersleft
-
 
 if(variable_struct_exists(global.saveBeforeBattle,"Amber")){
 global.amber=instance_create_depth(0,0,0,obj_amber)
@@ -78,4 +70,16 @@ if(variable_struct_exists(global.saveBeforeBattle,"Teddy")){
 with(instance_create_depth(0,0,0,obj_teddy)){load(global.saveBeforeBattle)}
 }
 
+}
+
+function load_globals(saveStruct){
+global.phase = saveStruct._global.phase
+global.turn = saveStruct._global.turn
+global.background_music = saveStruct._global.background_music
+global.enemy = saveStruct._global.enemy
+global.last_room = saveStruct._global.last_room
+global.move = saveStruct._global.move
+if(saveStruct == global.saveData){
+global.saveBeforeBattle = saveStruct._global.saveBeforeBattle
+}
 }

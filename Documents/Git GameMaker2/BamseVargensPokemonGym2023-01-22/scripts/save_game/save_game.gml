@@ -8,7 +8,6 @@ function save_game(saveStruct = global.saveData){
 	enemy : global.enemy,
 	last_room : global.last_room,
 	move : global.move,
-	numberofstartersleft : global.numberofstartersleft,
 	saveBeforeBattle : global.saveBeforeBattle
 	}
 	
@@ -42,8 +41,7 @@ function save_game_before_battle(){
 	background_music : global.background_music,
 	enemy : global.enemy,
 	last_room : global.last_room,
-	move : global.move,
-	numberofstartersleft : global.numberofstartersleft
+	move : global.move
 	}
 	
 global.amber.save(global.saveBeforeBattle)
@@ -53,4 +51,5 @@ with(obj_husmusen){save(global.saveBeforeBattle)}
 with(obj_teddy){save(global.saveBeforeBattle)}
 
 global.saveBeforeBattle._room = room_get_name(room)
+//global.saveData._global.saveBeforeBattle = global.saveBeforeBattle
 }

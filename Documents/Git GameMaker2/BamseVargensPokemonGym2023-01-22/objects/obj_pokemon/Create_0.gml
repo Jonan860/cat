@@ -27,6 +27,14 @@ ailmentIterator = 0
 
 movesList=ds_list_create()
 
+die = function(){
+if(owner=global.amber){
+with(obj_move_button){ instance_destroy()}
+}
+active=0
+alive=0
+}
+
 status_text=0
 
 scr_ai=function(){}
@@ -41,6 +49,7 @@ for(var i=0; i<ds_list_size(movesList); i++){
 }
 
 moveToDaycare = function(){
+	visible = 0
 	daycare = 1
 	with(owner){
 ds_list_delete(pokemonCompanionList, ds_list_find_index(pokemonCompanionList,other.id))
@@ -48,8 +57,16 @@ ds_list_add(daycareList, other.id)
 }
 }
 
+daycareHeal = function(healAmount){
+HP = ifElseReturn(HP>0, min(HP+healAmount,max_HP), healAmount/2 )	
+alive= 1
+}
+
+Heal = function(healAmount){HP = min(max_HP, HP + healAmount)}
+
 daycareRetrieve = function(){
 daycare = 0
+visible = 0
 with(owner){
 ds_list_delete(daycareList, ds_list_find_index(daycareList,other.id))
 ds_list_add(pokemonCompanionList, other.id)
@@ -64,9 +81,9 @@ confused.symptomatic = confused.applied * choose(0, 0, 1)
 getOpponent = function() {return owner.getOpponent().active_pokemon}
 
 save = function(saveStruct = global.saveData){
-	var varMovesList = array_create(ds_list_size(movesList))
+	var varMovesppList = array_create(ds_list_size(movesList))
 for(var i = 0; i < ds_list_size(movesList); i++){
-varMovesList[i] = movesList[|i]
+varMovesppList[i] = movesList[|i].pp
 } 
 
 saveDataEntry = {
@@ -77,24 +94,25 @@ saveDataEntry = {
 	_daycare : daycare,
 	_action_bar : action_bar,
 	_level : level,
-    _movesList : varMovesList,
+    _movesppList : varMovesppList,
 	_alive : alive,
 _active : active, 
 _defence_bonus : defence_bonus, _attack_bonus : attack_bonus, _evasion_bonus : evasion_bonus, _accuracy_bonus : accuracy_bonus,
 _level : level,
 _experience : experience,
 _exp_needed : exp_needed, ///
+_damage : damage,
 _xstart : xstart, _ystart : ystart,
 _sound : sound,
 _active_pokemon : owner.active_pokemon == id,
-_confused : confused,
-_asleep : asleep,
-_paralyzed : paralyzed,
-_poisoned : poisoned,
-_frozen : frozen,
-_burned : burned,
-_leeched : leeched,
-_nightmared : nightmared,
+_confused : confused.save(),
+_asleep : asleep.save(),
+_paralyzed : paralyzed.save(),
+_poisoned : poisoned.save(),
+_frozen : frozen.save(),
+_burned : burned.save(),
+_leeched : leeched.save(),
+_nightmared : nightmared.save(),
 _status_text : status_text
 }
 
@@ -106,35 +124,38 @@ variable_struct_set(saveStruct,owner.name + "." + name, saveDataEntry)
 
 load = function(saveStruct = global.saveData){
 	var struct= variable_struct_get(saveStruct,owner.name + "." + name)
+	var isBattleSave = saveStruct == global.saveBeforeBattle
 	HP = struct._HP
-	max_HP = struct._max_HP
+
 	
 	x = struct._x
 	y = struct._y
 	
-	level = struct._level
 	action_bar = struct._action_bar
 active = struct._active
 daycare = struct._daycare
-	for(var i = 0; i < array_length(struct._movesList); i++){
-    movesList[|i].load(struct._movesList[i])
+	for(var i = 0; i < array_length(struct._movesppList); i++){
+    movesList[|i].pp = struct._movesppList[i]
 	}
 	
 	
-	if(struct._active_pokemon and isBattleRoom(saveStruct._room)){
+	if(struct._active_pokemon and isBattleRoom(asset_get_index(saveStruct._room)) and scrContains(owner,global.enemy,global.amber)){
 		owner.active_pokemon = id
 		visible = 1
+		active = 1
 		owner.visible = 0
 		
 	}
 	
-	alive = struct._alive
+alive = struct._alive
 defence_bonus = struct._defence_bonus; attack_bonus = struct._attack_bonus; evasion_bonus = struct._evasion_bonus; accuracy_bonus = struct._accuracy_bonus;
 
 if(saveStruct != global.saveBeforeBattle){
 level = struct._level
 experience = struct._experience
 exp_needed = struct._exp_needed
+max_HP = struct._max_HP
+damage = struct._damage
 } ///
 
 xstart = struct._xstart; ystart = struct._ystart;
