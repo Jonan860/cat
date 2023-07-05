@@ -1,0 +1,20 @@
+Font font0 has been converted to font family Arial (Regular)
+GameMaker Studio 1 font texture has been backed up at ${project_dir}\fonts\font0\font0.gms1.png
+Font fontoriginal has been converted to font family Arial (Regular)
+GameMaker Studio 1 font texture has been backed up at ${project_dir}\fonts\fontoriginal\fontoriginal.gms1.png
+Missing audiogroup for sound: 'sound_svenska' - setting to default audio group
+Missing audiogroup for sound: 'sound_norska' - setting to default audio group
+Missing audiogroup for sound: 'sound_pickachucry' - setting to default audio group
+Missing audiogroup for sound: 'sound_franky_theme' - setting to default audio group
+Missing audiogroup for sound: 'sound_bulbasaur' - setting to default audio group
+Missing audiogroup for sound: 'sound_squirtle' - setting to default audio group
+Missing audiogroup for sound: 'sound_charmander' - setting to default audio group
+Missing audiogroup for sound: 'sound_growl' - setting to default audio group
+Missing audiogroup for sound: 'sound_tail_whip' - setting to default audio group
+Missing audiogroup for sound: 'sound_defence_curl' - setting to default audio group
+Missing audiogroup for sound: 'sound_elite_four' - setting to default audio group
+Game speed set to 30
+Added compatibility script 'instance/instance_create.gml'
+Added compatibility script 'object/object_get_depth.gml'
+Added compatibility script 'sound/sound_global_volume.gml'
+Added compatibility script '__global_object_depths.gml'
