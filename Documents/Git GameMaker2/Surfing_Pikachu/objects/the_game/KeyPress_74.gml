@@ -1,0 +1,1 @@
+audio_set_master_gain(0, max(audio_get_master_gain(0) - power(0.1, (1 + (audio_get_master_gain(0) <= 0.1))) , 0))

@@ -1,0 +1,39 @@
+Converting GML script: C:\Users\lille\Documents\Git GameMaker2\Surfing_Pikachu\conv\gmx\Surfing_Pikachu_57F3D171\scripts\fnc_scale\fnc_scale.gml
+Converted description /// @description fcn_scale(object)/// @param object
+
+GameMaker Studio 1 font texture has been backed up at C:\Users\lille\Documents\Git GameMaker2\Surfing_Pikachu\conv\gmx\Surfing_Pikachu_57F3D171\fonts\font_poke_wars\font_poke_wars.gms1.png
+Converting GML script: C:\Users\lille\Documents\Git GameMaker2\Surfing_Pikachu\conv\gmx\Surfing_Pikachu_57F3D171\objects\obj_haunter\Alarm_2.gml
+Converted builtin - line 5: background_index=bg_night_shade -> __background_set( e__BG.Index, 0, bg_night_shade )
+Converted builtin - line 10: background_index=background_space -> __background_set( e__BG.Index, 0, background_space )
+
+Converting GML script: C:\Users\lille\Documents\Git GameMaker2\Surfing_Pikachu\conv\gmx\Surfing_Pikachu_57F3D171\objects\obj_haunter\Collision_ad484fae-4cf2-4988-8c7c-7e9ecd940578.gml
+Converted builtin - line 4: background_index=background_space -> __background_set( e__BG.Index, 0, background_space )
+
+Missing audiogroup for sound: 'sound_surfing_safari' - setting to default audio group
+Missing audiogroup for sound: 'sound_wipeout' - setting to default audio group
+Missing audiogroup for sound: 'sound_bird' - setting to default audio group
+Missing audiogroup for sound: 'sound_sylar' - setting to default audio group
+Missing audiogroup for sound: 'sound_miserlou' - setting to default audio group
+Missing audiogroup for sound: 'sound_dragonborn' - setting to default audio group
+Missing audiogroup for sound: 'sound_thunderthunder' - setting to default audio group
+Missing audiogroup for sound: 'sound_pikadrop' - setting to default audio group
+Missing audiogroup for sound: 'sound_lightning' - setting to default audio group
+Missing audiogroup for sound: 'sound_pikachu_cry' - setting to default audio group
+Missing audiogroup for sound: 'sound_star_wars_intro' - setting to default audio group
+Missing audiogroup for sound: 'sound_greetings_swordsman' - setting to default audio group
+Missing audiogroup for sound: 'sound_hidden_will_to_fight' - setting to default audio group
+Missing audiogroup for sound: 'sound_gust' - setting to default audio group
+Missing audiogroup for sound: 'sound_smog' - setting to default audio group
+Missing audiogroup for sound: 'sound_rock_throw' - setting to default audio group
+Missing audiogroup for sound: 'sound_screech' - setting to default audio group
+Game speed set to 30
+Added compatibility script 'background\__background_set.gml'
+Added compatibility script 'background\__background_set_internal.gml'
+Added compatibility script 'instance\instance_create.gml'
+Added compatibility script 'object\object_get_depth.gml'
+Added compatibility script 'background\__init_background.gml'
+Added compatibility script '__init_global.gml'
+Added compatibility script 'background\__background_get_element.gml'
+Added compatibility script 'background\__background_get_internal.gml'
+Added compatibility script 'background\__background_set_element.gml'
+Added compatibility script '__global_object_depths.gml'

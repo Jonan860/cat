@@ -1,0 +1,2 @@
+timer+=text_speed
+

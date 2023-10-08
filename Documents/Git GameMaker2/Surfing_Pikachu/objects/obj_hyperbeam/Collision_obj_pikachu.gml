@@ -1,0 +1,1 @@
+hitEffect(other.id)
