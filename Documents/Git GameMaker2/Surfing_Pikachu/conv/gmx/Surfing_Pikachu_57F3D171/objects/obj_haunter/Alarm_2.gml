@@ -1,29 +1,3 @@
-if(night_shades>0)
-{
-if(night_shades%2==1)
-{
-__background_set( e__BG.Index, 0, bg_night_shade )
-night_shades-=1
-alarm[2]=room_speed/3
-}
-else if(night_shades%2==0)
-{__background_set( e__BG.Index, 0, background_space )
-night_shades-=1
-alarm[2]=room_speed/3}
-}
-else if(night_shades==0)
-{
-with(instance_find(obj_pikachu,0))
-{
-HP=max(0,HP-25)
-}
-state="evade"
-direction=choose(90,270)
-speed=speeed
-alarm[0]=(200+irandom(room_height-200))/speeed
-alarm[0]=(200+irandom(room_height-200))/speeed
-alarm[1]=room_height*3/speeed
-vulnerable=0
-}
-
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:65a37d9700b9c3b632261d177134300a0fdfcfb1b02c0c04a858de2241a4d8ad
+size 561

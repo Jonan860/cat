@@ -1,20 +1,3 @@
-event_inherited()
-image_xscale *= 3; image_yscale *= 3
-projectile = obj_rock_throw
-hurtPika = function() {
-	with(global.pikachu) {
-		HP -= 20 * (1 - damage_reduction)
-	}
-} 
-
-benefitPika = function() {
-	with(global.pikachu) {
-		if(defence_bonus <= 6) {
-			defence_bonus += 0.5
-			damage_reduction = defence_bonus / (defence_bonus + 1)
-		}
-		else {
-			HP = min(max_HP, HP + 10)
-		}
-	}
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:78dbc57bfbb08efd583520225b6922ff3739e6334ddebd70a6cefc99f6eb7ad3
+size 404

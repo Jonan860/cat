@@ -1,5 +1,3 @@
-/// @description d3d - Pushes the current transformation onto the stack.
-var m = matrix_get( matrix_world );
-matrix_stack_push();
-matrix_stack_set( m );
-return true;
+version https://git-lfs.github.com/spec/v1
+oid sha256:e14f9b404a97d77a123dc6b7080ddae376153ddce9d65c975af424088fc81e1a
+size 165

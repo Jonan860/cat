@@ -1,15 +1,3 @@
-audio_stop_sound(all)
-audio_play_sound(sound_hidden_will_to_fight,0,1)
-with(obj_vargen)
-{
-visible=1
-}
-with(obj_vargens_pokemon_gym)
-{
-visible=1
-}
-with(obj_fors_ttning_f_ljer)
-{
-visible=1
-}
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:6a0ec862608992b9c4a0e68671b7797167dc2827acd01513f3110401f17fe0fb
+size 204

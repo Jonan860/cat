@@ -1,27 +1,3 @@
-function initializeGlobalQuestionValues() { 
-	switch(global.player) {
-		case PLAYERS.BEBIS : 
-			global.mn_max = 3;
-			global.questionOperatorString = "+"
-			global.questionOperator = function(n,m) {
-				return n + m
-			}
-			break;
-		
-		case PLAYERS.NILS :
-			global.mn_max = 10;
-			global.questionOperatorString = "+"
-			global.questionOperator = function(n,m) {
-				return n + m
-			}
-			break;
-		
-		case PLAYERS.IDA :
-			global.mn_max = 6;
-			global.questionOperatorString = "*"
-			global.questionOperator = function(n, m) {
-				return n * m
-			}
-			break;
-	}
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:809b5fbfd86b6aacd5e7503ae5a5fe9ce49a53b9ec9d7c60582b79fcca4450fc
+size 589

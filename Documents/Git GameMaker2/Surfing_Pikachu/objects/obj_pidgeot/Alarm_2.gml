@@ -1,17 +1,3 @@
-sonicboom = instance_create_depth(x - sprite_width/2, y, 0, obj_sonicboom, {owner : id})
-with(sonicboom) {
-	speed = 15
-	direction = 180 - 60 + irandom(120)
-}
-gust -= 1
-if( gust > 0) {
-	alarm[2] = game_get_speed(gamespeed_fps)/3
-}
-if(gust = 0) {
-	global.bossState = BOSS_STATES.EVADE
-	direction = choose(90, 270)
-	speed = movementSpeed
-	alarm[0] = (200 + irandom(room_height - 200)) / movementSpeed
-	alarm[1] = room_height * 3 / movementSpeed
-}
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:53b3837b5940896e4ebb81179d4f1f2b316182c6c67292fde6a7cbf36135e36d
+size 461

@@ -1,11 +1,3 @@
-if(other.owner == global.pikachu and vulnerable) {
-	__background_set( e__BG.Index, 0, background_space )
-	alarm[2] =- 1
-	global.bossState = BOSS_STATES.EVADE
-	direction = choose(90, 270)
-	speed = movementSpeed
-	alarm[0] = (200 + irandom(room_height - 200)) / movementSpeed
-	alarm[1] = room_height * 3 / movementSpeed
-	vulnerable = 0
-}
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:7fb8a530a76e77d8a2ae668eaaa1164461822fa70122f59b22dd66428afaee9f
+size 346

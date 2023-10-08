@@ -1,8 +1,3 @@
-/// @description (Old DnD) - particle system emitter destroy
-/// @param index emitter index
-if (global.__part_syst < 0) { global.__part_syst = part_system_create(); }
-var index = argument0;
-if (global.__part_emit[index] < 0) {
-	return;
-} // end if
-part_emitter_destroy( global.__part_syst, global.__part_emit[index]);
+version https://git-lfs.github.com/spec/v1
+oid sha256:5d4277b0965a5fc9493f9d4796ea48cedefd29c2d5cfc2f7fabc79eb43bff00d
+size 317

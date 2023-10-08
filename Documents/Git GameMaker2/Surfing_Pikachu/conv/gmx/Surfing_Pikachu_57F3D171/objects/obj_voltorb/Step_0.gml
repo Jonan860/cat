@@ -1,7 +1,3 @@
-attack=irandom(room_width/30)
-if(armed and x>room_width/2 and attack==1)
-{
-instance_create(x-sprite_width,y,obj_sonicboom)
-armed=0
-}
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:ba535f67dc4dc043c9b63a175432c4162c6e8487957d803c3d9080c3cf99b71c
+size 140

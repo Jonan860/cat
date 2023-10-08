@@ -1,9 +1,3 @@
-hspeed = 1
-direction = 180
-alive = 1
-movementSpeed = 8
-global.bossState = BOSS_STATES.ENTER
-damage_reduction = 0
-vulnerable = 1
-
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:5bb0e35094f7094b22d5f83acb4d42063e16afd720a2771baba68bbb4a067138
+size 138

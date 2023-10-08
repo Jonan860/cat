@@ -1,23 +1,3 @@
-{
-  "resourceType": "GMSound",
-  "resourceVersion": "1.0",
-  "name": "sound_hidden_will_to_fight",
-  "audioGroupId": {
-    "name": "audiogroup_default",
-    "path": "audiogroups/audiogroup_default",
-  },
-  "bitDepth": 1,
-  "bitRate": 192,
-  "compression": 3,
-  "conversionMode": 0,
-  "duration": 0.0,
-  "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
-  },
-  "preload": true,
-  "sampleRate": 44100,
-  "soundFile": "sound_hidden_will_to_fight",
-  "type": 0,
-  "volume": 1.0,
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b230414cfa7f488652a681a36a74f46d77ae532de7e1bc54e8a5c02ecbb16eca
+size 515

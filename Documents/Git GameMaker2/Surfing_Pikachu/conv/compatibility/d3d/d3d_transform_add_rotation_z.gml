@@ -1,18 +1,3 @@
-/// @description d3d - Adds a rotation around the z-axis with the indicated amount.
-/// @param angle the angle to rorate the transform through the vector
-
-// get the sin and cos of the angle passed in
-var c = dcos(argument0);
-var s = dsin(argument0);
-
-// build the rotation matrix
-var mT = matrix_build_identity();
-mT[0] = c;
-mT[1] = -s;
-
-mT[4] = s;
-mT[5] = c;
-
-var m = matrix_get( matrix_world );
-var mR = matrix_multiply( m, mT );
-matrix_set( matrix_world, mR );
+version https://git-lfs.github.com/spec/v1
+oid sha256:67ef37dddb097aa7eaab741dfb576e8f25e88221f4614d2d557e6718a1349717
+size 465

@@ -1,32 +1,3 @@
-{
-  "resourceType": "GMPath",
-  "resourceVersion": "1.0",
-  "name": "path_pikachu",
-  "closed": false,
-  "kind": 1,
-  "parent": {
-    "name": "Paths",
-    "path": "folders/Paths.yy",
-  },
-  "points": [
-    {"speed":100.0,"x":336.0,"y":48.0,},
-    {"speed":100.0,"x":528.0,"y":272.0,},
-    {"speed":100.0,"x":816.0,"y":208.0,},
-    {"speed":100.0,"x":864.0,"y":288.0,},
-    {"speed":100.0,"x":768.0,"y":368.0,},
-    {"speed":100.0,"x":400.0,"y":448.0,},
-    {"speed":100.0,"x":224.0,"y":464.0,},
-    {"speed":100.0,"x":160.0,"y":448.0,},
-    {"speed":100.0,"x":80.0,"y":464.0,},
-    {"speed":100.0,"x":64.0,"y":544.0,},
-    {"speed":100.0,"x":112.0,"y":624.0,},
-    {"speed":100.0,"x":192.0,"y":672.0,},
-    {"speed":100.0,"x":256.0,"y":720.0,},
-    {"speed":100.0,"x":336.0,"y":736.0,},
-    {"speed":100.0,"x":448.0,"y":736.0,},
-    {"speed":100.0,"x":560.0,"y":720.0,},
-    {"speed":100.0,"x":608.0,"y":704.0,},
-    {"speed":100.0,"x":800.0,"y":688.0,},
-  ],
-  "precision": 4,
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b9807b0ab8d8697fba5e81348ab1dbdbfaf619eb4f734a772a3a14720132b079
+size 1010

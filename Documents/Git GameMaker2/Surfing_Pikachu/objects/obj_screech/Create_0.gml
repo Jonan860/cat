@@ -1,10 +1,3 @@
-event_inherited()
-image_angle = point_direction(x, y, global.pikachu.x, global.pikachu.y)
-hitEffect = function(victim) {
-	with(victim) {
-		damage_reduction = 0
-		defence_bonus = 0
-	}
-}
-
-sound = sound_screech
+version https://git-lfs.github.com/spec/v1
+oid sha256:93955b675bf9b964caa7bca5f7b8032f12bd0627e7b2367ecc6d87dd60515ce2
+size 215

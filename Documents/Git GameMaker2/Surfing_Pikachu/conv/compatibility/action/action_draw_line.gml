@@ -1,17 +1,3 @@
-/// @description (Old DnD) - draw line
-/// @param x1	x position of start point
-/// @param y1	y position of start point
-/// @param x2	x position of end point
-/// @param y2	y position of end point
-var xx1 = argument0;
-var yy1 = argument1;
-var xx2 = argument2;
-var yy2 = argument3;
-if (global.__argument_relative) {
-	xx1 += x;
-	yy1 += y;
-	xx2 += x;
-	yy2 += y;
-}  // end if
-
-draw_line( xx1, yy1, xx2, yy2 );
+version https://git-lfs.github.com/spec/v1
+oid sha256:ab48fbed75c2aec7c5b42325cd9b1df8b2295ec01024b7409bdb68ef6ccb9959
+size 403

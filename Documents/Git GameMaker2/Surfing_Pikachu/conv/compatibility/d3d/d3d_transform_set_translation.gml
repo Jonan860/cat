@@ -1,11 +1,3 @@
-/// @description d3d - Sets the transformation to a translation over the indicated vector.
-/// @param xt x value
-/// @param yt y value
-/// @param zt z value
-
-// build the rotation matrix
-var m = matrix_build_identity();
-m[12] = argument0;
-m[13] = argument1;
-m[14] = argument2;
-matrix_set( matrix_world, m);
+version https://git-lfs.github.com/spec/v1
+oid sha256:1e831dfb332f2c04c74eee856a3b0b5860536f4e45a8c3085145b2befc7b9138
+size 307

@@ -1,5 +1,3 @@
-/// @description Returns the name of the joystick.
-/// @param id	the id of the joystick (1 or 2)
-
-var jid=__joystick_2_gamepad(argument0);
-return gamepad_get_description(jid);
+version https://git-lfs.github.com/spec/v1
+oid sha256:2ce6f4ae9de1377e1c5066329796b7813b39874a9475544913db1cc4f4d94db6
+size 175

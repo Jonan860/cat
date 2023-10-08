@@ -1,11 +1,3 @@
-/// @description (Old DnD) - if health evauation
-/// @param val  value to check against
-/// @param type	type of check (1==<, 2==>, anything else is ==)
-var ret = false;
-switch( argument1 )
-{
-	case 1:	ret = (health < argument0); break;	
-	case 2:	ret = (health > argument0); break;	
-	default:ret = (health == argument0); break;	
-}
-return ret;
+version https://git-lfs.github.com/spec/v1
+oid sha256:38a22cba8be43bb0fb524e6c3bc6439775de7aea1182dbc5256b7157d8b31f56
+size 340

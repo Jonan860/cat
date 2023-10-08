@@ -1,7 +1,3 @@
-with(obj_hyperball) {
-	instance_destroy()
-}
-instance_create_depth(x - 0.16 * sprite_width, y - 0.47 * sprite_height
-, depth, obj_hyperbeam)
-alarm[3] = game_get_speed(gamespeed_fps) * 7
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:d9a861111427e3d5d93060a25f341daa8fe9563ca7482449fd73e5d9641353f9
+size 192

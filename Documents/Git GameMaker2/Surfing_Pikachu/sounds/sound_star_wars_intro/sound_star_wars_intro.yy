@@ -1,23 +1,3 @@
-{
-  "resourceType": "GMSound",
-  "resourceVersion": "1.0",
-  "name": "sound_star_wars_intro",
-  "audioGroupId": {
-    "name": "audiogroup_default",
-    "path": "audiogroups/audiogroup_default",
-  },
-  "bitDepth": 1,
-  "bitRate": 192,
-  "compression": 3,
-  "conversionMode": 0,
-  "duration": 0.0,
-  "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
-  },
-  "preload": true,
-  "sampleRate": 44100,
-  "soundFile": "sound_star_wars_intro",
-  "type": 0,
-  "volume": 1.0,
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:dc0d8be9c67a15d9de3cd5ac72ee75ed5fbf059a29ffb8f2235c9b662884d2c7
+size 505

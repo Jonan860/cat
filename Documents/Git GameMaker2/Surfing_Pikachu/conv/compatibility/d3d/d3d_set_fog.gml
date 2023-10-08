@@ -1,7 +1,3 @@
-/// @description  d3d - set fog enable/disable and colour
-/// @param enable true if enabled, false if disabled
-/// @param colour	colour of the fog
-/// @param near	distance to when fog starts
-/// @param far	distance to when fog becomes absolute
-
-gpu_set_fog(argument0, argument1, argument2, argument3 );
+version https://git-lfs.github.com/spec/v1
+oid sha256:36c0a410eb4266fcdec0f2300f3b36f2f20747448eb55c1a64847a0a632842ea
+size 302

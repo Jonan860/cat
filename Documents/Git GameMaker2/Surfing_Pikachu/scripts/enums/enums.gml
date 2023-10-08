@@ -1,23 +1,3 @@
-enum PLAYERS {
-	BEBIS,
-	NILS,
-	IDA
-}
-
-enum BOSS_STATES {
-	ENTER,
-	EVADE,
-	AIMING,
-	ATTACKING
-}
-
-enum GAME_PHASES {
-	PRE_PIDGEOT,
-	PIDGEOT,
-	PRE_HAUNTER,
-	HAUNTER,
-	PRE_DRAGONITE,
-	DRAGONITE,
-	PRE_ARMADA,
-	ARMADA
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:c2b164f1310ab823f2582cd484853b4e2c0fd6ba991bbb6d182b65419c30b731
+size 235

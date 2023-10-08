@@ -1,7 +1,3 @@
-/// @description (Old DnD) - set sprite set
-/// @param index sprite index
-/// @param image image number
-/// @param speed image speed
-sprite_index = argument0;
-if (argument1 >= 0) image_index = argument1;
-image_speed = argument2;
+version https://git-lfs.github.com/spec/v1
+oid sha256:0e057e20d13d83caae09b43b967ea39c8ae6acb3cfb4cdc5993927cdeaa72a34
+size 228

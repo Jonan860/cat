@@ -1,7 +1,3 @@
-var __colinfo = __background_get_colour_element();
-
-if (__colinfo[0] == -1)
-	return 0;
-	
-var __col = layer_background_get_blend(__colinfo[0]);
-return __col;
+version https://git-lfs.github.com/spec/v1
+oid sha256:43fd5e08dcd8ab1b0c71969c2bbb90c146554b166d477b26af7af17165cafc31
+size 156

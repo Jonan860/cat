@@ -1,5 +1,3 @@
-/// @description Determines whether a background exists or not.
-/// @param index The index of the background to check.
-/// @returns {boolean} whether the background exists or not
-
-return sprite_exists(argument0);
+version https://git-lfs.github.com/spec/v1
+oid sha256:f79e08b7fabe69e2fd3144582fec5638bb60f8d5f2b32356304ad2d1adfed285
+size 212

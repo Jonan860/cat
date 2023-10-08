@@ -1,7 +1,3 @@
-/// @description d3d - set shading
-/// @param enable	true if enabled, false if disabled
-
-if (!global.__d3dDeprecatedMessage[0]) {
-	show_debug_message( "d3d_set_shading is deprecated as it needs to be done in the shader now" );
-	global.__d3dDeprecatedMessage[0] = true;
-} 
+version https://git-lfs.github.com/spec/v1
+oid sha256:334ea1df507b0ddb55307fc8b6802e66c947b4cba5061c71e56ddc6b99bfbdcd
+size 272

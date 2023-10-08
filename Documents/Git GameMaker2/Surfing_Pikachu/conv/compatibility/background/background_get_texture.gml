@@ -1,5 +1,3 @@
-/// @description Returns the texture id for the given background.
-/// @param back The index of the background to use.
-/// @returns {pointer} a pointer to the background texture
-
-return sprite_get_texture(argument0, 0);
+version https://git-lfs.github.com/spec/v1
+oid sha256:dceeefecc41e18902233e2f10a56f5949b33de58e011ab7a3e8bdf88603dc45e
+size 218

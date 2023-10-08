@@ -1,34 +1,3 @@
-{
-  "resourceType": "GMObject",
-  "resourceVersion": "1.0",
-  "name": "obj_textanimation_3d",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-  ],
-  "managed": true,
-  "overriddenProperties": [],
-  "parent": {
-    "name": "intro_text",
-    "path": "folders/Objects/intro_text.yy",
-  },
-  "parentObjectId": null,
-  "persistent": false,
-  "physicsAngularDamping": 0.1,
-  "physicsDensity": 0.5,
-  "physicsFriction": 0.2,
-  "physicsGroup": 1,
-  "physicsKinematic": false,
-  "physicsLinearDamping": 0.1,
-  "physicsObject": false,
-  "physicsRestitution": 0.1,
-  "physicsSensor": false,
-  "physicsShape": 1,
-  "physicsShapePoints": [],
-  "physicsStartAwake": true,
-  "properties": [],
-  "solid": false,
-  "spriteId": null,
-  "spriteMaskId": null,
-  "visible": true,
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:c4cd2e52e83209a6f08e78dbf3a8730d8a9ff22cda1c6886ed0b420aac80b459
+size 1028

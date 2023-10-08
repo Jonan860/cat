@@ -1,8 +1,3 @@
-/// @description Returns the position of the yx-axis of joystick.
-/// @param id	the id of the joystick (1 or 2)
-/// @return {Number} the position of the y-axis of the joystick/gamepad with the given id, with the value being somewhere between -1 and 1
-
-
-var jid=__joystick_2_gamepad(argument0);
-
-return gamepad_axis_value( jid, 1);
+version https://git-lfs.github.com/spec/v1
+oid sha256:ee7af3e1003729a3e9ae19451a7b7f115f0e685d4bb722230f60996105e61dc6
+size 330

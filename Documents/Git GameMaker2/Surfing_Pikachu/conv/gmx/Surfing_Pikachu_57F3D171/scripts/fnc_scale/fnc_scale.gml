@@ -1,13 +1,3 @@
-/// @description fcn_scale(object)
-/// @param object
-object=argument0
-if(object==obj_voltorb)
-return 1
-if(object==obj_electrode)
-return 1+1/3
-if(object==obj_koffing)
-return 1+1/3
-if(object==obj_geodude)
-return 2
-if(object==obj_graveler)
-return 3
+version https://git-lfs.github.com/spec/v1
+oid sha256:577586c93b8d75366b1ba77f902a276abeb14781184d061ccdff7f5f5b9757c9
+size 258

@@ -1,8 +1,3 @@
-/// @description (Old DnD) - set sprite
-/// @param index sprite index
-/// @param scale scale
-image_index = argument0;
-if (argument1 > 0) {
-	image_xscale = argument1;	
-	image_yscale = argument1;	
-} // end if
+version https://git-lfs.github.com/spec/v1
+oid sha256:232b4e9b7fed64f02a708ed5ada68b4cb2c232eecaff134e08e54e58ab51b53b
+size 207

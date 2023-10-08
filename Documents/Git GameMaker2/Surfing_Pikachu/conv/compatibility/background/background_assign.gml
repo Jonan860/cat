@@ -1,6 +1,3 @@
-/// @description Assigns one background to another background index.
-/// @param index The index of the background to be copied to (ie: over-written).
-/// @param background The background to be copied from.
-/// @returns
-
-sprite_assign(argument0, argument1);
+version https://git-lfs.github.com/spec/v1
+oid sha256:70e7d05087e225b31d271eb10a082437f7cfce80ac6451c0257e6b74ca1b33e6
+size 256

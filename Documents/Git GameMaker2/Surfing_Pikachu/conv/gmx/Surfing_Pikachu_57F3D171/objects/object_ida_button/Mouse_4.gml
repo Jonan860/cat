@@ -1,7 +1,3 @@
-global.player="ida"
-global.n=irandom(6)
-global.m=irandom(6)
-global.number=global.n*global.m
-audio_stop_all()
-room_goto_next()
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:98ca13198ba9b4888f298e71537fce1ab17ab3cf024374cfc070239d219b2a1c
+size 133

@@ -1,5 +1,3 @@
-/// @description  d3d - backface culling on or off
-/// @param enable true if enabled, false if disabled
-
-//gpu_set_cullmode( argument0 ? cull_clockwise : cull_noculling );
-gpu_set_cullmode( argument0 ? cull_counterclockwise : cull_noculling );
+version https://git-lfs.github.com/spec/v1
+oid sha256:1fdc09da4b29bc682330c0aaefd6e5ed3b57468fe9bd86aef8e415cdb9b869d2
+size 243

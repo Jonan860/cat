@@ -1,23 +1,3 @@
-{
-  "resourceType": "GMSound",
-  "resourceVersion": "1.0",
-  "name": "sound_smog",
-  "audioGroupId": {
-    "name": "audiogroup_default",
-    "path": "audiogroups/audiogroup_default",
-  },
-  "bitDepth": 1,
-  "bitRate": 192,
-  "compression": 0,
-  "conversionMode": 0,
-  "duration": 0.0,
-  "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
-  },
-  "preload": true,
-  "sampleRate": 44100,
-  "soundFile": "sound_smog",
-  "type": 0,
-  "volume": 1.0,
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5c9ff11a8c0f6c22ef6726211177345d69fbca3ba116a1fbd388e0622ddd9d05
+size 483

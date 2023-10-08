@@ -1,9 +1,3 @@
-/// @description Sets a tile's blending.
-/// @param index The index of the tile.
-/// @param colour The colour to blend the tile with.
-/// @returns 
-
-var __index = argument0;
-var __colour = argument1;
-
-return layer_tile_blend(__index, __colour);
+version https://git-lfs.github.com/spec/v1
+oid sha256:14a611920e37fef175cbae4ad4c5dd245d9ed1931ab0d7c4a8a4fbde8efd4beb
+size 244

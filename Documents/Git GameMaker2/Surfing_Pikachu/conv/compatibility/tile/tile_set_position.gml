@@ -1,12 +1,3 @@
-/// @description Sets the position of a given tile.
-/// @param index The index of the tile.
-/// @param x The tile's new x position.
-/// @param y The tile's new y position.
-/// @returns 
-
-var __index = argument0;
-var __x = argument1;
-var __y = argument2;
-
-layer_tile_x(__index, __x);
-layer_tile_y(__index, __y);
+version https://git-lfs.github.com/spec/v1
+oid sha256:86731db809765d1ecbf79aaf7897b5eb6fc4563bfca035d97c0e90b07f58134d
+size 310

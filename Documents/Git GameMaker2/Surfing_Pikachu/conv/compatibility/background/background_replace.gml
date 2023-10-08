@@ -1,8 +1,3 @@
-/// @description Replace a background resource with another one.
-/// @param ind The index of the background to permanently replace.
-/// @param fname The filename of the image to make the new background.
-/// @param removeback Indicates whether to make all pixels with the same colour (left-bottom pixel) transparent.
-/// @param smooth Indicates whether to smooth the edges.
-/// @returns 
-
-sprite_replace(argument0, argument1, 1, argument2, argument3, 0, 0);
+version https://git-lfs.github.com/spec/v1
+oid sha256:890f894104def415cebbf67d69ed3c5bc2fbb1dc9e8e591db50920876f4e0f60
+size 456

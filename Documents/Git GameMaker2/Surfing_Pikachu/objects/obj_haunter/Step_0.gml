@@ -1,11 +1,3 @@
-event_inherited()
-if(global.bossState == BOSS_STATES.ATTACKING) {
-	vulnerable = 1
-}
-if(alive and global.bossState == BOSS_STATES.AIMING and abs(y - global.pikachu.y) <= 5) {
-	night_shades = 10
-	global.bossState = BOSS_STATES.ATTACKING
-	speed = 0
-	alarm[2] = game_get_speed(gamespeed_fps)/3
-}
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:341b332125c9c4e4c9075428ffa46eafb9fd10cf8f0d72b258de152106967a29
+size 303

@@ -1,9 +1,3 @@
-if(room == Space) {
-	if(global.gamePhase != GAME_PHASES.PRE_ARMADA and global.gamePhase != GAME_PHASES.ARMADA) {
-		var obj = choose(obj_voltorb, obj_voltorb, obj_electrode, obj_electrode
-		, obj_koffing, obj_koffing, obj_graveler, obj_geodude)
-	} else {
-		var obj = choose(obj_fearow, obj_vaporeon, obj_moltres)
-	}
-	instance_create_depth(room_width + 32, 0, 0, obj)
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7fa0ccbb37094592790b0f6390f43894f4897f0b542ac36c98ff76aa6a373193
+size 375

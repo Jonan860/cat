@@ -1,16 +1,3 @@
-/// @description (Old DnD) - if collision evauation
-/// @param xxG 	x value
-/// @param yyG 	y value
-/// @param flag false for free, true for empty check
-var xx = argument0;
-var yy = argument1;
-if (global.__argument_relative) {
-	xx += x;
-	yy += y;
-}  // end if
-
-if (argument2) {
-	return !place_empty( xx, yy);
-} else {
-	return !place_free( xx, yy );
-} // end if
+version https://git-lfs.github.com/spec/v1
+oid sha256:e5a64f536f9937820d83d81d1272a9b101de6967d8e951627907cf51de7afd0c
+size 361

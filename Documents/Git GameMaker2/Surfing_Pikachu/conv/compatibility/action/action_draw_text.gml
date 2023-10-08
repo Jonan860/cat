@@ -1,13 +1,3 @@
-/// @description (Old DnD) - draw text
-/// @param msg	text to display
-/// @param x	x position 
-/// @param y	y position 
-
-var msg =argument0;
-var xx = argument1;
-var yy = argument2;
-if (global.__argument_relative) {
-	xx += x;
-	yy += y;
-}  // end if
-draw_text( xx, yy, string_hash_to_newline(msg));
+version https://git-lfs.github.com/spec/v1
+oid sha256:ac447c91e25456884dfb064805c0aad7e32bcde4f159509b971b9a25c7a1364f
+size 296

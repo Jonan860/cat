@@ -1,7 +1,3 @@
-/// @description Returns the background index a given tile is drawn from.
-/// @param index The index of the tile.
-/// @returns {number} The background index
-
-var __index = argument0;
-
-return layer_tile_get_sprite(__index);
+version https://git-lfs.github.com/spec/v1
+oid sha256:0bf02b8f69cc2a1c44f2bd147dfcf3426ebae0eebcff0a433cf6c20c8e3a156a
+size 222

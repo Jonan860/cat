@@ -1,34 +1,3 @@
-{
-  "resourceType": "GMObject",
-  "resourceVersion": "1.0",
-  "name": "obj_crying_pikachu",
-  "eventList": [],
-  "managed": true,
-  "overriddenProperties": [],
-  "parent": {
-    "name": "outro animation",
-    "path": "folders/Objects/outro animation.yy",
-  },
-  "parentObjectId": null,
-  "persistent": false,
-  "physicsAngularDamping": 0.1,
-  "physicsDensity": 0.5,
-  "physicsFriction": 0.2,
-  "physicsGroup": 0,
-  "physicsKinematic": false,
-  "physicsLinearDamping": 0.1,
-  "physicsObject": false,
-  "physicsRestitution": 0.1,
-  "physicsSensor": false,
-  "physicsShape": 0,
-  "physicsShapePoints": [],
-  "physicsStartAwake": true,
-  "properties": [],
-  "solid": false,
-  "spriteId": {
-    "name": "spr_crying_pikachu",
-    "path": "sprites/spr_crying_pikachu/spr_crying_pikachu.yy",
-  },
-  "spriteMaskId": null,
-  "visible": true,
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d3820fdcefb0bf438c728822dc1f2ea9ffc11c7e8746ed57b825a3a02747dcd8
+size 866

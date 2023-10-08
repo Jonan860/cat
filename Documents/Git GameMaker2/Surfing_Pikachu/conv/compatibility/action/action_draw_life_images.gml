@@ -1,17 +1,3 @@
-/// @description (Old DnD) - draw life with images
-/// @param x	x position 
-/// @param y	y position 
-/// @param index sprite index to use
-
-var xx = argument0;
-var yy = argument1;
-if (global.__argument_relative) {
-	xx += x;
-	yy += y;
-}  // end if
-
-var w = sprite_get_width( argument2 );
-for( var i=0; i<lives; ++i) {
-	draw_sprite( argument2, 0, xx+(i*w), yy);
-} // end for
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:56d713bd823bee5d8d8234d364566d787994b7ef58c5fe8ca62ae941ec3ee68f
+size 373

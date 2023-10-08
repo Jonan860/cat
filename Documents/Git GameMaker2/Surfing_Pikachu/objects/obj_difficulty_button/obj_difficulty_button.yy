@@ -1,33 +1,3 @@
-{
-  "resourceType": "GMObject",
-  "resourceVersion": "1.0",
-  "name": "obj_difficulty_button",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,},
-  ],
-  "managed": true,
-  "overriddenProperties": [],
-  "parent": {
-    "name": "difficulty_buttons",
-    "path": "folders/Objects/buttons/difficulty_buttons.yy",
-  },
-  "parentObjectId": null,
-  "persistent": false,
-  "physicsAngularDamping": 0.1,
-  "physicsDensity": 0.5,
-  "physicsFriction": 0.2,
-  "physicsGroup": 1,
-  "physicsKinematic": false,
-  "physicsLinearDamping": 0.1,
-  "physicsObject": false,
-  "physicsRestitution": 0.1,
-  "physicsSensor": false,
-  "physicsShape": 1,
-  "physicsShapePoints": [],
-  "physicsStartAwake": true,
-  "properties": [],
-  "solid": false,
-  "spriteId": null,
-  "spriteMaskId": null,
-  "visible": true,
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5b4ffc75c88532c496305827268bdca3987918bff8d0db1c28322f7aaf87cdf2
+size 919

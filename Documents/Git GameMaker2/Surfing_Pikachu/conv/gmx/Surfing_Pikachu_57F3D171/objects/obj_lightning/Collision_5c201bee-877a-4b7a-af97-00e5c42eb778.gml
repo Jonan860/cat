@@ -1,9 +1,3 @@
-if(alive and owner!="pikachu")
-{
-with(other)
-{
-HP=max(0,HP-20*(1-damage_reduction))
-}
-alive=0
-}
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:62c1105d3637bbc12e04c91334a1990e38a214ed7f1fbb9339c14564175e7b06
+size 105

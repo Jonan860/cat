@@ -1,3 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
-show_debug_message("instance of type obj_poke_wars was destroyed")
+version https://git-lfs.github.com/spec/v1
+oid sha256:98c9e18f306b3426e12993ddaad918bc21745b668b564841ed8b3ad38bba2a5c
+size 151

@@ -1,9 +1,3 @@
-var __prop = argument0;
-var __index = argument1;
-var __val = argument2;
-
-var __res = __view_get(__prop, __index);
-
-__view_set_internal(__prop, __index, __val);
-
-return __res;
+version https://git-lfs.github.com/spec/v1
+oid sha256:6c8c405fa502e8fda7cad05ae7e7a9a77af984ff0e23cc232b568fd116595107
+size 174

@@ -1,24 +1,3 @@
-{
-  "resourceType": "GMLinuxOptions",
-  "resourceVersion": "1.0",
-  "name": "Linux",
-  "option_linux_allow_fullscreen": false,
-  "option_linux_disable_sandbox": false,
-  "option_linux_display_cursor": true,
-  "option_linux_display_name": "Created with GameMaker",
-  "option_linux_display_splash": false,
-  "option_linux_enable_steam": false,
-  "option_linux_homepage": "http://www.yoyogames.com",
-  "option_linux_icon": "${base_options_dir}/linux/icons/64.png",
-  "option_linux_interpolate_pixels": true,
-  "option_linux_long_desc": "",
-  "option_linux_maintainer_email": "",
-  "option_linux_resize_window": false,
-  "option_linux_scale": 0,
-  "option_linux_short_desc": "",
-  "option_linux_splash_screen": "${base_options_dir}/linux/splash/splash.png",
-  "option_linux_start_fullscreen": false,
-  "option_linux_sync": false,
-  "option_linux_texture_page": "2048x2048",
-  "option_linux_version": "1.0.0.0",
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:123c41a6f2b44a0ca121665bb92410a079e5f91fec448ead0037dba04f705e5f
+size 931

@@ -1,11 +1,3 @@
-/// @description d3d - Sets the transformation to a scaling with the indicated amounts.
-/// @param xs the x scale amount
-/// @param ys the y scale amount
-/// @param zs the z scale amount
-
-// build the rotation matrix
-var m = matrix_build_identity();
-m[0] = argument0;
-m[5] = argument1;
-m[10] = argument2;
-matrix_set( matrix_world, m);
+version https://git-lfs.github.com/spec/v1
+oid sha256:0872fa0358e04cd2a0d3a7bcc9a8ff3c105d69f9d1fd070c7634fc01b84f5603
+size 335

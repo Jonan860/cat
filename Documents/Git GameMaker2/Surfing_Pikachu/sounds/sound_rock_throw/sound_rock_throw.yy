@@ -1,23 +1,3 @@
-{
-  "resourceType": "GMSound",
-  "resourceVersion": "1.0",
-  "name": "sound_rock_throw",
-  "audioGroupId": {
-    "name": "audiogroup_default",
-    "path": "audiogroups/audiogroup_default",
-  },
-  "bitDepth": 1,
-  "bitRate": 192,
-  "compression": 3,
-  "conversionMode": 0,
-  "duration": 0.0,
-  "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
-  },
-  "preload": true,
-  "sampleRate": 44100,
-  "soundFile": "sound_rock_throw",
-  "type": 0,
-  "volume": 1.0,
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:91403a409e748dc7306f63235d426c52cbfeac849dd633f730c7ddd18ec93034
+size 495

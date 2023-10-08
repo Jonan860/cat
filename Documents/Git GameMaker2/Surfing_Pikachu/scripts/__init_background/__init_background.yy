@@ -1,11 +1,3 @@
-{
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "__init_background",
-  "isCompatibility": true,
-  "isDnD": false,
-  "parent": {
-    "name": "background",
-    "path": "folders/Scripts/compatibility/background.yy",
-  },
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:be08d1824f609aee5d4531985bf41098c153204c229708e0c9282d9c0dffcf29
+size 251

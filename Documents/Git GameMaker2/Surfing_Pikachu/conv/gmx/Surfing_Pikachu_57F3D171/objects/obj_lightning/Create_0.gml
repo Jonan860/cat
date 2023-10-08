@@ -1,9 +1,3 @@
-event_inherited()
-drop=0
-image_angle=point_direction(x,y,instance_find(obj_pikachu,0).x,instance_find(obj_pikachu,0).y)-225
-owner=0
-if(drop=0)
-{
-audio_play_sound(sound_lightning,0,0)
-}
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:c20a051dfceabf9dbd60ce0f9ca27fa63c8724b8b2785f5839ceae0f43742520
+size 194

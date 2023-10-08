@@ -1,19 +1,3 @@
-event_inherited()
-image_xscale *= 1 + 1/3; image_yscale *= 1 + 1/3
-projectile = obj_smog
-hurtPika = function() {
-	with(global.pikachu) {
-		HP -= 20 * (1 - damage_reduction)
-	}
-}
-	
-benefitPika = function() {
-	with(global.pikachu) {
-		if(poison_count > 0) {
-			poison_count = 0
-		} else {
-			HP = min(max_HP, HP + 10)
-		}
-	}
-}
-	
+version https://git-lfs.github.com/spec/v1
+oid sha256:d5d3c388b73e349e087594dc7b3e810addbf8b6dbece29f65c82fc4da80d1d5e
+size 345

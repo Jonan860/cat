@@ -1,36 +1,3 @@
-{
-  "resourceType": "GMObject",
-  "resourceVersion": "1.0",
-  "name": "obj_fors_ttning_f_ljer",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-  ],
-  "managed": true,
-  "overriddenProperties": [],
-  "parent": {
-    "name": "buttons",
-    "path": "folders/Objects/buttons.yy",
-  },
-  "parentObjectId": null,
-  "persistent": false,
-  "physicsAngularDamping": 0.1,
-  "physicsDensity": 0.5,
-  "physicsFriction": 0.2,
-  "physicsGroup": 0,
-  "physicsKinematic": false,
-  "physicsLinearDamping": 0.1,
-  "physicsObject": false,
-  "physicsRestitution": 0.1,
-  "physicsSensor": false,
-  "physicsShape": 0,
-  "physicsShapePoints": [],
-  "physicsStartAwake": true,
-  "properties": [],
-  "solid": false,
-  "spriteId": {
-    "name": "spr_forts_ttning_f_ljer",
-    "path": "sprites/spr_forts_ttning_f_ljer/spr_forts_ttning_f_ljer.yy",
-  },
-  "spriteMaskId": null,
-  "visible": true,
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:8ba18c9c2da0e991e955050fa614de7a56d8a65c8da07c8d9cc636d7a8cdab58
+size 1007

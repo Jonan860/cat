@@ -1,33 +1,3 @@
-{
-  "resourceType": "GMObject",
-  "resourceVersion": "1.0",
-  "name": "obj_debug_drawer",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
-  ],
-  "managed": true,
-  "overriddenProperties": [],
-  "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
-  },
-  "parentObjectId": null,
-  "persistent": false,
-  "physicsAngularDamping": 0.1,
-  "physicsDensity": 0.5,
-  "physicsFriction": 0.2,
-  "physicsGroup": 0,
-  "physicsKinematic": false,
-  "physicsLinearDamping": 0.1,
-  "physicsObject": false,
-  "physicsRestitution": 0.1,
-  "physicsSensor": false,
-  "physicsShape": 0,
-  "physicsShapePoints": [],
-  "physicsStartAwake": true,
-  "properties": [],
-  "solid": false,
-  "spriteId": null,
-  "spriteMaskId": null,
-  "visible": true,
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:4c4a3883d605e2220b09584922e814b87fceb24e87c2db873813098b43a5564e
+size 876

@@ -1,7 +1,3 @@
-/// @description Returns the position of the u-axis of joystick.
-/// @param id	the id of the joystick (1 or 2)
-/// @return {Number} the position of the u-axis of the joystick/gamepad with the given id, with the value being somewhere between -1 and 1
-
-var jid=__joystick_2_gamepad(argument0);
-
-return gamepad_axis_value( jid, 4);
+version https://git-lfs.github.com/spec/v1
+oid sha256:1e83bb45087a134a92471a986be63d14e4b0298c8f07dd4df93a84cf7bc575cc
+size 328

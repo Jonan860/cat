@@ -1,12 +1,3 @@
-
-if(room == Space) {
-	if(!audio_is_playing(global.background_music)) {
-		if(!instance_exists(obj_boss)) {
-			setupNextGamePhase()
-		}
-	}
-	if(alarm[0] <= 0) {
-		alarm[0] = random(game_get_speed(gamespeed_fps) * 2)
-	}
-}
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:3380d0445aa74d8e02e5c4074f253f5b354bf3b88b50d0db81c3a3e874f9d024
+size 230

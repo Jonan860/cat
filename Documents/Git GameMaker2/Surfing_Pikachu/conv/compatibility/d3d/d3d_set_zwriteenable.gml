@@ -1,4 +1,3 @@
-/// @description d3d - set z write enable
-/// @param enable	true if enabled, false if disabled
-
-gpu_set_zwriteenable( argument0 );
+version https://git-lfs.github.com/spec/v1
+oid sha256:c676a323a48043e6693f93d2965efcefa32e39dd938b11b4878eee532c4c552e
+size 131

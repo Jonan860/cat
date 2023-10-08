@@ -1,12 +1,3 @@
-/// @description d3d - Sets the primitive vertex
-/// @param x the x position
-/// @param y the y position
-/// @param z the z position
-
-vertex_position_3d( global.__d3dPrimBuffer, argument0, argument1, argument2 );
-vertex_normal( global.__d3dPrimBuffer, 0, 0, 0 );
-vertex_colour( global.__d3dPrimBuffer, draw_get_colour(), draw_get_alpha());
-vertex_texcoord( global.__d3dPrimBuffer, 0, 0 );
-
-
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:f6820f20dcc191a2198eb320825c6a72b25e1ea1cfb9488376342a2017e9eed0
+size 392

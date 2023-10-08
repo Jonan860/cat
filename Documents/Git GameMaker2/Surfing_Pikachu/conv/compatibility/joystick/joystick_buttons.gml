@@ -1,5 +1,3 @@
-/// @description Returns the number of buttons the joystick has.
-/// @param id	the id of the joystick (1 or 2)
-
-var jid=__joystick_2_gamepad(argument0);
-return gamepad_button_count(jid);
+version https://git-lfs.github.com/spec/v1
+oid sha256:44e03c394911fb5f309605920212e284d9743c4cf8511112883d31cf9eb92a1a
+size 186

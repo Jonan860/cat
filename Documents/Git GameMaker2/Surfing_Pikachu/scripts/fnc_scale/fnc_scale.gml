@@ -1,9 +1,3 @@
-function fnc_scale(object) {
-	switch(object) {
-		case obj_voltorb : return 1; break;
-		case obj_electrode : return 1 + 1/3; break;	
-		case obj_koffing : return 1 + 1/3; break;
-		case obj_geodude : return 2; break;
-		case obj_graveler : return 3; break;
-	}
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:9ebac337c82efa118d30777b3c561844a27c79ec25f140a250c8ca57598a4a0a
+size 267

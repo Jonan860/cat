@@ -1,6 +1,3 @@
-
-if(global.bossState = BOSS_STATES.EVADE and hspeed == 0) {
-	direction += 180
-	alarm[0] = (200 + irandom(room_height - 200)) / movementSpeed
-}
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:da7165b8fb322283b2c8e9afdd7ada54a404a8533c59e14ce2828c63d31759b2
+size 149

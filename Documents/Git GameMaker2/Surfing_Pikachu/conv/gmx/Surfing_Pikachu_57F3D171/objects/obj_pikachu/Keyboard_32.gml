@@ -1,19 +1,3 @@
-if(room!=room_bamse)
-{
-if(ammo>0 and loaded)
-{
-lightning=instance_create(x+sprite_width/2,y,obj_lightning)
-with(lightning)
-{
-owner="pikachu"
-image_angle=-225
-speed=15
-direction=0
-
-}
-loaded=0
-ammo-=1
-alarm[0]=room_speed*2
-}
-}
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:50b4f80eb8a87f5e26a26abf804e15c3cbd1babbdc9c5e9a59aa2872dd21a34d
+size 244

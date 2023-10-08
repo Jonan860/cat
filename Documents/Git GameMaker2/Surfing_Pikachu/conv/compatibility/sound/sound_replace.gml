@@ -1,7 +1,3 @@
-/// @description (Deprecated) Replaces an existing sound with one from a given filename
-/// @param index 	The index of the sound to be replace.
-/// @param fname	The filename of the sound to add.
-/// @param kind		The kind of sound it should be added as (legacy Feature) 0=normal, 1=background, 2=3D, 3=multimedia player, for things like MP3s).
-/// @param preload	Whether the sound should preload into memory immediately (true) or not (false) (legacy Feature) .
-show_debug_message( "sound_replace is not supported");
-return false;
+version https://git-lfs.github.com/spec/v1
+oid sha256:ce604b3b4ba2ae1e927131166126a8715c6ab55ab43cfacfdb3eafb0df74a7c7
+size 528

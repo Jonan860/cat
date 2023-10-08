@@ -1,5 +1,3 @@
-/// @description Fade a sound in or out over a given time.
-/// @param index	sound index
-/// @param volume	The final volume from 0 to 1.
-/// @param time		The length for the change in gain in milliseconds. 
-audio_sound_gain( argument0, argument1, argument2 );
+version https://git-lfs.github.com/spec/v1
+oid sha256:7a6d47361b74189dcdf9eb842ac285cf378b7bdaadb86e35585840dffae089fa
+size 257

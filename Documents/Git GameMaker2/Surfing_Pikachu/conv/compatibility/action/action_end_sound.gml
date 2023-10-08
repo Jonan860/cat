@@ -1,3 +1,3 @@
-/// @description (Old DnD) - end the sound
-/// @param soundid sound id
-audio_stop_sound( argument0 );
+version https://git-lfs.github.com/spec/v1
+oid sha256:d12babadab798f96c1405aaee704a10791f4c523ca7129cff21eec3b872c064e
+size 101

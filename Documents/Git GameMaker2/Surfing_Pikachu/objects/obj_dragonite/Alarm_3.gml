@@ -1,10 +1,3 @@
-with(obj_hyperbeam) {
-	instance_destroy()
-}
-global.bossState = BOSS_STATES.EVADE
-direction = choose(90, 270)
-speed = movementSpeed
-alarm[0] = (200 + irandom(room_height - 200)) / movementSpeed
-alarm[1] = room_height * 3 / movementSpeed
-
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:5cfae969914da6efc19a3f8c0c475a2f3df9c2322d5020155e88d040fc967618
+size 247

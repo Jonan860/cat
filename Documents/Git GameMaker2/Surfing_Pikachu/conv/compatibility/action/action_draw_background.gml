@@ -1,19 +1,3 @@
-/// @description (Old DnD) - draw background
-/// @param index resource index
-/// @param x	x position
-/// @param y	y position
-/// @param tiled	true if tiled
-
-var xx = argument1;
-var yy = argument2;
-if (global.__argument_relative) {
-	xx += x;
-	yy += y;
-}  // end if
-
-// draw tiled if argument3 is true
-if (argument3) {
-	draw_sprite_tiled( argument0, 0, xx, yy )
-} else {
-	draw_sprite( argument0, 0, xx, yy );
-} // end if
+version https://git-lfs.github.com/spec/v1
+oid sha256:02d3b837954b88aac5f8f4c472269df196f1d97e7423ace627b398777dd47a1b
+size 418

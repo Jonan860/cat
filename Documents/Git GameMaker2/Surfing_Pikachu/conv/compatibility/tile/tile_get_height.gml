@@ -1,12 +1,3 @@
-/// @description Returns the height of a given tile.
-/// @param index The index of the tile.
-/// @returns {number} The height of the tile
-
-var __index = argument0;
-
-var __reg = layer_tile_get_region(__index);
-if (array_length_1d(__reg) == 0)
-	return 0;
-
-return __reg[3];
-	
+version https://git-lfs.github.com/spec/v1
+oid sha256:7f70f05d8a528174d726c413cf011c40a90a4bfb3c34c90481a1f9f834c8c125
+size 272

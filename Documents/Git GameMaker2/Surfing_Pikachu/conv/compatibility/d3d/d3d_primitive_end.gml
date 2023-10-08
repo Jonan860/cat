@@ -1,12 +1,3 @@
-/// @description d3d - end the primitive stream
-
-if (global.__d3dPrimKind != -1) {
-
-	vertex_end( global.__d3dPrimBuffer );
-	vertex_submit( global.__d3dPrimBuffer, global.__d3dPrimKind, global.__d3dPrimTex );
-
-	// mark this as finished
-	global.__d3dPrimKind = -1;
-} else {
-	show_debug_message( "d3d_primitive_end :: with no d3d_primitive_begin ");
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a89e44d41b9d285b270321a74c207eb025d4e177a50cf8e5bf56d7388cb8ea58
+size 349

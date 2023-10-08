@@ -1,6 +1,3 @@
-/// @description (Deprecated) add a sound resource
-/// @param fname	The filename of the sound to add.
-/// @param kind		The kind of sound it should be added as (legacy Feature) 0=normal, 1=background, 2=3D, 3=multimedia player, for things like MP3s).
-/// @param preload	Whether the sound should preload into memory immediately (true) or not (false) (legacy Feature) .
-show_debug_message( "sound_add is not supported");
-return -1;
+version https://git-lfs.github.com/spec/v1
+oid sha256:79f5811872ca403e700ae1f072ec111d5774891395d20f9b2ebcd0039a3564c4
+size 428

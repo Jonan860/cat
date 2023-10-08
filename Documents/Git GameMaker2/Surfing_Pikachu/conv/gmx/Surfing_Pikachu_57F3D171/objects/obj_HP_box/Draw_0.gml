@@ -1,9 +1,3 @@
-draw_self()
-draw_set_valign(fa_middle)
-if(selected)
-{draw_text_transformed(x,y,string_hash_to_newline(keyboard_string),2,2,0)}
-else
-draw_text_transformed(x,y,string_hash_to_newline(global.HP_box),2,2,0)
-draw_set_valign(fa_bottom)
-
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:2045cb94dbd16ccfd2e44d302ea2d12e5bbe38ec89e968eef36762a1b28be40f
+size 240

@@ -1,4 +1,3 @@
-/// @description d3d - enable lighting
-/// @param index	number of light 
-/// @param enable	true if enabled, false if disabled
-draw_light_enable( argument0, argument1 );
+version https://git-lfs.github.com/spec/v1
+oid sha256:a2a85f670bbc7ecb341fa2505d3797535a32465f0c53074aa4ff7ac4f3364af6
+size 169

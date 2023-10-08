@@ -1,12 +1,3 @@
-event_inherited()
-text[1]="För länge länge sedan i en annan galax."
-text[2]="I ett annat universum."
-text[3]="Med två rumsliga dimensioner."
-text[4]="Uppbyggt av 1024*768=786432 stycken"
-text[5]="elementära byggstenar kallade pixlar..."
-scale=2.5
-spacing=40
-text_speed=2
-rows=5
-row=1
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:72d99f211b2a91b41aef9ab402d751a4f50d2e000f6c2f2788b882db6c736899
+size 301

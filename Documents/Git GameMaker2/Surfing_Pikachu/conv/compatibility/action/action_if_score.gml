@@ -1,11 +1,3 @@
-/// @description (Old DnD) - if score evauation
-/// @param val  value to check against
-/// @param type	type of check (1==<, 2==>, anything else is ==)
-var ret = false;
-switch( argument1 )
-{
-	case 1:	ret = (score < argument0); break;	
-	case 2:	ret = (score > argument0); break;	
-	default:ret = (score == argument0); break;	
-}
-return ret;
+version https://git-lfs.github.com/spec/v1
+oid sha256:3a8fbbdc9897bd60d13e382d469f2108333dc46e7f74ded367ede0f307141a1c
+size 336

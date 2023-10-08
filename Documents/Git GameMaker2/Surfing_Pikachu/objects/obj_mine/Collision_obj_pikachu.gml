@@ -1,12 +1,3 @@
-if(alive) {
-	alive = 0
-	if(global.questionOperator(global.pikachu.m, global.pikachu.n) != answerOption) {
-		hurtPika()
-		startSelfDestructAnimation()
-	} else {
-		benefitPika()
-		global.pikachu.createQuestionString()
-		sprite_index = spr_ditto
-		image_xscale = 1; image_yscale = 1
-	}
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5e36b7c646736bac6d4e43735809378eecfbe48119665adc25dbdd91c48ce234
+size 295

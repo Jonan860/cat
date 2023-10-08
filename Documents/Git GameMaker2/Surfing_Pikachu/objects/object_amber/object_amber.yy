@@ -1,34 +1,3 @@
-{
-  "resourceType": "GMObject",
-  "resourceVersion": "1.0",
-  "name": "object_amber",
-  "eventList": [],
-  "managed": true,
-  "overriddenProperties": [],
-  "parent": {
-    "name": "outro animation",
-    "path": "folders/Objects/outro animation.yy",
-  },
-  "parentObjectId": null,
-  "persistent": false,
-  "physicsAngularDamping": 0.1,
-  "physicsDensity": 0.5,
-  "physicsFriction": 0.2,
-  "physicsGroup": 0,
-  "physicsKinematic": false,
-  "physicsLinearDamping": 0.1,
-  "physicsObject": false,
-  "physicsRestitution": 0.1,
-  "physicsSensor": false,
-  "physicsShape": 0,
-  "physicsShapePoints": [],
-  "physicsStartAwake": true,
-  "properties": [],
-  "solid": false,
-  "spriteId": {
-    "name": "spr_amber",
-    "path": "sprites/spr_amber/spr_amber.yy",
-  },
-  "spriteMaskId": null,
-  "visible": true,
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:bc85333a4387575ff7d6945e3b7cf88a980e66cd8bdff6e05703c5da098a8e48
+size 833

@@ -1,11 +1,3 @@
-draw_self()
-if(room!=room_bamse)
-{
-draw_healthbar(50,25,250,50,HP/max_HP*100,c_black,c_red,c_lime,0,0,0)
-//draw_healthbar(25,room_height-25,500,room_height-50,100*distance/(room_speed*60*10),c_black,c_yellow,c_yellow,0,0,0)
-draw_text_ext_transformed_colour(500,room_height-100 , string_hash_to_newline(string_number),5, 300,2,2,0,c_lime, c_lime, c_red, c_red, 1);
-draw_text_ext_transformed_colour(350,25,string_hash_to_newline("lightning:"+string(ammo)),5, 300,2,2,0,c_dkgray, c_yellow, c_red, c_yellow, 1);
-draw_text_ext_transformed_colour(350,75, string_hash_to_newline("poison_count:"+string(poison_count)),5, 300,2,2,0,c_lime, c_purple, c_fuchsia, c_purple, 1);
-draw_text_ext_transformed_colour(350,125, string_hash_to_newline("damage_reduction:"+string(damage_reduction)+"%"),5, 300,2,2,0,c_lime, c_gray, c_fuchsia, c_gray, 1);
-}
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:13b0254b5659c9e35a1e41f4bc03fbde712f8e0d7a27dd3cb37cdb5836b1f13a
+size 846

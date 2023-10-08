@@ -1,14 +1,3 @@
-attack=irandom(room_width/30)
-if(armed and x>room_width/2 and attack==1)
-{
-if(instance_find(obj_pikachu,0).damage_reduction==0)
-{
-instance_create(x-sprite_width,y,obj_lightning)
-}
-else
-{
-instance_create(x-sprite_width,y,obj_screech)
-}
-armed=0
-}
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:a5a44f8daf296dcf7b8e427614f4c95360ecf068f9a8dd91f3f05025b0d33443
+size 259

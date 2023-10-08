@@ -1,23 +1,3 @@
-{
-  "resourceType": "GMSound",
-  "resourceVersion": "1.0",
-  "name": "sound_surfing_safari",
-  "audioGroupId": {
-    "name": "audiogroup_default",
-    "path": "audiogroups/audiogroup_default",
-  },
-  "bitDepth": 1,
-  "bitRate": 192,
-  "compression": 3,
-  "conversionMode": 0,
-  "duration": 0.0,
-  "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
-  },
-  "preload": true,
-  "sampleRate": 44100,
-  "soundFile": "sound_surfing_safari",
-  "type": 0,
-  "volume": 1.0,
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:16a8b0e1f42c8400fbb61e9a39558a0f5685ac14ea867dab6b1706c523566b21
+size 503

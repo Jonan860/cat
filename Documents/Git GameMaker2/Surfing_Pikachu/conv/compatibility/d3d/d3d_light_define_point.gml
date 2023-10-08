@@ -1,9 +1,3 @@
-/// @description d3d - set the point and of a specific light
-/// @param index	number of light 
-/// @param x	x component
-/// @param y	y component
-/// @param z	z component
-/// @param range	range for this light
-/// @param col	colour for this light
-draw_light_define_point( argument0, argument1, argument2, argument3, argument4, argument5 );
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:ce760d9a2ac43061548a28601f7ecb1c47a25690fdc7950e415dd895a12553e8
+size 339

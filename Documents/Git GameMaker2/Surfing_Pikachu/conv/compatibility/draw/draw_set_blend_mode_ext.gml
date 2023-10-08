@@ -1,4 +1,3 @@
-/// @description Sets an extended blend mode for drawing.
-/// @param src Source blend mode
-/// @param dest Destination blend mode
-gpu_set_blendmode_ext( argument0, argument1 );
+version https://git-lfs.github.com/spec/v1
+oid sha256:40b573194bb810ed7e039c4117a54c37560062fa1eae203f40c31fa51c18e1a2
+size 176

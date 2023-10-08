@@ -1,3 +1,3 @@
-/// @description Sets the blend mode for drawing.
-/// @param mode The blend mode constant to set to 
-gpu_set_alphatestref( argument0 );
+version https://git-lfs.github.com/spec/v1
+oid sha256:e2212cd71d7303c140c4bd6b755e35e8e188684edbc22ed7867819b8411d3d0e
+size 135

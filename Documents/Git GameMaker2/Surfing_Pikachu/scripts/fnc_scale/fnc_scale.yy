@@ -1,11 +1,3 @@
-{
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "fnc_scale",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy",
-  },
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:4d696fba7c4aa665ac224aef2e4ddbe25ee8eda723ccd353e9a84bb82f2a06a2
+size 216

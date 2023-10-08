@@ -1,11 +1,3 @@
-/// @description Returns the top coordinate of a given tile from its background.
-/// @param index The index of the tile.
-/// @returns {number} The top of the tile
-
-var __index = argument0;
-
-var __reg = layer_tile_get_region(__index);
-if (array_length_1d(__reg) == 0)
-	return 0;
-	
-return __reg[1];
+version https://git-lfs.github.com/spec/v1
+oid sha256:d7dccce6e4f341df2ae3f4844548838b2f493a16a2049e4c30d345d9cba49aae
+size 296

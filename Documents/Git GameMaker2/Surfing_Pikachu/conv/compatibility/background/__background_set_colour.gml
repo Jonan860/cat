@@ -1,9 +1,3 @@
-var __newcol = argument0;
-
-var __colinfo = __background_get_colour_element();
-
-if (__colinfo[0] == -1)
-	return 0;
-	
-layer_background_blend(__colinfo[0], __newcol);
-return __newcol;
+version https://git-lfs.github.com/spec/v1
+oid sha256:e4ca743a95fb993854d60e2c54743f3b5847eabf07f413713ebc589765c0490c
+size 180

@@ -1,16 +1,3 @@
-/// @description (Old DnD) - if empty evauation
-/// @param xx	x value
-/// @param yy 	y value
-/// @param flag true for empty, false for free check
-var xx = argument0;
-var yy = argument1;
-if (global.__argument_relative) {
-	xx += x;
-	yy += y;
-}  // end if
-
-if (argument2) {
-	return place_empty( xx, yy );
-} else {
-	return place_free( xx, yy);
-} // end if
+version https://git-lfs.github.com/spec/v1
+oid sha256:333bf4c79c4937808172ad9a7c9e58271c610cb5944cc5345273f2cabeeef4ec
+size 352

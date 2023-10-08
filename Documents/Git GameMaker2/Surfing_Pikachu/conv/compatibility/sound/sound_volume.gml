@@ -1,4 +1,3 @@
-/// @description Sets the volume of a given sound.
-/// @param index 	The index of the sound to change the volume of.
-/// @param value	The new global volume from 0 to 1.
-audio_sound_gain( argument0, argument1, 0);
+version https://git-lfs.github.com/spec/v1
+oid sha256:ae7a39d133d7a1ab607fc10b23a63cafd452a5beba5cbb6e0f6549d2cb33a758
+size 212

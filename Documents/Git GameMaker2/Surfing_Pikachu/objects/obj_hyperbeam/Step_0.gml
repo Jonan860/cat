@@ -1,3 +1,3 @@
-image_xscale += image_xscale < 5 ? 1/game_get_speed(gamespeed_fps) : 0.01/game_get_speed(gamespeed_fps)
-
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:d7441c11def5311c34652e28ad04b51254a96bf469ac87d20748c994a2cae9f1
+size 108

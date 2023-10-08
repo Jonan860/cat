@@ -1,3 +1,3 @@
-draw_self()
-draw_healthbar(room_width-500,room_height-50,room_width,room_height-25,100*HP/max_HP,c_black,c_red,c_lime,0,0,0)
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:ae82316d04c627fdf4751509edbfd830d9f94695981eb5b5b93cd91eb41a3ad8
+size 128

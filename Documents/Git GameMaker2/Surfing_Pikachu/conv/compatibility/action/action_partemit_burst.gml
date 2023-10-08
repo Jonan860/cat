@@ -1,14 +1,3 @@
-/// @description (Old DnD) - particle system emitter burst
-/// @param index emitter index
-/// @param ptype particle type
-/// @param num number
-
-if (global.__part_syst < 0) { global.__part_syst = part_system_create(); }
-var index = argument0;
-if (global.__part_emit[index] < 0) {
-	show_message( "The particle emitter must first be created" );
-	return;
-} // end if
-var ptype = argument1;
-var num = argument2;
-part_emitter_burst(global.__part_syst,  global.__part_emit[index], ptype, num )
+version https://git-lfs.github.com/spec/v1
+oid sha256:5fcfd540e487595aa0dd7213b0a11cc3974bae37cb16dc1a6c3daf40716f8e21
+size 486

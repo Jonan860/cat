@@ -1,14 +1,3 @@
-/// @description (Old DnD) - draw life
-/// @param x	x position 
-/// @param y	y position 
-/// @param msg	message to disply before lives
-
-var xx = argument0;
-var yy = argument1;
-if (global.__argument_relative) {
-	xx += x;
-	yy += y;
-}  // end if
-
-draw_text( xx, yy, string_hash_to_newline(argument2)+string(lives));
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:ca65af10c49960f798c0e1fc1606f7fbb3c952c74fb5dd6c7fa659887ec6571c
+size 314

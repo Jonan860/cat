@@ -1,26 +1,3 @@
-/// @description Checks to see if a joystick button has been pressed.
-/// @param id	the id of the joystick (1 or 2)
-/// @return  {Number} virtual key code for the numberpad buttons depending on direction being pressed by the joystick/gamepad with the given id
-var jid=__joystick_2_gamepad(argument0);
-
-var haxis = gamepad_axis_value( jid, gp_axislh );
-var vaxis = gamepad_axis_value( jid, gp_axislv );
-
-var dir = 0;
-if (vaxis < -0.3)
-	dir = 6;
-else
-if (vaxis > 0.3)
-	dir = 0;
-else
-	dir = 3;
-
-if (haxis < -0.3)
-	dir += 1;
-else
-if (haxis > 0.3)
-	dir += 3;
-else 
-	dir += 2;
-
-return vk_numpad0+dir;
+version https://git-lfs.github.com/spec/v1
+oid sha256:833e4eb30c8b10075c702f1ed619ea2a1c1b1a113f932c847e953c5265aed8c6
+size 594

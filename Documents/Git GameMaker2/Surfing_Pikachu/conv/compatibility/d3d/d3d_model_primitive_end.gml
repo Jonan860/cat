@@ -1,7 +1,3 @@
-/// @description  Ends the process of adding primitives to a model in 3D.
-/// @param ind The index of the model to end the addition of primitives to.
-
-var m = argument0;
-m[@ e__YYM.PrimKind] = 0;
-m[@ e__YYM.NumVerts] = 0;
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:c34cc51a842ec7b7182adeb4db6f7abb887c0a5cadd9c7f8b177ac8ebe9e84ed
+size 230

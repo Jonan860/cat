@@ -1,26 +1,3 @@
-/// @description (Old DnD) - move random
-/// @param x	x grid
-/// @param y	y grid
-
-var xmin=0, xmax=room_width;
-var ymin=0, ymax=room_height;
-if (sprite_exists(sprite_index) || sprite_exists(mask_index)) {
-	xmin = round(x - bbox_left);
-	xmax = round(xmax + x - bbox_right);
-	ymin = round(y - bbox_top);
-	ymax = round(ymax + y - bbox_bottom);
-}
-
-var sx = argument0;
-var sy = argument1;
-for( var i=0; i<100; ++i) {
-	var xx = xmin + irandom( xmax-xmin );
-	if (sx > 0) xx = sx * floor(xx/sx);
-	var yy = ymin + irandom( ymax - ymin );
-	if (sy > 0) yy = sy * floor(yy/sy);
-	if (place_free( xx, yy)) {
-		x = xx;
-		y = yy;
-		return;
-	} // end if
-} // end for
+version https://git-lfs.github.com/spec/v1
+oid sha256:5f403a64b971792a14a12aa340a5bd0acd5cadcdc9a6e881bdb16bad2e94517d
+size 650

@@ -1,7 +1,3 @@
-/// @description Checks if a given tile exists in the room.
-/// @param index The index of the tile to check for.
-/// @returns {boolean} whether the tile exists
-
-var __index = argument0;
-
-return layer_tile_exists(__index);
+version https://git-lfs.github.com/spec/v1
+oid sha256:b26612a2526006926db8acc74391905eebd561fcc45bc2f51f057159908db042
+size 221

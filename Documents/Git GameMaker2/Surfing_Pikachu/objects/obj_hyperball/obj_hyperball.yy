@@ -1,34 +1,3 @@
-{
-  "resourceType": "GMObject",
-  "resourceVersion": "1.0",
-  "name": "obj_hyperball",
-  "eventList": [],
-  "managed": true,
-  "overriddenProperties": [],
-  "parent": {
-    "name": "attack_animators",
-    "path": "folders/Objects/attack_animators.yy",
-  },
-  "parentObjectId": null,
-  "persistent": false,
-  "physicsAngularDamping": 0.1,
-  "physicsDensity": 0.5,
-  "physicsFriction": 0.2,
-  "physicsGroup": 0,
-  "physicsKinematic": false,
-  "physicsLinearDamping": 0.1,
-  "physicsObject": false,
-  "physicsRestitution": 0.1,
-  "physicsSensor": false,
-  "physicsShape": 0,
-  "physicsShapePoints": [],
-  "physicsStartAwake": true,
-  "properties": [],
-  "solid": false,
-  "spriteId": {
-    "name": "spr_hyper_ball",
-    "path": "sprites/spr_hyper_ball/spr_hyper_ball.yy",
-  },
-  "spriteMaskId": null,
-  "visible": true,
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:be6494b534bc477f46f332a86e8d187ab4fc30ab4135deecfba6f9c495b79c32
+size 851

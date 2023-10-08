@@ -1,8 +1,3 @@
-/// @description d3d - enable 3d
-
-var ret = global.__d3d;
-global.__d3d = true;
-//camera_apply(global.__d3dCamera);
-gpu_set_ztestenable(true);
-gpu_set_zwriteenable(true);
-return ret;
+version https://git-lfs.github.com/spec/v1
+oid sha256:517bb99c073fa4d0183012c09e93b7256b793ab3f59b32753de1fbd77417415d
+size 182

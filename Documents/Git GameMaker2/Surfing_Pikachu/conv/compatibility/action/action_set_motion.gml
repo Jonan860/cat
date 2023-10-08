@@ -1,11 +1,3 @@
-/// @description (Old DnD) - set motion
-/// @param dir direction
-/// @param spd speed
-var dir = argument0;
-var spd = argument1;
-if (global.__argument_relative) {
-	dir += direction;
-	spd += speed;
-}  // end if
-direction = dir;
-speed = spd;
+version https://git-lfs.github.com/spec/v1
+oid sha256:aecee8d43adfafc74058e8ac6ed9b05ea5599a256368b6b5f33c720afb3d25ab
+size 239

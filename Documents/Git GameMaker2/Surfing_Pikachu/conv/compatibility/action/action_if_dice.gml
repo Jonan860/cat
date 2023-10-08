@@ -1,8 +1,3 @@
-/// @description (Old DnD) - if dice evauation
-/// @param v number of sides of the dice
-var ret = true;
-var v = argument0;
-if (v > 1) {
-	ret = random( 1000*v ) <= 1000;
-} // endif
-return ret;
+version https://git-lfs.github.com/spec/v1
+oid sha256:378d210933bd10fb6fdcf1fc40591e9082b1cae75a6b26b3d2a42fb0b55006e3
+size 191

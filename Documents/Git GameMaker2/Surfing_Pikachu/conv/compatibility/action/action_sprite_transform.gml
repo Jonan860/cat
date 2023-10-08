@@ -1,10 +1,3 @@
-/// @description (Old DnD) - set sprite transform
-/// @param scaleX x scale of sprite
-/// @param scaleY y scale of sprite
-/// @param angle angle of sprite
-/// @param third ???? quadrant ????
-image_xscale = argument0;
-image_yscale = argument1;
-image_angle = argument2;
-if ((argument3 == 1) || (argument3 == 3)) image_xscale=-image_xscale;
-if ((argument3 == 2) || (argument3 == 3)) image_yscale=-image_yscale;
+version https://git-lfs.github.com/spec/v1
+oid sha256:b0012e4bc5d13c8802bae41af407fde9fc1748f9c08a8bffc2a5b18e76cbb26f
+size 408

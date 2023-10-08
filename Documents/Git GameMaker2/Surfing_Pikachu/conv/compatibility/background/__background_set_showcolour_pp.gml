@@ -1,10 +1,3 @@
-var __newvis = argument0;
-
-var __colinfo = __background_get_colour_element();
-
-if (__colinfo[0] == -1)
-	return 0;
-	
-var __vis = layer_background_get_visible(__colinfo[0]);
-layer_background_visible(__colinfo[0], __newvis);
-return __vis;
+version https://git-lfs.github.com/spec/v1
+oid sha256:21d74cafaba5ed44e9f999102e13b00ce4ec8d51928240e7219596235b52a1c5
+size 235

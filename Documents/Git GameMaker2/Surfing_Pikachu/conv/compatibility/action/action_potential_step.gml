@@ -1,13 +1,3 @@
-/// @description (Old DnD) - potential step
-/// @param x	x position 
-/// @param y	y position 
-/// @param speed	speed
-/// @param checkall	true if checking all
-
-var xx = argument0;
-var yy = argument1;
-if (global.__argument_relative) {
-	xx += x;
-	yy += y;
-}  // end if
-mp_potential_step( xx, yy, argument2, argument3 );
+version https://git-lfs.github.com/spec/v1
+oid sha256:6d1ef838efac79d07f899de0a7432ca5a7dd62b5428bc767f33c0eb2c94400f9
+size 316

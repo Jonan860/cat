@@ -1,5 +1,3 @@
-// ------------------------------------------------------------
-/// @description Loops the indicated sound
-/// @param index The index of the sound to loop
-
-audio_play_sound( argument0, 10, true );
+version https://git-lfs.github.com/spec/v1
+oid sha256:de77d4d9668205d3e9d90b6b85da9fbdce0bff49148f4a814c170e23b24ab725
+size 197

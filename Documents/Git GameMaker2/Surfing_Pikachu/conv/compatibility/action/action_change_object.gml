@@ -1,4 +1,3 @@
-/// @description (Old DnD) - Changes the calling instance to an instance of a different object
-/// @param objInd The new object the calling object will change into.
-/// @param performEvents Whether to perform that new object's create and destroy events (true) or not (false).
-instance_change( argument0, argument1 );
+version https://git-lfs.github.com/spec/v1
+oid sha256:2e859740cee2a2d6ce0e42c28f6d95a81a18b6f0053e44cc751b7b86703bf25d
+size 317

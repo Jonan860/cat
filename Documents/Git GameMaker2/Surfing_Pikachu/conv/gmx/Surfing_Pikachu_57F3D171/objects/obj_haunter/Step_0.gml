@@ -1,11 +1,3 @@
-event_inherited()
-if(state=="attackattack")
-vulnerable=1
-if(alive and state="attack" and abs(y-instance_find(obj_pikachu,0).y)<=5)
-{
-night_shades=10
-state="attackattack"
-speed=0
-alarm[2]=room_speed/3
-}
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:fe6713d7dccd528c39ae2bde448f3ca6ea14d7e286b6af3b12deaa3b0412662b
+size 213

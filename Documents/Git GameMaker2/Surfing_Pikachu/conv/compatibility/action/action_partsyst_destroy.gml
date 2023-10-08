@@ -1,5 +1,3 @@
-/// @description (Old DnD) - particle system destroy
-if (global.__part_syst >= 0) { 
-	part_system_destroy(global.__part_syst);
-}
-global.__part_syst = -1;
+version https://git-lfs.github.com/spec/v1
+oid sha256:e7bf6546ffc2ba72f32712d5d9bd2ce6123fa065b2d02c7067c66f6afb8785c6
+size 154

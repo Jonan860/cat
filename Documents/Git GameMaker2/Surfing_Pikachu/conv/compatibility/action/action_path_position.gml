@@ -1,7 +1,3 @@
-/// @description (Old DnD) - set path position
-/// @param position new position
-var pos = argument0;
-if (global.__argument_relative) {
-	pos += path_position;
-}  // end if
-path_position = pos;
+version https://git-lfs.github.com/spec/v1
+oid sha256:debb7b1b897240c9fc888738f076451267f636183a8c99ec34ebcce6082e1090
+size 191

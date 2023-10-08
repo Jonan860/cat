@@ -1,12 +1,3 @@
-{
-  "resourceType": "GMWasmOptions",
-  "resourceVersion": "1.0",
-  "name": "wasm",
-  "option_wasm_game_name": "${project_name}",
-  "option_wasm_icon": "${base_options_dir}/wasm/icon.png",
-  "option_wasm_interpolate_pixels": true,
-  "option_wasm_scale": 0,
-  "option_wasm_splash_screen": "${base_options_dir}/wasm/splash.png",
-  "option_wasm_texture_page": "2048x2048",
-  "option_wasm_version": "1.0.0.0",
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:8bb68d096d82e2efb336d6b9461e2a14f89b802ed8dce4e9c5e1e0ecbccf8724
+size 417

@@ -1,10 +1,3 @@
-if(global.bossState == BOSS_STATES.EVADE) {
-	global.bossState = BOSS_STATES.AIMING
-}
-else if(global.bossState == BOSS_STATES.AIMING and hspeed == 0) {
-	global.bossState = BOSS_STATES.EVADE
-	direction = choose(90, 270)
-	alarm[0] = (200 + irandom(room_height - 200)) / movementSpeed
-	alarm[1] = room_height * 3 / movementSpeed
-}
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:99e0cec7245afc343f4a656c6615e378a2bebf18de58d872aad05250d7033ce3
+size 337

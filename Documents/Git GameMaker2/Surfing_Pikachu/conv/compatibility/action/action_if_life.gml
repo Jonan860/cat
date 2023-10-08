@@ -1,11 +1,3 @@
-/// @description (Old DnD) - if life evauation
-// @param val  value to check against
-/// @param type	type of check (1==<, 2==>, anything else is ==)
-var ret = false;
-switch( argument1 )
-{
-	case 1:	ret = (lives < argument0); break;	
-	case 2:	ret = (lives > argument0); break;	
-	default:ret = (lives == argument0); break;	
-}
-return ret;
+version https://git-lfs.github.com/spec/v1
+oid sha256:f92671c190f9777f63ffcf4875d62da6bbbb5dd04030e95687e7159ccea2c613
+size 334

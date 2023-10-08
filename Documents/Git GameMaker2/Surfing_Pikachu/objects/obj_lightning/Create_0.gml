@@ -1,13 +1,3 @@
-event_inherited()
-image_angle = point_direction(x, y, global.pikachu.x, global.pikachu.y) - 225
-owner = 0
-audio_play_sound(sound_lightning, 0, 0)
-
-hitEffect = function(victim) {
-	show_debug_message("other for hitEffect is" + string(other.id))
-	with(victim) {
-		HP -= 20 * (1 - damage_reduction)
-	}
-}
-
-sound = sound_lightning
+version https://git-lfs.github.com/spec/v1
+oid sha256:387d6157eedf047353c1d47c18ee364fa2afc1f4295f080de77d86e5f9c6acc6
+size 337

@@ -1,16 +1,3 @@
-/// @description (Old DnD) - creates an instance of an object at a position
-/// @param objInd object to create
-/// @param xPos		X position to create at
-/// @param yPos		Y position to create at
-
-if (!object_exists(argument0)) {
-	show_message( "creating instance for non-existent object" + string(id) );
-	return 0;
-}
-
-if (global.__argument_relative)
-{
-	instance_create( x+argument1, y+argument2, argument0);
-} else {
-	instance_create( argument1, argument2, argument0);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:330dac7e964b308501bb8c503acbacaa11124c4aca13199bcc32778a0250ae24
+size 468

@@ -1,6 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
-
-show_debug_message("a pikachu was destroyed")
-
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:e789b493131bc69bf35f7d1e8812fab88d59a8c2ed645a478561c98e53395c6e
+size 136

@@ -1,14 +1,3 @@
-event_inherited()
-text_speed += 2/game_get_speed(gamespeed_fps)
-timer += text_speed
-if(timer > game_get_speed(gamespeed_fps) * 3 * text_speed and !instance_exists(obj_star_wars_text)) {
-	instance_create_depth(x, y, depth, obj_star_wars_text)
-}
-
-var zz = start_text[2] + timer * direction_text[2]
-if(zz > room_height * 30) {//10
-	instance_destroy()
-}
-
-
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:e42d3134e7654155f8a9fbe27767c5b36dd8c10f77d17d60d129027a4748a29e
+size 366

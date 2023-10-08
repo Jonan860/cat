@@ -1,9 +1,3 @@
-/// @description Sets a tile's visibility.
-/// @param index The index of the tile.
-/// @param visible The visibility of the tile. true=visible, false=invisible.
-/// @returns 
-
-var __index = argument0;
-var __visible = argument1;
-
-layer_tile_visible(__index, __visible);
+version https://git-lfs.github.com/spec/v1
+oid sha256:b71247dc30d125b30f10ac5a4eb8139f114090f575f75b7c483543f21e103358
+size 268

@@ -1,28 +1,3 @@
-image_index=spr_ind
-draw_self()
-draw_sprite(bubble,0,x+sprite_width/2,y-sprite_height/2)
-if(global.player="bebis")
-{
-draw_set_valign(fa_bottom)
-draw_set_halign(fa_center)
-draw_text_ext_transformed_colour(x+sprite_width/2,y-sprite_height/2-12,string_hash_to_newline(string_number),3,500,2,2,0,c_red,c_red,c_red,c_red,1)
-draw_set_valign(fa_top)
-draw_set_halign(fa_left)
-}
-if(global.player="nils")
-{
-draw_set_valign(fa_bottom)
-draw_set_halign(fa_center)
-draw_text_ext_transformed_colour(x+sprite_width/2,y-sprite_height/2-12,string_hash_to_newline(string_number),3,500,2,2,0,c_red,c_red,c_red,c_red,1)
-draw_set_valign(fa_top)
-draw_set_halign(fa_left)
-}
-if(global.player="ida")
-{
-draw_set_valign(fa_bottom)
-draw_set_halign(fa_center)
-draw_text_ext_transformed_colour(x+sprite_width/2,y-sprite_height/2-12,string_hash_to_newline(string_number),3,500,2,2,0,c_red,c_red,c_red,c_red,1)
-draw_set_valign(fa_top)
-draw_set_halign(fa_left)
-}
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:a9376517fac9292a01c6d826bb4ed6e8f8c0f02683c47bbbe89de9b85857250b
+size 957

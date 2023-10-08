@@ -1,11 +1,3 @@
-/// @description Returns the left coordinate of a given tile from its background.
-/// @param index The index of the tile.
-/// @returns {number} The width of the tile
-
-var __index = argument0;
-
-var __reg = layer_tile_get_region(__index);
-if (array_length_1d(__reg) == 0)
-	return 0;
-	
-return __reg[0];
+version https://git-lfs.github.com/spec/v1
+oid sha256:74b888bff435c5030daf74703c2762a9f7410840246f348026aae392885e5ce6
+size 299

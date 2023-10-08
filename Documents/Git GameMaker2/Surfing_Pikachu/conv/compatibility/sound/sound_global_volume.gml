@@ -1,4 +1,3 @@
-/// @description Sets the volume of all sounds
-/// @param value	The new global volume from 0 to 1.
-audio_master_gain(argument0)
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:e1094b50b4cef540d892f03e57158aede8f5eaa465fedf991d71135033db4f91
+size 129

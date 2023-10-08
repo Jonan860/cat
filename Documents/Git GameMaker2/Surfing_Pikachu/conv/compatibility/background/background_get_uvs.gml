@@ -1,5 +1,3 @@
-/// @description Returns the texture coordinates of the background within the texture page as an array.
-/// @param back The index of the background to use.
-/// @returns {array} an array containing the uv coordinates of the background on the texture page
-
-return sprite_get_uvs(argument0, 0);
+version https://git-lfs.github.com/spec/v1
+oid sha256:51accead1e3266fc92620a9ccddd88284fea71d796e8add17918ab907d59826c
+size 291

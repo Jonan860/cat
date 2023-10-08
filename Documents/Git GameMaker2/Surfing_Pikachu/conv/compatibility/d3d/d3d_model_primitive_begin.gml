@@ -1,7 +1,3 @@
-/// @description  Begins the process of defining a primitive that is to be added to a model in 3D.
-/// @param ind The index of the model to add the primitive to.
-/// @param kind The kind of primitive you are going to draw.
-
-var m = argument0;
-m[@ e__YYM.PrimKind] = argument1;
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:b08a36cdd9646160398ae0b94dd012b24a103ca67882ad8a8e1bb806bf490593
+size 278

@@ -1,5 +1,3 @@
-/// @description Adds an image (with alpha) from a file to the set of background resources.
-/// @param fname The name (string) of the file to add.
-/// @returns {number} resource name for the new background
-var __dummy = argument1;
-return sprite_add(argument0, 0, false, false, 0, 0);
+version https://git-lfs.github.com/spec/v1
+oid sha256:3ee18dbb622bf9b7146f5121122a376dd2844905738ad65e0c6ab6ba05eff4b8
+size 284

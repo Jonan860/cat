@@ -1,9 +1,3 @@
-/// @description Returns the depth of a given tile.
-/// @param index The index of the tile to check.
-/// @returns {number} the depth of the tile
-
-var __index = argument0;
-
-// Should really check if the element ID points to a tile (and not a different sort of element)
-var __layerid = layer_get_element_layer(__index);
-return layer_get_depth(__layerid);
+version https://git-lfs.github.com/spec/v1
+oid sha256:1cb17b135c8a14d554ada63161d88493a759b670ae3b9e582ccf62e5ce6f941c
+size 352

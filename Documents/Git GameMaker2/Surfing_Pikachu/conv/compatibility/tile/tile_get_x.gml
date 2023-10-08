@@ -1,7 +1,3 @@
-/// @description Returns the x coordinate of a given tile.
-/// @param index The index of the tile.
-/// @returns {number} The x position of the tile
-
-var __index = argument0;
-
-return layer_tile_get_x(__index);
+version https://git-lfs.github.com/spec/v1
+oid sha256:5919a43e4dce1ff3e5465b798206559e0c5b4438d2f4325bb8ad422743a7317c
+size 208

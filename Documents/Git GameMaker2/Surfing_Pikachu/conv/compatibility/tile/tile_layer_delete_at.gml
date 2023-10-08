@@ -1,15 +1,3 @@
-/// @description Deletes the tile(s) at a given depth and position.
-/// @param depth The depth of a tile to be deleted.
-/// @param x The x position at which to delete a tile.
-/// @param y The y position at which to delete a tile.
-/// @returns 
-
-var __depth = argument0;
-var __x = argument1;
-var __y = argument2;
-
-var __tile_el = tile_layer_find(__depth, __x, __y);
-if (__tile_el != -1)
-{
-	layer_tile_destroy(__tile_el);			
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:91d61afbe1d9d66bc7275840215d61a3d0aa66c1d571f3e461e1992af3efad35
+size 424

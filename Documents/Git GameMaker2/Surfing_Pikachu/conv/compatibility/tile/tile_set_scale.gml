@@ -1,12 +1,3 @@
-/// @description Sets a tile's horizontal and vertical scaling.
-/// @param index The index of the tile.
-/// @param xscale The tile's horizontal scale.
-/// @param yscale The tile's vertical scale.
-/// @returns 
-
-var __index = argument0;
-var __xscale = argument1;
-var __yscale = argument2;
-
-layer_tile_xscale(__index, __xscale);
-layer_tile_yscale(__index, __yscale);
+version https://git-lfs.github.com/spec/v1
+oid sha256:08a7223e91e90f6a6e01abad03399c6260441e3f796f3bb6fcf9ffa29999b69d
+size 364

@@ -1,8 +1,3 @@
-event_inherited()
-if(alive and global.bossState == BOSS_STATES.AIMING and abs(y - global.pikachu.y) <= 5) {
-	global.bossState = BOSS_STATES.ATTACKING
-	speed = 0
-	instance_create_depth(x - 0.19 * sprite_width, y - 0.21 * sprite_height, depth, obj_hyperball)
-	alarm[2] = 2 * game_get_speed(gamespeed_fps)
-}
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:e2ffb22d3e0176f51a74f6c5019bf2507e8f2553c5540c57e5fd887080a28c20
+size 313

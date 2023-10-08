@@ -1,15 +1,3 @@
-if(room != room_bamse) {
-	if(ammo > 0 and loaded) {
-		lightning = instance_create_depth(x + sprite_width/2, y, depth, obj_lightning)
-		with(lightning) {
-			owner = global.pikachu
-			image_angle = -225
-			speed = 15
-			direction = 0
-		}
-		loaded = 0
-		ammo -= 1
-		alarm[0] = game_get_speed(gamespeed_fps) * 2
-	}
-}
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:0ebb974d39d8c62180cc1ae1474dd519b5b48a4e71b4cff90e7d9007f8b3f1b9
+size 328

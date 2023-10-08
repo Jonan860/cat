@@ -1,11 +1,3 @@
-{
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "initializeGlobalQuestionValues",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy",
-  },
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:320cab22a22a815feb306db98320020273339339d020668293286e2df5ab914c
+size 237

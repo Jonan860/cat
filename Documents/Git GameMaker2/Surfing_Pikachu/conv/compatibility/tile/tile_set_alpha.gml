@@ -1,9 +1,3 @@
-/// @description Sets a tile's alpha (transparency).
-/// @param index The index of the tile.
-/// @param alpha The transparency of the tile.
-/// @returns 
-
-var __index = argument0;
-var __alpha = argument1;
-
-return layer_tile_alpha(__index, __alpha);
+version https://git-lfs.github.com/spec/v1
+oid sha256:3b3bd274eb4fc768ac81848de75fc0b0ba84649f2f42ef7c0cffe21850f68892
+size 248

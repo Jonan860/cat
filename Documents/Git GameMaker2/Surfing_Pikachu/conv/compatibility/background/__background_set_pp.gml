@@ -1,10 +1,3 @@
-var __prop = argument0;
-var __bind = argument1;
-var __val = argument2;
-
-var __backinfo = __background_get_element(__bind);
-var __res = __background_get_internal(__prop, __bind, __backinfo);
-
-__background_set_internal(__prop, __bind, __val, __backinfo);
-
-return __res;
+version https://git-lfs.github.com/spec/v1
+oid sha256:67920f3a10618d520ef0dc8ad77ed220c9ba2a39415538ad3dd6d2604c7d7367
+size 267
