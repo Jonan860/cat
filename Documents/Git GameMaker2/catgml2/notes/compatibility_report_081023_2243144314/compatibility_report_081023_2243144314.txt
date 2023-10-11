@@ -1,0 +1,6 @@
+Missing audiogroup for sound: 'sound_game' - setting to default audio group
+Missing audiogroup for sound: 'sound_lose' - setting to default audio group
+Missing audiogroup for sound: 'sound_win' - setting to default audio group
+Missing audiogroup for sound: 'sound_scared' - setting to default audio group
+Game speed set to 30
+Added compatibility script 'sound\sound_stop.gml'

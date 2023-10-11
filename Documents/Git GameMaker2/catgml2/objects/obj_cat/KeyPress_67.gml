@@ -1,0 +1,1 @@
+sprite_index = sprite_index==spr_nils_charizard ? spr_jonathans_cat : spr_nils_charizard
